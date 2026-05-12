@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Afrinetix Solutions</title>
+<meta name="description" content="Digital Marketing, AI Automation, Web Development & Training services from Afrinetix Solutions. Starter, Growth and Enterprise pricing.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sora:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--white:#FFFFFF;--orange:#E8631A;--orange-dark:#c44a08;--orange-light:#ff7a30;--navy:#0B1828;--navy-dark:#050e1a;--navy-mid:#132236;--navy-light:#1a2f48;--gray-light:#f4f5f7;--gray-mid:#e8eaed;--gray-text:#6b7280;--text-dark:#111827;--font-serif:'DM Serif Display',Georgia,serif;--font-body:'Sora',-apple-system,sans-serif;--font-mono:'DM Mono',monospace;--r-sm:8px;--r-md:16px;--r-lg:24px;--r-full:9999px;--sh-sm:0 2px 8px rgba(0,0,0,.06);--sh-md:0 8px 32px rgba(0,0,0,.10);--sh-lg:0 20px 60px rgba(0,0,0,.15);--sh-or:0 8px 32px rgba(232,99,26,.25);--t:0.3s cubic-bezier(.4,0,.2,1);--ts:0.6s cubic-bezier(.4,0,.2,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--text-dark);background:var(--white);overflow-x:hidden;cursor:none}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--orange);border-radius:2px}
+#cursor-dot,#cursor-ring{position:fixed;border-radius:50%;pointer-events:none;z-index:99999}
+#cursor-dot{width:8px;height:8px;background:var(--orange);transform:translate(-50%,-50%)}
+#cursor-ring{width:36px;height:36px;border:2px solid var(--orange);transform:translate(-50%,-50%);transition:width .2s,height .2s}
+a,button{cursor:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 48px;height:72px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-bottom:1px solid transparent;transition:border-color var(--t),box-shadow var(--t)}
+nav.scrolled{border-bottom-color:var(--gray-mid);box-shadow:0 4px 24px rgba(0,0,0,.06)}
+.nav-brand{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+.nav-logo-img{height:46px;width:auto;display:block}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{font-size:.85rem;font-weight:500;color:var(--navy);text-decoration:none;padding:6px 14px;border-radius:var(--r-full);transition:background var(--t),color var(--t)}
+.nav-links a:hover,.nav-links a.active{background:rgba(232,99,26,.1);color:var(--orange)}
+.nav-right{display:flex;align-items:center;gap:16px}
+.nav-phone{font-size:.82rem;font-weight:500;color:var(--navy);text-decoration:none}
+.btn-nav{background:var(--orange);color:var(--white);border:none;padding:10px 22px;border-radius:var(--r-full);font-size:.85rem;font-weight:600;cursor:none;transition:background var(--t);text-decoration:none;white-space:nowrap}
+.btn-nav:hover{background:var(--orange-dark)}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:8px;cursor:none}
+.nav-hamburger span{display:block;width:24px;height:2px;background:var(--navy);border-radius:2px;transition:transform var(--t),opacity var(--t)}
+.nav-drawer{display:none;position:fixed;inset:0;background:var(--white);z-index:999;flex-direction:column;padding:100px 40px 40px;transform:translateX(100%);transition:transform var(--ts)}
+.nav-drawer.open{transform:translateX(0)}
+.nav-drawer a{font-family:var(--font-serif);font-size:2rem;color:var(--navy);text-decoration:none;padding:12px 0;border-bottom:1px solid var(--gray-mid);display:block}
+.nav-drawer a:hover{color:var(--orange)}
+.nav-drawer .btn-nav{margin-top:24px;display:inline-block;font-size:1rem;padding:14px 32px}
+/* PAGE HERO */
+.page-hero{padding:140px 48px 80px;background:var(--navy);position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(232,99,26,.15),transparent 60%)}
+.page-hero-inner{max-width:1240px;margin:0 auto;position:relative;z-index:1}
+.page-label{font-family:var(--font-mono);font-size:.72rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+.page-title{font-family:var(--font-serif);font-size:clamp(2.8rem,5vw,5rem);color:var(--white);line-height:1.05;margin-bottom:20px}
+.page-title em{font-style:italic;color:var(--orange)}
+.page-subtitle{font-size:1.05rem;line-height:1.7;color:rgba(255,255,255,.65);max-width:560px}
+/* SHARED */
+section{padding:100px 48px}
+.section-inner{max-width:1240px;margin:0 auto}
+.section-label{font-family:var(--font-mono);font-size:.72rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+.section-heading{font-family:var(--font-serif);font-size:clamp(2rem,3vw,3rem);color:var(--navy);line-height:1.1}
+.section-heading em{font-style:italic;color:var(--orange)}
+.btn-primary{background:var(--orange);color:var(--white);border:2px solid var(--orange);padding:14px 32px;border-radius:var(--r-full);font-size:.95rem;font-weight:600;cursor:none;transition:all var(--t);text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{background:var(--orange-dark);border-color:var(--orange-dark);transform:translateY(-2px);box-shadow:var(--sh-or)}
+.btn-outline{background:transparent;color:var(--navy);border:2px solid var(--navy);padding:14px 32px;border-radius:var(--r-full);font-size:.95rem;font-weight:600;cursor:none;transition:all var(--t);text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.btn-outline:hover{background:var(--navy);color:var(--white);transform:translateY(-2px)}
+/* SERVICE PILLAR */
+.service-pillar{padding:100px 48px;border-bottom:1px solid var(--gray-mid)}
+.service-pillar:nth-child(even){background:var(--gray-light)}
+.pillar-inner{max-width:1240px;margin:0 auto}
+.pillar-hero{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-bottom:72px}
+.pillar-num{font-family:var(--font-mono);font-size:.72rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+.pillar-icon{width:72px;height:72px;border-radius:var(--r-lg);display:flex;align-items:center;justify-content:center;font-size:2rem;margin-bottom:24px}
+.pillar-title{font-family:var(--font-serif);font-size:clamp(2rem,3.5vw,3.5rem);color:var(--navy);line-height:1.1;margin-bottom:16px}
+.pillar-title em{font-style:italic;color:var(--orange)}
+.pillar-desc{font-size:.95rem;line-height:1.75;color:var(--gray-text);margin-bottom:28px}
+.pillar-features{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pf-item{display:flex;align-items:flex-start;gap:10px;font-size:.85rem;color:var(--text-dark);line-height:1.5}
+.pf-item::before{content:'✓';color:var(--orange);font-weight:700;flex-shrink:0;margin-top:1px}
+.pillar-visual{background:linear-gradient(135deg,var(--navy),var(--navy-light));border-radius:var(--r-lg);padding:40px;display:flex;flex-direction:column;gap:16px}
+.pillar-visual.orange{background:linear-gradient(135deg,var(--orange),var(--orange-dark))}
+.pv-stat{background:rgba(255,255,255,.08);border-radius:var(--r-md);padding:20px;border:1px solid rgba(255,255,255,.1)}
+.pv-val{font-family:var(--font-serif);font-size:2rem;color:var(--white)}
+.pv-val em{color:var(--orange-light);font-style:normal}
+.pillar-visual.orange .pv-val em{color:var(--white)}
+.pv-lbl{font-size:.75rem;font-family:var(--font-mono);color:rgba(255,255,255,.6);margin-top:4px}
+/* PRICING */
+.pricing-section{margin-top:60px}
+.pricing-label{font-family:var(--font-mono);font-size:.72rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:24px}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.price-card{border-radius:var(--r-lg);padding:36px;border:2px solid var(--gray-mid);position:relative;transition:all var(--t);background:var(--white)}
+.price-card:hover{transform:translateY(-4px);box-shadow:var(--sh-lg)}
+.price-card.featured{border-color:var(--orange);background:var(--orange)}
+.price-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--navy);color:var(--white);font-family:var(--font-mono);font-size:.65rem;padding:5px 14px;border-radius:var(--r-full);white-space:nowrap}
+.price-tier{font-family:var(--font-mono);font-size:.7rem;color:var(--orange);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.price-card.featured .price-tier{color:rgba(255,255,255,.7)}
+.price-val{font-family:var(--font-serif);font-size:2.5rem;color:var(--navy);margin-bottom:4px}
+.price-card.featured .price-val{color:var(--white)}
+.price-period{font-size:.78rem;color:var(--gray-text);font-family:var(--font-mono);margin-bottom:24px}
+.price-card.featured .price-period{color:rgba(255,255,255,.7)}
+.price-features{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+.price-features li{font-size:.85rem;color:var(--text-dark);display:flex;align-items:flex-start;gap:8px;line-height:1.4}
+.price-features li::before{content:'✓';color:var(--orange);font-weight:700;flex-shrink:0}
+.price-card.featured .price-features li{color:var(--white)}
+.price-card.featured .price-features li::before{color:rgba(255,255,255,.9)}
+.price-cta{display:block;text-align:center;padding:12px;border-radius:var(--r-full);font-size:.88rem;font-weight:600;text-decoration:none;transition:all var(--t);border:2px solid var(--navy);color:var(--navy)}
+.price-cta:hover{background:var(--navy);color:var(--white)}
+.price-card.featured .price-cta{border-color:var(--white);color:var(--white);background:rgba(255,255,255,.15)}
+.price-card.featured .price-cta:hover{background:var(--white);color:var(--orange)}
+/* FAQ */
+.faq-section{margin-top:60px;padding-top:60px;border-top:1px solid var(--gray-mid)}
+.faq-label{font-family:var(--font-mono);font-size:.72rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:24px}
+.faq-list{display:flex;flex-direction:column;gap:12px;max-width:800px}
+.faq-item{border:1px solid var(--gray-mid);border-radius:var(--r-md);overflow:hidden;transition:border-color var(--t)}
+.faq-item.open{border-color:var(--orange)}
+.faq-q{padding:20px 24px;display:flex;justify-content:space-between;align-items:center;cursor:none;font-weight:600;font-size:.92rem;color:var(--navy)}
+.faq-icon{font-size:1.2rem;transition:transform var(--t);color:var(--orange);flex-shrink:0}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s}
+.faq-a-inner{padding:0 24px 20px;font-size:.88rem;line-height:1.7;color:var(--gray-text)}
+.faq-item.open .faq-a{max-height:300px}
+/* CTA BAND */
+.cta-band{background:var(--navy);padding:100px 48px;text-align:center}
+.cta-heading{font-family:var(--font-serif);font-size:clamp(2.2rem,4vw,4rem);color:var(--white);line-height:1.1;margin-bottom:16px}
+.cta-heading em{color:var(--orange);font-style:italic}
+.cta-sub{font-size:1rem;color:rgba(255,255,255,.65);max-width:520px;margin:0 auto 40px;line-height:1.7}
+.cta-btns{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.btn-white{background:var(--white);color:var(--navy);border:2px solid var(--white);padding:14px 32px;border-radius:var(--r-full);font-size:.95rem;font-weight:600;cursor:none;transition:all var(--t);text-decoration:none}
+.btn-white:hover{background:transparent;color:var(--white)}
+/* FOOTER */
+footer{background:var(--navy-dark);padding:80px 48px 0}
+.footer-inner{max-width:1240px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:60px;padding-bottom:60px;border-bottom:1px solid rgba(255,255,255,.08)}
+.footer-brand{display:flex;align-items:center;margin-bottom:20px;text-decoration:none}
+.footer-about{font-size:.85rem;line-height:1.7;color:rgba(255,255,255,.5);margin-bottom:24px}
+.footer-socials{display:flex;gap:12px}
+.social-btn{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:.85rem;text-decoration:none;transition:all var(--t)}
+.social-btn:hover{border-color:var(--orange);color:var(--orange)}
+.footer-col-title{font-family:var(--font-mono);font-size:.72rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:20px}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:.85rem;color:rgba(255,255,255,.5);text-decoration:none;transition:color var(--t)}
+.footer-links a:hover{color:var(--white)}
+.footer-bar{display:flex;justify-content:space-between;align-items:center;padding:24px 0;flex-wrap:wrap;gap:12px}
+.footer-copy{font-size:.78rem;color:rgba(255,255,255,.35);font-family:var(--font-mono)}
+.footer-legal{display:flex;gap:24px}
+.footer-legal a{font-size:.78rem;color:rgba(255,255,255,.35);text-decoration:none}
+.footer-legal a:hover{color:rgba(255,255,255,.7)}
+/* CHATBOT */
+.chatbot-fab{position:fixed;bottom:32px;right:32px;z-index:900;width:58px;height:58px;border-radius:50%;background:var(--orange);border:none;cursor:none;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 32px rgba(232,99,26,.4);animation:fabBounce 3s ease-in-out infinite}
+.chatbot-fab:hover{animation:none;transform:scale(1.1)}
+.chatbot-fab svg{width:26px;height:26px;color:var(--white)}
+.fab-badge{position:absolute;top:0;right:0;width:14px;height:14px;border-radius:50%;background:#22c55e;border:2px solid var(--white)}
+@keyframes fabBounce{0%,100%{transform:translateY(0)}30%{transform:translateY(-8px)}60%{transform:translateY(-4px)}}
+.chatbot-window{position:fixed;bottom:108px;right:32px;z-index:900;width:364px;background:var(--white);border-radius:var(--r-lg);box-shadow:0 20px 80px rgba(0,0,0,.2);overflow:hidden;display:none;flex-direction:column}
+.chatbot-window.open{display:flex}
+.chat-header{background:linear-gradient(135deg,var(--orange),var(--orange-dark));padding:20px;display:flex;align-items:center;gap:12px}
+.chat-avatar{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.chat-header-info{flex:1}
+.chat-header-name{font-weight:700;font-size:.95rem;color:var(--white)}
+.chat-header-status{font-size:.72rem;color:rgba(255,255,255,.8);font-family:var(--font-mono)}
+.chat-header-status::before{content:'● ';color:#4ade80}
+.chat-close{background:none;border:none;cursor:none;color:rgba(255,255,255,.7);font-size:1.2rem;padding:4px}
+.chat-messages{height:280px;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.chat-msg{max-width:85%;padding:10px 14px;border-radius:14px;font-size:.85rem;line-height:1.5}
+.chat-msg.bot{background:var(--gray-light);color:var(--text-dark);align-self:flex-start;border-bottom-left-radius:4px}
+.chat-msg.user{background:var(--orange);color:var(--white);align-self:flex-end;border-bottom-right-radius:4px}
+.typing-indicator{display:flex;align-items:center;gap:4px;padding:10px 14px;background:var(--gray-light);border-radius:14px;border-bottom-left-radius:4px;width:fit-content}
+.typing-dot{width:7px;height:7px;border-radius:50%;background:var(--gray-text);animation:td 1.4s infinite}
+.typing-dot:nth-child(2){animation-delay:.2s}.typing-dot:nth-child(3){animation-delay:.4s}
+@keyframes td{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-6px);opacity:1}}
+.chat-chips{display:flex;gap:6px;padding:10px 14px;overflow-x:auto;border-top:1px solid var(--gray-mid)}
+.chat-chips::-webkit-scrollbar{height:0}
+.chip{background:var(--gray-light);border:1px solid var(--gray-mid);border-radius:var(--r-full);padding:5px 11px;font-size:.74rem;font-weight:500;cursor:none;white-space:nowrap;transition:all var(--t)}
+.chip:hover{background:rgba(232,99,26,.1);border-color:var(--orange);color:var(--orange)}
+.chat-input-row{display:flex;padding:12px 14px;gap:8px;border-top:1px solid var(--gray-mid)}
+.chat-input{flex:1;border:1px solid var(--gray-mid);border-radius:var(--r-full);padding:9px 14px;font-family:var(--font-body);font-size:.85rem;outline:none;transition:border-color var(--t)}
+.chat-input:focus{border-color:var(--orange)}
+.chat-send{width:36px;height:36px;border-radius:50%;background:var(--orange);border:none;cursor:none;display:flex;align-items:center;justify-content:center;color:var(--white);transition:all var(--t)}
+.chat-send:hover{background:var(--orange-dark)}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(40px);transition:opacity .7s ease,transform .7s ease}
+.reveal-right.visible{opacity:1;transform:translateX(0)}
+@media(max-width:1100px){nav{padding:0 24px}.nav-phone{display:none}.nav-links{display:none}.nav-hamburger{display:flex}.nav-drawer{display:flex}}
+@media(max-width:900px){section,.service-pillar{padding:72px 24px}.page-hero{padding:110px 24px 60px}.pillar-hero{grid-template-columns:1fr;gap:40px}.pricing-grid{grid-template-columns:1fr;max-width:460px}.footer-grid{grid-template-columns:1fr 1fr;gap:40px}}
+@media(max-width:600px){.pillar-features{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.chatbot-window{width:calc(100vw - 32px);right:16px}}
+</style>
+</head>
+<body>
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+<nav id="main-nav">
+  <a href="index.html" class="nav-brand"><img src="images/logo.png" alt="Afrinetix Solutions Limited" class="nav-logo-img"></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html" class="active">Services</a>
+    <a href="work.html">Work</a><a href="results.html">Results</a><a href="blog.html">Blog</a>
+    <a href="careers.html">Careers</a><a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:+254711571124" class="nav-phone">+254 711 571 124</a>
+    <a href="contact.html" class="btn-nav">Free Strategy Call</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<nav class="nav-drawer" id="nav-drawer">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+  <a href="work.html">Work</a><a href="results.html">Results</a><a href="blog.html">Blog</a>
+  <a href="careers.html">Careers</a><a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn-nav">Free Strategy Call →</a>
+</nav>
+
+<main>
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-label">What We Offer</div>
+    <h1 class="page-title">Four Pillars of <em>Transformative</em> Growth</h1>
+    <p class="page-subtitle">Every service we offer is engineered for one outcome: measurable growth. Explore our four core service pillars and find the right fit for your ambitions.</p>
+  </div>
+</section>
+
+<!-- SERVICE 01: DIGITAL MARKETING -->
+<div class="service-pillar" id="marketing">
+  <div class="pillar-inner">
+    <div class="pillar-hero">
+      <div class="reveal-left">
+        <div class="pillar-num">01 / SERVICE</div>
+        <div class="pillar-icon" style="background:rgba(232,99,26,.12)">📈</div>
+        <h2 class="pillar-title">Digital Marketing <em>&</em> Growth</h2>
+        <p class="pillar-desc">Full-funnel marketing that finds your ideal customers, converts them at record rates, and builds a brand that compounds in value over time. We blend performance marketing precision with creative storytelling that resonates in African markets.</p>
+        <div class="pillar-features">
+          <div class="pf-item">Performance advertising (Meta, Google, TikTok)</div>
+          <div class="pf-item">SEO & organic content strategy</div>
+          <div class="pf-item">Email & SMS marketing automation</div>
+          <div class="pf-item">Conversion rate optimization (CRO)</div>
+          <div class="pf-item">Social media management & growth</div>
+          <div class="pf-item">Brand strategy & positioning</div>
+          <div class="pf-item">Influencer & affiliate marketing</div>
+          <div class="pf-item">Analytics, attribution & reporting</div>
+        </div>
+      </div>
+      <div class="pillar-visual reveal-right">
+        <div class="pv-stat"><div class="pv-val"><em>40</em>%</div><div class="pv-lbl">Average CAC Reduction</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>4</em>×</div><div class="pv-lbl">Average Conversion Rate Lift</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>3</em>×</div><div class="pv-lbl">Pipeline Growth</div></div>
+        <div style="background:rgba(255,255,255,.05);border-radius:var(--r-md);padding:16px;margin-top:8px">
+          <p style="font-size:.8rem;color:rgba(255,255,255,.6);font-style:italic">"Afrinetix dropped our cost per lead from KES 1,200 to KES 420 in 8 weeks."</p>
+          <p style="font-size:.72rem;color:rgba(255,255,255,.4);margin-top:8px;font-family:var(--font-mono)">— Head of Growth, NexaBank</p>
+        </div>
+      </div>
+    </div>
+    <div class="pricing-section reveal">
+      <div class="pricing-label">Pricing Tiers</div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-tier">Starter</div>
+          <div class="price-val">KES 45K</div>
+          <div class="price-period">per month · 3-month minimum</div>
+          <ul class="price-features">
+            <li>2 paid ad channels (Meta + Google)</li>
+            <li>Monthly budget up to KES 200K</li>
+            <li>Basic SEO (10 keywords)</li>
+            <li>Monthly performance report</li>
+            <li>Email automation setup</li>
+            <li>Dedicated account manager</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Get Started</a>
+        </div>
+        <div class="price-card featured">
+          <div class="price-badge">Most Popular</div>
+          <div class="price-tier">Growth</div>
+          <div class="price-val">KES 95K</div>
+          <div class="price-period">per month · 3-month minimum</div>
+          <ul class="price-features">
+            <li>4 paid ad channels incl. TikTok</li>
+            <li>Monthly budget up to KES 500K</li>
+            <li>Advanced SEO (30 keywords)</li>
+            <li>Weekly performance reports</li>
+            <li>Full email & SMS automation</li>
+            <li>CRO audits & landing pages</li>
+            <li>Social media management (3 channels)</li>
+            <li>Monthly strategy session</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Get Started</a>
+        </div>
+        <div class="price-card">
+          <div class="price-tier">Enterprise</div>
+          <div class="price-val">Custom</div>
+          <div class="price-period">bespoke engagement</div>
+          <ul class="price-features">
+            <li>Unlimited ad channels</li>
+            <li>Unlimited ad budget management</li>
+            <li>Full SEO & content programme</li>
+            <li>Real-time analytics dashboard</li>
+            <li>Dedicated team (3+ specialists)</li>
+            <li>Weekly strategy sessions</li>
+            <li>Full marketing stack management</li>
+            <li>Priority 24/7 support</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="faq-section reveal">
+      <div class="faq-label">Frequently Asked Questions</div>
+      <div class="faq-list">
+        <div class="faq-item"><div class="faq-q">How quickly will I see results?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Most clients see measurable improvement within the first 30 days, with significant performance gains by month 3. Paid ads typically show results in the first 2 weeks, while SEO compounds over 3-6 months.</div></div></div>
+        <div class="faq-item"><div class="faq-q">Do I need to provide the ad creative?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">No. Our Growth and Enterprise packages include full creative production — copy, design, and video. On the Starter plan, we provide copy and static creative.</div></div></div>
+        <div class="faq-item"><div class="faq-q">What ad spend is included in the package cost?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">The package prices are our management fees. Ad spend is separate and paid directly to the platforms (Meta, Google, etc.). We'll recommend an appropriate budget based on your goals.</div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICE 02: AI & AUTOMATION -->
+<div class="service-pillar" id="automation">
+  <div class="pillar-inner">
+    <div class="pillar-hero">
+      <div class="reveal-left">
+        <div class="pillar-num">02 / SERVICE</div>
+        <div class="pillar-icon" style="background:rgba(11,24,40,.08)">🤖</div>
+        <h2 class="pillar-title">AI <em>&</em> Automation Solutions</h2>
+        <p class="pillar-desc">We deploy intelligent automation that removes the bottlenecks killing your growth. From AI-powered chatbots to full workflow automation, we help you do more with less — cutting costs while accelerating operations.</p>
+        <div class="pillar-features">
+          <div class="pf-item">AI chatbot & customer service automation</div>
+          <div class="pf-item">CRM & lead pipeline automation</div>
+          <div class="pf-item">Workflow & process automation (Zapier, n8n)</div>
+          <div class="pf-item">Predictive analytics & dashboards</div>
+          <div class="pf-item">AI content generation systems</div>
+          <div class="pf-item">Automated reporting & data pipelines</div>
+          <div class="pf-item">Custom AI model integration</div>
+          <div class="pf-item">Operations intelligence & forecasting</div>
+        </div>
+      </div>
+      <div class="pillar-visual orange reveal-right">
+        <div class="pv-stat"><div class="pv-val">35%</div><div class="pv-lbl">Average Overhead Reduction</div></div>
+        <div class="pv-stat"><div class="pv-val">70%</div><div class="pv-lbl">Manual Process Elimination</div></div>
+        <div class="pv-stat"><div class="pv-val">3×</div><div class="pv-lbl">Faster Customer Response Times</div></div>
+        <div style="background:rgba(255,255,255,.15);border-radius:var(--r-md);padding:16px;margin-top:8px">
+          <p style="font-size:.8rem;color:rgba(255,255,255,.85);font-style:italic">"Our AI chatbot now handles 68% of customer queries automatically."</p>
+          <p style="font-size:.72rem;color:rgba(255,255,255,.6);margin-top:8px;font-family:var(--font-mono)">— Director, HealthFirst</p>
+        </div>
+      </div>
+    </div>
+    <div class="pricing-section reveal">
+      <div class="pricing-label">Pricing Tiers</div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-tier">Starter</div>
+          <div class="price-val">KES 55K</div>
+          <div class="price-period">one-time setup + KES 15K/mo support</div>
+          <ul class="price-features">
+            <li>1 AI chatbot deployment</li>
+            <li>Up to 5 automation workflows</li>
+            <li>CRM integration (existing platform)</li>
+            <li>Basic analytics dashboard</li>
+            <li>30-day post-launch support</li>
+            <li>Training for 2 team members</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Get Started</a>
+        </div>
+        <div class="price-card featured">
+          <div class="price-badge">Best Value</div>
+          <div class="price-tier">Growth</div>
+          <div class="price-val">KES 120K</div>
+          <div class="price-period">one-time setup + KES 30K/mo</div>
+          <ul class="price-features">
+            <li>2 AI chatbots (web + WhatsApp)</li>
+            <li>Up to 20 automation workflows</li>
+            <li>Full CRM setup & automation</li>
+            <li>Advanced analytics dashboard</li>
+            <li>Predictive lead scoring</li>
+            <li>3-month post-launch support</li>
+            <li>Team training (5 members)</li>
+            <li>Monthly optimization reviews</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Get Started</a>
+        </div>
+        <div class="price-card">
+          <div class="price-tier">Enterprise</div>
+          <div class="price-val">Custom</div>
+          <div class="price-period">full AI transformation</div>
+          <ul class="price-features">
+            <li>Unlimited chatbot & automation build</li>
+            <li>Custom AI model development</li>
+            <li>Full data pipeline architecture</li>
+            <li>Enterprise CRM & ERP integration</li>
+            <li>Real-time BI dashboards</li>
+            <li>Dedicated AI engineer on retainer</li>
+            <li>SLA-backed ongoing support</li>
+            <li>Quarterly AI strategy reviews</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="faq-section reveal">
+      <div class="faq-label">Frequently Asked Questions</div>
+      <div class="faq-list">
+        <div class="faq-item"><div class="faq-q">What systems can you integrate with?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">We integrate with all major CRMs (HubSpot, Salesforce, Zoho), ERPs, WhatsApp Business API, email platforms, and custom databases. If your tool has an API, we can connect it.</div></div></div>
+        <div class="faq-item"><div class="faq-q">Do I need a technical team to maintain the automations?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">No. We build systems designed for non-technical teams to manage. We also provide training and ongoing support so your team can make updates confidently.</div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICE 03: WEB & SYSTEMS -->
+<div class="service-pillar" id="web">
+  <div class="pillar-inner">
+    <div class="pillar-hero">
+      <div class="reveal-left">
+        <div class="pillar-num">03 / SERVICE</div>
+        <div class="pillar-icon" style="background:rgba(232,99,26,.12)">💻</div>
+        <h2 class="pillar-title">Web <em>&</em> Systems Development</h2>
+        <p class="pillar-desc">We build high-performance digital products — from conversion-engineered websites to complex custom platforms — that look stunning, load instantly, and scale with your growth.</p>
+        <div class="pillar-features">
+          <div class="pf-item">Conversion-optimized marketing websites</div>
+          <div class="pf-item">Custom web applications & SaaS platforms</div>
+          <div class="pf-item">E-commerce & online booking systems</div>
+          <div class="pf-item">Customer portals & dashboards</div>
+          <div class="pf-item">API design, development & integration</div>
+          <div class="pf-item">Progressive Web Apps (PWA)</div>
+          <div class="pf-item">Database architecture & design</div>
+          <div class="pf-item">Ongoing maintenance & hosting</div>
+        </div>
+      </div>
+      <div class="pillar-visual reveal-right">
+        <div class="pv-stat"><div class="pv-val"><em>4</em>×</div><div class="pv-lbl">Average Conversion Lift from Redesign</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>&lt;2s</em></div><div class="pv-lbl">Average Page Load Time</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>100</em></div><div class="pv-lbl">Lighthouse Performance Score</div></div>
+      </div>
+    </div>
+    <div class="pricing-section reveal">
+      <div class="pricing-label">Pricing Tiers</div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-tier">Starter</div>
+          <div class="price-val">KES 80K</div>
+          <div class="price-period">one-time project fee</div>
+          <ul class="price-features">
+            <li>5-page marketing website</li>
+            <li>Mobile-responsive design</li>
+            <li>Basic SEO setup</li>
+            <li>Contact form & CRM integration</li>
+            <li>Google Analytics setup</li>
+            <li>1 month post-launch support</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Get Started</a>
+        </div>
+        <div class="price-card featured">
+          <div class="price-badge">Most Popular</div>
+          <div class="price-tier">Growth</div>
+          <div class="price-val">KES 180K</div>
+          <div class="price-period">one-time project fee</div>
+          <ul class="price-features">
+            <li>10-15 page website or web app</li>
+            <li>Custom UI/UX design</li>
+            <li>Advanced SEO & performance</li>
+            <li>CMS integration (content management)</li>
+            <li>Booking / e-commerce functionality</li>
+            <li>3rd-party API integrations</li>
+            <li>3-month post-launch support</li>
+            <li>Analytics & conversion tracking</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Get Started</a>
+        </div>
+        <div class="price-card">
+          <div class="price-tier">Enterprise</div>
+          <div class="price-val">Custom</div>
+          <div class="price-period">complex digital products</div>
+          <ul class="price-features">
+            <li>Custom web applications & SaaS</li>
+            <li>Complex system architecture</li>
+            <li>Multi-role user portals</li>
+            <li>Advanced API & data integrations</li>
+            <li>Scalable cloud infrastructure</li>
+            <li>Full QA & security testing</li>
+            <li>DevOps & CI/CD pipeline</li>
+            <li>Ongoing retainer support</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="faq-section reveal">
+      <div class="faq-label">Frequently Asked Questions</div>
+      <div class="faq-list">
+        <div class="faq-item"><div class="faq-q">How long does a website project take?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Starter sites launch in 2-3 weeks. Growth projects typically take 4-8 weeks. Enterprise applications are scoped individually, but we always deliver a detailed timeline before starting.</div></div></div>
+        <div class="faq-item"><div class="faq-q">Will I be able to update the website myself?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Yes. Growth and Enterprise sites include a user-friendly CMS so your team can update content without technical knowledge. We also provide hands-on training.</div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICE 04: TRAINING -->
+<div class="service-pillar" id="training">
+  <div class="pillar-inner">
+    <div class="pillar-hero">
+      <div class="reveal-left">
+        <div class="pillar-num">04 / SERVICE</div>
+        <div class="pillar-icon" style="background:rgba(11,24,40,.08)">🎓</div>
+        <h2 class="pillar-title">Training <em>&</em> Digital Transformation</h2>
+        <p class="pillar-desc">Your technology is only as powerful as the people using it. We upskill your entire organization — from executives to frontline teams — with practical, results-oriented digital training programmes built for African business realities.</p>
+        <div class="pillar-features">
+          <div class="pf-item">Digital marketing bootcamps (2-5 days)</div>
+          <div class="pf-item">AI tools & automation masterclasses</div>
+          <div class="pf-item">Digital transformation consulting</div>
+          <div class="pf-item">Executive digital leadership programme</div>
+          <div class="pf-item">Custom corporate training design</div>
+          <div class="pf-item">Team digital capability assessments</div>
+          <div class="pf-item">Change management support</div>
+          <div class="pf-item">Ongoing coaching & mentorship</div>
+        </div>
+      </div>
+      <div class="pillar-visual orange reveal-right">
+        <div class="pv-stat"><div class="pv-val">500+</div><div class="pv-lbl">Professionals Trained</div></div>
+        <div class="pv-stat"><div class="pv-val">28%</div><div class="pv-lbl">Avg Sales Lift Post-Training</div></div>
+        <div class="pv-stat"><div class="pv-val">4.9★</div><div class="pv-lbl">Average Training Rating</div></div>
+      </div>
+    </div>
+    <div class="pricing-section reveal">
+      <div class="pricing-label">Pricing Tiers</div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-tier">Starter</div>
+          <div class="price-val">KES 35K</div>
+          <div class="price-period">per training day (up to 20 participants)</div>
+          <ul class="price-features">
+            <li>1-day focused workshop</li>
+            <li>Pre-designed curriculum</li>
+            <li>Printed training materials</li>
+            <li>Certificate of completion</li>
+            <li>Post-training resource pack</li>
+            <li>Follow-up Q&A session</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Book Training</a>
+        </div>
+        <div class="price-card featured">
+          <div class="price-badge">Most Effective</div>
+          <div class="price-tier">Growth</div>
+          <div class="price-val">KES 120K</div>
+          <div class="price-period">5-day bootcamp programme</div>
+          <ul class="price-features">
+            <li>5-day immersive bootcamp</li>
+            <li>Custom curriculum design</li>
+            <li>Hands-on practical workshops</li>
+            <li>Up to 30 participants</li>
+            <li>Pre & post capability assessments</li>
+            <li>1-month post-training coaching</li>
+            <li>Implementation action plan</li>
+            <li>Digital toolkits & resources</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Book Training</a>
+        </div>
+        <div class="price-card">
+          <div class="price-tier">Enterprise</div>
+          <div class="price-val">Custom</div>
+          <div class="price-period">full transformation programme</div>
+          <ul class="price-features">
+            <li>Full digital transformation consulting</li>
+            <li>Multi-team, multi-level training</li>
+            <li>Unlimited participants</li>
+            <li>Custom learning platform / LMS</li>
+            <li>Quarterly refresh sessions</li>
+            <li>Digital maturity assessment</li>
+            <li>Executive strategy workshops</li>
+            <li>12-month transformation support</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="faq-section reveal">
+      <div class="faq-label">Frequently Asked Questions</div>
+      <div class="faq-list">
+        <div class="faq-item"><div class="faq-q">Can training be delivered remotely?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Yes. All training programmes are available in-person (Nairobi), hybrid, or fully online via Zoom. We use interactive tools like Miro and Kahoot to keep online sessions engaging.</div></div></div>
+        <div class="faq-item"><div class="faq-q">Do you customize training for our specific industry?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Absolutely. All Growth and Enterprise programmes are custom-built for your industry, team composition, and specific challenges. We do a needs assessment before designing the curriculum.</div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="section-inner">
+    <h2 class="cta-heading reveal">Not Sure Which Service <em>Fits</em>?</h2>
+    <p class="cta-sub reveal">Book a free 30-minute strategy call. We'll audit your current situation and recommend the exact mix of services to hit your growth goals fastest.</p>
+    <div class="cta-btns reveal">
+      <a href="contact.html" class="btn-primary">Book Free Strategy Call</a>
+      <a href="work.html" class="btn-white">See Our Work</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div><a href="index.html" class="footer-brand"><img src="images/logo.png" alt="Afrinetix" style="height:40px;width:auto;filter:brightness(0) invert(1)"></a><p class="footer-about">Growth Engine for the Digital Age. AI-powered digital growth agency based in Nairobi, Kenya.</p><div class="footer-socials"><a href="https://linkedin.com/company/AfrinetixSolutions" class="social-btn">in</a><a href="https://twitter.com/AfrinetixSolutions" class="social-btn">𝕏</a><a href="https://instagram.com/AfrinetixSolutions" class="social-btn">ig</a><a href="https://facebook.com/AfrinetixSolutions" class="social-btn">fb</a><a href="https://tiktok.com/@AfrinetixSolutions" class="social-btn">tk</a></div></div>
+      <div><div class="footer-col-title">Services</div><ul class="footer-links"><li><a href="#marketing">Digital Marketing</a></li><li><a href="#automation">AI & Automation</a></li><li><a href="#web">Web Development</a></li><li><a href="#training">Training</a></li></ul></div>
+      <div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="work.html">Our Work</a></li><li><a href="results.html">Results</a></li><li><a href="careers.html">Careers</a></li></ul></div>
+      <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a href="mailto:afrinetixsolutions@gmail.com">afrinetixsolutions@gmail.com</a></li><li><a href="tel:+254711571124">+254 711 571 124</a></li><li><a href="contact.html">Nairobi, Kenya</a></li></ul></div>
+    </div>
+    <div class="footer-bar"><div class="footer-copy">© 2025 Afrinetix Solutions Limited. All rights reserved.</div><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div></div>
+  </div>
+</footer>
+
+<button class="chatbot-fab" id="chatbot-fab"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><span class="fab-badge"></span></button>
+<div class="chatbot-window" id="chatbot-window"><div class="chat-header"><div class="chat-avatar">🤖</div><div class="chat-header-info"><div class="chat-header-name">Afri — AI Assistant</div><div class="chat-header-status">Online · Ready to help</div></div><button class="chat-close" id="chat-close">✕</button></div><div class="chat-messages" id="chat-messages"><div class="chat-msg bot">Hi! 👋 I can help with <strong>pricing</strong>, <strong>service details</strong>, or help you <strong>book a call</strong>. What would you like to know?</div></div><div class="chat-chips"><button class="chip" onclick="sendChip('Pricing info')">Pricing</button><button class="chip" onclick="sendChip('Our results')">Results</button><button class="chip" onclick="sendChip('Book a call')">Book a call</button></div><div class="chat-input-row"><input class="chat-input" id="chat-input" type="text" placeholder="Ask Afri anything…" autocomplete="off"><button class="chat-send" id="chat-send-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div></div>
+
+<script>
+const dot=document.getElementById('cursor-dot'),ring=document.getElementById('cursor-ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+(function ar(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(ar);})();
+document.querySelectorAll('a,button').forEach(el=>{el.addEventListener('mouseenter',()=>{ring.style.width='52px';ring.style.height='52px';dot.style.opacity='0';});el.addEventListener('mouseleave',()=>{ring.style.width='36px';ring.style.height='36px';dot.style.opacity='1';});});
+window.addEventListener('scroll',()=>document.getElementById('main-nav').classList.toggle('scrolled',scrollY>20));
+const hb=document.getElementById('hamburger'),dr=document.getElementById('nav-drawer');
+hb.addEventListener('click',()=>{const o=dr.classList.toggle('open');const s=hb.querySelectorAll('span');s[0].style.transform=o?'translateY(7px) rotate(45deg)':'';s[1].style.opacity=o?'0':'';s[2].style.transform=o?'translateY(-7px) rotate(-45deg)':'';});
+document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>q.parentElement.classList.toggle('open'));});
+const obs=new IntersectionObserver(e=>e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')}),{threshold:.12});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>obs.observe(el));
+const fab=document.getElementById('chatbot-fab'),win=document.getElementById('chatbot-window'),closeB=document.getElementById('chat-close'),inp=document.getElementById('chat-input'),sendB=document.getElementById('chat-send-btn'),msgs=document.getElementById('chat-messages');
+let open=false;
+fab.addEventListener('click',()=>{open=!open;win.style.display=open?'flex':'none';if(open)win.classList.add('open');else win.classList.remove('open');});
+closeB.addEventListener('click',()=>{open=false;win.classList.remove('open');setTimeout(()=>win.style.display='none',300);});
+const R={pricing:"<strong>Service Pricing Ranges:</strong><br>📈 Marketing: from <strong>KES 45K/mo</strong><br>🤖 AI/Automation: from <strong>KES 55K</strong> setup<br>💻 Web Dev: from <strong>KES 80K</strong> project<br>🎓 Training: from <strong>KES 35K/day</strong>",results:"<strong>Client Results:</strong><br>✅ 40% CAC reduction<br>✅ 3× pipeline growth<br>✅ 35% overhead saved<br>✅ 4× conversion lift",book:"Book via <a href='contact.html' style='color:var(--orange)'>our contact form</a> or call <strong>+254 711 571 124</strong>.",default:"I'd recommend <a href='contact.html' style='color:var(--orange)'>booking a free strategy call</a> — we'll give you a personalised recommendation!"};
+function getR(m){const l=m.toLowerCase();if(l.includes('price')||l.includes('cost'))return R.pricing;if(l.includes('result')||l.includes('proof'))return R.results;if(l.includes('book')||l.includes('call'))return R.book;return R.default;}
+function addMsg(t,c){const d=document.createElement('div');d.className='chat-msg '+c;d.innerHTML=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;}
+function showTyping(){const t=document.createElement('div');t.className='typing-indicator';t.id='typing';t.innerHTML='<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';msgs.appendChild(t);msgs.scrollTop=msgs.scrollHeight;}
+function rmTyping(){const t=document.getElementById('typing');if(t)t.remove();}
+function sendMsg(t){if(!t.trim())return;addMsg(t,'user');showTyping();setTimeout(()=>{rmTyping();addMsg(getR(t),'bot');},800+Math.random()*500);}
+function sendChip(t){sendMsg(t);}
+sendB.addEventListener('click',()=>{sendMsg(inp.value);inp.value='';});
+inp.addEventListener('keydown',e=>{if(e.key==='Enter'){sendMsg(inp.value);inp.value='';}});
+</script>
+</body>
+</html>

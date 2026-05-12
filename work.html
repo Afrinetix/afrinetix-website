@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Work | Afrinetix Solutions</title>
+<meta name="description" content="Case studies and portfolio from Afrinetix Solutions — real results across finance, healthcare, real estate, education, and SaaS.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sora:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--white:#FFFFFF;--orange:#E8631A;--orange-dark:#c44a08;--navy:#0B1828;--navy-dark:#050e1a;--navy-light:#1a2f48;--gray-light:#f4f5f7;--gray-mid:#e8eaed;--gray-text:#6b7280;--text-dark:#111827;--font-serif:'DM Serif Display',Georgia,serif;--font-body:'Sora',-apple-system,sans-serif;--font-mono:'DM Mono',monospace;--r-md:16px;--r-lg:24px;--r-full:9999px;--sh-md:0 8px 32px rgba(0,0,0,.10);--sh-lg:0 20px 60px rgba(0,0,0,.15);--sh-or:0 8px 32px rgba(232,99,26,.25);--t:0.3s cubic-bezier(.4,0,.2,1);--ts:0.6s cubic-bezier(.4,0,.2,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}body{font-family:var(--font-body);color:var(--text-dark);background:var(--white);overflow-x:hidden;cursor:none}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--orange);border-radius:2px}
+#cursor-dot,#cursor-ring{position:fixed;border-radius:50%;pointer-events:none;z-index:99999}
+#cursor-dot{width:8px;height:8px;background:var(--orange);transform:translate(-50%,-50%)}
+#cursor-ring{width:36px;height:36px;border:2px solid var(--orange);transform:translate(-50%,-50%);transition:width .2s,height .2s}
+a,button{cursor:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 48px;height:72px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-bottom:1px solid transparent;transition:border-color var(--t),box-shadow var(--t)}
+nav.scrolled{border-bottom-color:var(--gray-mid);box-shadow:0 4px 24px rgba(0,0,0,.06)}
+.nav-brand{display:flex;align-items:center;text-decoration:none}
+.nav-logo-img{height:46px;width:auto;display:block}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{font-size:.85rem;font-weight:500;color:var(--navy);text-decoration:none;padding:6px 14px;border-radius:var(--r-full);transition:background var(--t),color var(--t)}
+.nav-links a:hover,.nav-links a.active{background:rgba(232,99,26,.1);color:var(--orange)}
+.nav-right{display:flex;align-items:center;gap:16px}
+.nav-phone{font-size:.82rem;font-weight:500;color:var(--navy);text-decoration:none}
+.btn-nav{background:var(--orange);color:var(--white);border:none;padding:10px 22px;border-radius:var(--r-full);font-size:.85rem;font-weight:600;cursor:none;transition:background var(--t);text-decoration:none;white-space:nowrap}
+.btn-nav:hover{background:var(--orange-dark)}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:8px;cursor:none}
+.nav-hamburger span{display:block;width:24px;height:2px;background:var(--navy);border-radius:2px;transition:transform var(--t),opacity var(--t)}
+.nav-drawer{display:none;position:fixed;inset:0;background:var(--white);z-index:999;flex-direction:column;padding:100px 40px 40px;transform:translateX(100%);transition:transform var(--ts)}
+.nav-drawer.open{transform:translateX(0)}
+.nav-drawer a{font-family:var(--font-serif);font-size:2rem;color:var(--navy);text-decoration:none;padding:12px 0;border-bottom:1px solid var(--gray-mid);display:block}
+.nav-drawer a:hover{color:var(--orange)}
+.nav-drawer .btn-nav{margin-top:24px;display:inline-block;font-size:1rem;padding:14px 32px}
+.page-hero{padding:140px 48px 80px;background:var(--navy);position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(232,99,26,.15),transparent 60%)}
+.page-hero-inner{max-width:1240px;margin:0 auto;position:relative;z-index:1}
+.page-label{font-family:var(--font-mono);font-size:.72rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+.page-title{font-family:var(--font-serif);font-size:clamp(2.8rem,5vw,5rem);color:var(--white);line-height:1.05;margin-bottom:20px}
+.page-title em{font-style:italic;color:var(--orange)}
+.page-subtitle{font-size:1.05rem;line-height:1.7;color:rgba(255,255,255,.65);max-width:560px}
+section{padding:100px 48px}
+.section-inner{max-width:1240px;margin:0 auto}
+.section-label{font-family:var(--font-mono);font-size:.72rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+.section-heading{font-family:var(--font-serif);font-size:clamp(2rem,3vw,3rem);color:var(--navy);line-height:1.1}
+.section-heading em{font-style:italic;color:var(--orange)}
+.btn-primary{background:var(--orange);color:var(--white);border:2px solid var(--orange);padding:14px 32px;border-radius:var(--r-full);font-size:.95rem;font-weight:600;cursor:none;transition:all var(--t);text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{background:var(--orange-dark);transform:translateY(-2px);box-shadow:var(--sh-or)}
+/* FILTER */
+.work-filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:48px;align-items:center}
+.filter-label{font-family:var(--font-mono);font-size:.72rem;color:var(--gray-text);letter-spacing:.08em;text-transform:uppercase;margin-right:8px}
+.filter-btn{background:var(--gray-light);border:1px solid var(--gray-mid);border-radius:var(--r-full);padding:8px 18px;font-size:.82rem;font-weight:500;font-family:var(--font-body);cursor:none;transition:all var(--t)}
+.filter-btn.active,.filter-btn:hover{background:var(--orange);color:var(--white);border-color:var(--orange)}
+/* WORK GRID */
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.work-card{border-radius:var(--r-lg);overflow:hidden;background:var(--white);border:1px solid var(--gray-mid);transition:all var(--t)}
+.work-card:hover{transform:translateY(-6px);box-shadow:var(--sh-lg);border-color:var(--orange)}
+.work-thumb{height:200px;display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative;overflow:hidden}
+.work-thumb::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(0,0,0,.4))}
+.work-body{padding:28px}
+.work-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.work-tag{font-size:.68rem;font-family:var(--font-mono);color:var(--orange);background:rgba(232,99,26,.1);padding:3px 10px;border-radius:var(--r-full)}
+.work-title{font-family:var(--font-serif);font-size:1.2rem;color:var(--navy);margin-bottom:4px;line-height:1.2}
+.work-client{font-size:.78rem;color:var(--gray-text);margin-bottom:6px;font-family:var(--font-mono)}
+.work-desc{font-size:.84rem;line-height:1.6;color:var(--gray-text);margin-bottom:16px}
+.work-result{background:rgba(232,99,26,.06);border-left:3px solid var(--orange);border-radius:4px;padding:10px 14px;font-size:.8rem;font-weight:600;color:var(--orange);margin-bottom:16px}
+.work-link{font-size:.82rem;font-weight:600;color:var(--navy);text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:color var(--t)}
+.work-link:hover{color:var(--orange)}
+/* FEATURED CASE STUDY */
+.case-study-section{background:var(--gray-light)}
+.case-study-card{background:var(--white);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--sh-lg);border:1px solid var(--gray-mid)}
+.cs-hero{height:280px;display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative}
+.cs-body{padding:48px}
+.cs-meta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+.cs-tag{font-size:.7rem;font-family:var(--font-mono);background:rgba(232,99,26,.1);color:var(--orange);padding:5px 14px;border-radius:var(--r-full)}
+.cs-title{font-family:var(--font-serif);font-size:2rem;color:var(--navy);margin-bottom:8px}
+.cs-client{font-size:.85rem;font-family:var(--font-mono);color:var(--gray-text);margin-bottom:20px}
+.cs-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:24px}
+.cs-section-title{font-family:var(--font-mono);font-size:.7rem;color:var(--orange);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.cs-text{font-size:.9rem;line-height:1.7;color:var(--gray-text)}
+.cs-metrics{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.cs-metric{background:var(--gray-light);border-radius:var(--r-md);padding:20px;text-align:center}
+.cs-metric-val{font-family:var(--font-serif);font-size:2rem;color:var(--navy)}
+.cs-metric-val em{color:var(--orange);font-style:normal}
+.cs-metric-lbl{font-size:.72rem;font-family:var(--font-mono);color:var(--gray-text);margin-top:4px}
+/* STATS ROW */
+.stats-row{background:var(--navy);padding:60px 48px}
+.stats-row-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center}
+.sr-num{font-family:var(--font-serif);font-size:2.8rem;color:var(--white);line-height:1}
+.sr-num em{color:var(--orange);font-style:normal}
+.sr-lbl{font-size:.78rem;font-family:var(--font-mono);color:rgba(255,255,255,.55);margin-top:6px}
+/* CTA */
+.cta-band{background:var(--navy);padding:100px 48px;text-align:center}
+.cta-heading{font-family:var(--font-serif);font-size:clamp(2.2rem,4vw,4rem);color:var(--white);line-height:1.1;margin-bottom:16px}
+.cta-heading em{color:var(--orange);font-style:italic}
+.cta-sub{font-size:1rem;color:rgba(255,255,255,.65);max-width:520px;margin:0 auto 40px;line-height:1.7}
+.cta-btns{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.btn-white{background:var(--white);color:var(--navy);border:2px solid var(--white);padding:14px 32px;border-radius:var(--r-full);font-size:.95rem;font-weight:600;cursor:none;transition:all var(--t);text-decoration:none}
+.btn-white:hover{background:transparent;color:var(--white)}
+footer{background:var(--navy-dark);padding:80px 48px 0}
+.footer-inner{max-width:1240px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:60px;padding-bottom:60px;border-bottom:1px solid rgba(255,255,255,.08)}
+.footer-brand{display:flex;margin-bottom:20px;text-decoration:none}
+.footer-about{font-size:.85rem;line-height:1.7;color:rgba(255,255,255,.5);margin-bottom:24px}
+.footer-socials{display:flex;gap:12px}
+.social-btn{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:.85rem;text-decoration:none;transition:all var(--t)}
+.social-btn:hover{border-color:var(--orange);color:var(--orange)}
+.footer-col-title{font-family:var(--font-mono);font-size:.72rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:20px}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:.85rem;color:rgba(255,255,255,.5);text-decoration:none;transition:color var(--t)}
+.footer-links a:hover{color:var(--white)}
+.footer-bar{display:flex;justify-content:space-between;align-items:center;padding:24px 0;flex-wrap:wrap;gap:12px}
+.footer-copy{font-size:.78rem;color:rgba(255,255,255,.35);font-family:var(--font-mono)}
+.footer-legal{display:flex;gap:24px}
+.footer-legal a{font-size:.78rem;color:rgba(255,255,255,.35);text-decoration:none}
+.footer-legal a:hover{color:rgba(255,255,255,.7)}
+.chatbot-fab{position:fixed;bottom:32px;right:32px;z-index:900;width:58px;height:58px;border-radius:50%;background:var(--orange);border:none;cursor:none;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 32px rgba(232,99,26,.4);animation:fabBounce 3s ease-in-out infinite}
+.chatbot-fab:hover{animation:none;transform:scale(1.1)}
+.chatbot-fab svg{width:26px;height:26px;color:var(--white)}
+.fab-badge{position:absolute;top:0;right:0;width:14px;height:14px;border-radius:50%;background:#22c55e;border:2px solid var(--white)}
+@keyframes fabBounce{0%,100%{transform:translateY(0)}30%{transform:translateY(-8px)}60%{transform:translateY(-4px)}}
+.chatbot-window{position:fixed;bottom:108px;right:32px;z-index:900;width:364px;background:var(--white);border-radius:var(--r-lg);box-shadow:0 20px 80px rgba(0,0,0,.2);overflow:hidden;display:none;flex-direction:column}
+.chatbot-window.open{display:flex}
+.chat-header{background:linear-gradient(135deg,var(--orange),var(--orange-dark));padding:20px;display:flex;align-items:center;gap:12px}
+.chat-avatar{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.chat-header-info{flex:1}.chat-header-name{font-weight:700;font-size:.95rem;color:var(--white)}
+.chat-header-status{font-size:.72rem;color:rgba(255,255,255,.8);font-family:var(--font-mono)}
+.chat-header-status::before{content:'● ';color:#4ade80}
+.chat-close{background:none;border:none;cursor:none;color:rgba(255,255,255,.7);font-size:1.2rem;padding:4px}
+.chat-messages{height:280px;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.chat-msg{max-width:85%;padding:10px 14px;border-radius:14px;font-size:.85rem;line-height:1.5}
+.chat-msg.bot{background:var(--gray-light);align-self:flex-start;border-bottom-left-radius:4px}
+.chat-msg.user{background:var(--orange);color:var(--white);align-self:flex-end;border-bottom-right-radius:4px}
+.typing-indicator{display:flex;align-items:center;gap:4px;padding:10px 14px;background:var(--gray-light);border-radius:14px;border-bottom-left-radius:4px;width:fit-content}
+.typing-dot{width:7px;height:7px;border-radius:50%;background:var(--gray-text);animation:td 1.4s infinite}
+.typing-dot:nth-child(2){animation-delay:.2s}.typing-dot:nth-child(3){animation-delay:.4s}
+@keyframes td{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-6px);opacity:1}}
+.chat-chips{display:flex;gap:6px;padding:10px 14px;overflow-x:auto;border-top:1px solid var(--gray-mid)}
+.chat-chips::-webkit-scrollbar{height:0}
+.chip{background:var(--gray-light);border:1px solid var(--gray-mid);border-radius:var(--r-full);padding:5px 11px;font-size:.74rem;font-weight:500;cursor:none;white-space:nowrap;transition:all var(--t)}
+.chip:hover{background:rgba(232,99,26,.1);border-color:var(--orange);color:var(--orange)}
+.chat-input-row{display:flex;padding:12px 14px;gap:8px;border-top:1px solid var(--gray-mid)}
+.chat-input{flex:1;border:1px solid var(--gray-mid);border-radius:var(--r-full);padding:9px 14px;font-family:var(--font-body);font-size:.85rem;outline:none;transition:border-color var(--t)}
+.chat-input:focus{border-color:var(--orange)}
+.chat-send{width:36px;height:36px;border-radius:50%;background:var(--orange);border:none;cursor:none;display:flex;align-items:center;justify-content:center;color:var(--white);transition:all var(--t)}
+.chat-send:hover{background:var(--orange-dark)}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease}.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(40px);transition:opacity .7s ease,transform .7s ease}.reveal-right.visible{opacity:1;transform:translateX(0)}
+@media(max-width:1100px){nav{padding:0 24px}.nav-phone{display:none}.nav-links{display:none}.nav-hamburger{display:flex}.nav-drawer{display:flex}}
+@media(max-width:900px){section,.stats-row{padding:72px 24px}.page-hero{padding:110px 24px 60px}.work-grid{grid-template-columns:1fr 1fr}.stats-row-inner{grid-template-columns:1fr 1fr}.cs-grid,.cs-metrics{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr;gap:40px}}
+@media(max-width:600px){.work-grid{grid-template-columns:1fr}.stats-row-inner{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr}.chatbot-window{width:calc(100vw - 32px);right:16px}}
+</style>
+</head>
+<body>
+<div id="cursor-dot"></div><div id="cursor-ring"></div>
+<nav id="main-nav">
+  <a href="index.html" class="nav-brand"><img src="images/logo.png" alt="Afrinetix Solutions Limited" class="nav-logo-img"></a>
+  <div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="work.html" class="active">Work</a><a href="results.html">Results</a><a href="blog.html">Blog</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></div>
+  <div class="nav-right"><a href="tel:+254711571124" class="nav-phone">+254 711 571 124</a><a href="contact.html" class="btn-nav">Free Strategy Call</a></div>
+  <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<nav class="nav-drawer" id="nav-drawer"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="results.html">Results</a><a href="blog.html">Blog</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a><a href="contact.html" class="btn-nav">Free Strategy Call →</a></nav>
+<main>
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-label">Our Portfolio</div>
+    <h1 class="page-title">Results That <em>Speak</em><br>for Themselves</h1>
+    <p class="page-subtitle">20+ engagements. 5 industries. One obsession — delivering measurable growth. Explore our case studies below.</p>
+  </div>
+</section>
+
+<section style="padding:80px 48px">
+  <div class="section-inner">
+    <div class="work-filter-bar">
+      <span class="filter-label">Filter:</span>
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="marketing">Marketing</button>
+      <button class="filter-btn" data-filter="automation">AI / Automation</button>
+      <button class="filter-btn" data-filter="web">Web Dev</button>
+      <button class="filter-btn" data-filter="training">Training</button>
+      <button class="filter-btn" data-filter="finance">Finance</button>
+      <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+    </div>
+    <div class="work-grid" id="work-grid">
+      <div class="work-card reveal" data-category="marketing finance">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#1e3a5f,#2563eb)">🏦</div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Marketing</span><span class="work-tag">SEO</span><span class="work-tag">Finance</span></div>
+          <div class="work-title">NexaBank Digital Growth</div>
+          <div class="work-client">Financial Services · Nairobi</div>
+          <div class="work-desc">Full-funnel digital marketing overhaul including paid media, SEO, and email automation for a tier-2 Kenyan bank.</div>
+          <div class="work-result">↑ 40% CAC reduction in 90 days</div>
+          <a href="#" class="work-link">View Case Study →</a>
+        </div>
+      </div>
+      <div class="work-card reveal" data-category="automation healthcare">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#0f4c35,#16a34a)">🏥</div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">AI</span><span class="work-tag">Automation</span><span class="work-tag">Healthcare</span></div>
+          <div class="work-title">HealthFirst AI Patient System</div>
+          <div class="work-client">Hospital Network · Kenya</div>
+          <div class="work-desc">AI-powered patient intake, appointment booking, and query automation deployed across a 3-hospital network.</div>
+          <div class="work-result">↓ 35% overhead, 3× faster bookings</div>
+          <a href="#" class="work-link">View Case Study →</a>
+        </div>
+      </div>
+      <div class="work-card reveal" data-category="web">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#4c1d1d,#dc2626)">🏠</div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Web Dev</span><span class="work-tag">UX</span><span class="work-tag">Real Estate</span></div>
+          <div class="work-title">PrimeEstate Property Portal</div>
+          <div class="work-client">Real Estate Agency · Nairobi</div>
+          <div class="work-desc">Custom property listing platform with AI-powered search, virtual tours, and integrated lead management CRM.</div>
+          <div class="work-result">4× conversion rate on listings</div>
+          <a href="#" class="work-link">View Case Study →</a>
+        </div>
+      </div>
+      <div class="work-card reveal" data-category="marketing">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#1a0a3d,#7c3aed)">📚</div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Marketing</span><span class="work-tag">Growth</span><span class="work-tag">Education</span></div>
+          <div class="work-title">EduGrow Student Acquisition</div>
+          <div class="work-client">EdTech Platform · East Africa</div>
+          <div class="work-desc">Strategic student acquisition campaign combining content marketing, social media, and performance advertising.</div>
+          <div class="work-result">3× pipeline growth in 6 months</div>
+          <a href="#" class="work-link">View Case Study →</a>
+        </div>
+      </div>
+      <div class="work-card reveal" data-category="automation">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#1a2a1a,#15803d)">⚙️</div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Automation</span><span class="work-tag">SaaS</span></div>
+          <div class="work-title">CloudPay Workflow Automation</div>
+          <div class="work-client">SaaS Fintech · Nairobi</div>
+          <div class="work-desc">End-to-end workflow automation eliminating manual data entry, approval chains, and reporting for a fintech SaaS.</div>
+          <div class="work-result">70% reduction in manual processes</div>
+          <a href="#" class="work-link">View Case Study →</a>
+        </div>
+      </div>
+      <div class="work-card reveal" data-category="training">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#2a1a00,#d97706)">🎓</div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Training</span><span class="work-tag">Strategy</span></div>
+          <div class="work-title">RetailChain Digital Upskill</div>
+          <div class="work-client">National Retailer · Kenya</div>
+          <div class="work-desc">5-day digital bootcamp upskilling 200+ retail staff across digital sales, CRM, and social commerce.</div>
+          <div class="work-result">200+ staff trained, 28% sales lift</div>
+          <a href="#" class="work-link">View Case Study →</a>
+        </div>
+      </div>
+      <div class="work-card reveal" data-category="web marketing">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#1a1a2e,#e11d48)">💊</div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Web Dev</span><span class="work-tag">Marketing</span><span class="work-tag">Healthcare</span></div>
+          <div class="work-title">MediCare Patient Portal</div>
+          <div class="work-client">Healthcare Group · Nairobi</div>
+          <div class="work-desc">Full-stack patient portal with telemedicine, prescription management, and an SEO-led patient acquisition strategy.</div>
+          <div class="work-result">5× increase in online bookings</div>
+          <a href="#" class="work-link">View Case Study →</a>
+        </div>
+      </div>
+      <div class="work-card reveal" data-category="automation finance">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#0a2040,#0ea5e9)">💳</div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">AI</span><span class="work-tag">Finance</span></div>
+          <div class="work-title">SACCO Digital Transformation</div>
+          <div class="work-client">Credit Union · Kenya</div>
+          <div class="work-desc">Complete digital transformation of a 50,000-member SACCO — mobile app, AI credit scoring, and automated member communications.</div>
+          <div class="work-result">60% drop in processing time</div>
+          <a href="#" class="work-link">View Case Study →</a>
+        </div>
+      </div>
+      <div class="work-card reveal" data-category="marketing training">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#1a3a1a,#16a34a)">🌱</div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Marketing</span><span class="work-tag">Training</span></div>
+          <div class="work-title">AgriTech Growth Programme</div>
+          <div class="work-client">AgriTech Startup · East Africa</div>
+          <div class="work-desc">Combined growth marketing and team training to launch a new agri-fintech product across Kenya, Uganda, and Tanzania.</div>
+          <div class="work-result">15,000 app downloads in 60 days</div>
+          <a href="#" class="work-link">View Case Study →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED CASE STUDY -->
+<section class="case-study-section" aria-label="Featured case study">
+  <div class="section-inner">
+    <div style="margin-bottom:32px" class="reveal">
+      <div class="section-label">Deep Dive</div>
+      <h2 class="section-heading">Featured <em>Case Study</em></h2>
+    </div>
+    <div class="case-study-card reveal">
+      <div class="cs-hero" style="background:linear-gradient(135deg,#1e3a5f,#2563eb)">🏦</div>
+      <div class="cs-body">
+        <div class="cs-meta">
+          <span class="cs-tag">Digital Marketing</span>
+          <span class="cs-tag">SEO</span>
+          <span class="cs-tag">Finance</span>
+        </div>
+        <h3 class="cs-title">How We Cut NexaBank's Customer Acquisition Cost by 40%</h3>
+        <div class="cs-client">NexaBank · Financial Services · Nairobi, Kenya</div>
+        <div class="cs-grid">
+          <div>
+            <div class="cs-section-title">The Challenge</div>
+            <p class="cs-text">NexaBank was spending over KES 1,200 per qualified lead across their digital channels — too high to maintain profitability in Kenya's competitive banking market. Their campaigns were scattered, their SEO non-existent, and their website was converting at just 0.8%.</p>
+            <div style="margin-top:24px">
+              <div class="cs-section-title">Our Approach</div>
+              <p class="cs-text">We rebuilt their entire digital acquisition stack from the ground up. Starting with a deep audit, we identified that 80% of their ad spend was going to the wrong audience. We restructured their Meta campaigns, rebuilt their Google Ads account, and launched a targeted SEO programme focused on high-intent, product-specific keywords.</p>
+            </div>
+          </div>
+          <div>
+            <div class="cs-section-title">The Results</div>
+            <div class="cs-metrics">
+              <div class="cs-metric"><div class="cs-metric-val"><em>40</em>%</div><div class="cs-metric-lbl">CAC Reduction</div></div>
+              <div class="cs-metric"><div class="cs-metric-val"><em>3.2</em>×</div><div class="cs-metric-lbl">Lead Volume Growth</div></div>
+              <div class="cs-metric"><div class="cs-metric-val"><em>4.8</em>×</div><div class="cs-metric-lbl">Conversion Rate</div></div>
+              <div class="cs-metric"><div class="cs-metric-val"><em>90</em></div><div class="cs-metric-lbl">Days to Full Results</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-row">
+  <div class="stats-row-inner">
+    <div class="reveal"><div class="sr-num"><em>20</em>+</div><div class="sr-lbl">Completed Projects</div></div>
+    <div class="reveal"><div class="sr-num"><em>5</em></div><div class="sr-lbl">Industries Served</div></div>
+    <div class="reveal"><div class="sr-num"><em>4</em>×</div><div class="sr-lbl">Average Growth Delivered</div></div>
+    <div class="reveal"><div class="sr-num"><em>100</em>%</div><div class="sr-lbl">Client Retention Rate</div></div>
+  </div>
+</div>
+
+<section class="cta-band">
+  <div class="section-inner">
+    <h2 class="cta-heading reveal">Ready to Become Our <em>Next</em> Case Study?</h2>
+    <p class="cta-sub reveal">Let's build something remarkable together. Book your free strategy call today.</p>
+    <div class="cta-btns reveal"><a href="contact.html" class="btn-primary">Start Your Project</a><a href="services.html" class="btn-white">Our Services</a></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="footer-inner"><div class="footer-grid"><div><a href="index.html" class="footer-brand"><img src="images/logo.png" alt="Afrinetix" style="height:40px;width:auto;filter:brightness(0) invert(1)"></a><p class="footer-about">Growth Engine for the Digital Age. Nairobi-based AI-powered digital growth agency.</p><div class="footer-socials"><a href="https://linkedin.com/company/AfrinetixSolutions" class="social-btn">in</a><a href="https://twitter.com/AfrinetixSolutions" class="social-btn">𝕏</a><a href="https://instagram.com/AfrinetixSolutions" class="social-btn">ig</a><a href="https://facebook.com/AfrinetixSolutions" class="social-btn">fb</a><a href="https://tiktok.com/@AfrinetixSolutions" class="social-btn">tk</a></div></div><div><div class="footer-col-title">Services</div><ul class="footer-links"><li><a href="services.html">Digital Marketing</a></li><li><a href="services.html">AI & Automation</a></li><li><a href="services.html">Web Development</a></li><li><a href="services.html">Training</a></li></ul></div><div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="work.html">Our Work</a></li><li><a href="results.html">Results</a></li><li><a href="careers.html">Careers</a></li></ul></div><div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a href="mailto:afrinetixsolutions@gmail.com">afrinetixsolutions@gmail.com</a></li><li><a href="tel:+254711571124">+254 711 571 124</a></li><li><a href="contact.html">Nairobi, Kenya</a></li></ul></div></div><div class="footer-bar"><div class="footer-copy">© 2025 Afrinetix Solutions Limited. All rights reserved.</div><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div></div></div></footer>
+
+<button class="chatbot-fab" id="chatbot-fab"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><span class="fab-badge"></span></button>
+<div class="chatbot-window" id="chatbot-window"><div class="chat-header"><div class="chat-avatar">🤖</div><div class="chat-header-info"><div class="chat-header-name">Afri — AI Assistant</div><div class="chat-header-status">Online · Ready to help</div></div><button class="chat-close" id="chat-close">✕</button></div><div class="chat-messages" id="chat-messages"><div class="chat-msg bot">Hi! 👋 Interested in our work? Ask me about specific projects, industries, or how to start your own project.</div></div><div class="chat-chips"><button class="chip" onclick="sendChip('Our services')">Services</button><button class="chip" onclick="sendChip('Pricing info')">Pricing</button><button class="chip" onclick="sendChip('Book a call')">Book a call</button></div><div class="chat-input-row"><input class="chat-input" id="chat-input" type="text" placeholder="Ask Afri anything…" autocomplete="off"><button class="chat-send" id="chat-send-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div></div>
+<script>
+const dot=document.getElementById('cursor-dot'),ring=document.getElementById('cursor-ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+(function ar(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(ar);})();
+document.querySelectorAll('a,button').forEach(el=>{el.addEventListener('mouseenter',()=>{ring.style.width='52px';ring.style.height='52px';dot.style.opacity='0';});el.addEventListener('mouseleave',()=>{ring.style.width='36px';ring.style.height='36px';dot.style.opacity='1';});});
+window.addEventListener('scroll',()=>document.getElementById('main-nav').classList.toggle('scrolled',scrollY>20));
+const hb=document.getElementById('hamburger'),dr=document.getElementById('nav-drawer');
+hb.addEventListener('click',()=>{const o=dr.classList.toggle('open');const s=hb.querySelectorAll('span');s[0].style.transform=o?'translateY(7px) rotate(45deg)':'';s[1].style.opacity=o?'0':'';s[2].style.transform=o?'translateY(-7px) rotate(-45deg)':'';});
+// FILTER
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const f=btn.dataset.filter;
+    document.querySelectorAll('.work-card').forEach(card=>{
+      const cats=card.dataset.category||'';
+      card.style.display=(f==='all'||cats.includes(f))?'':'none';
+    });
+  });
+});
+const obs=new IntersectionObserver(e=>e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')}),{threshold:.12});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>obs.observe(el));
+const fab=document.getElementById('chatbot-fab'),win=document.getElementById('chatbot-window'),closeB=document.getElementById('chat-close'),inp=document.getElementById('chat-input'),sendB=document.getElementById('chat-send-btn'),msgs=document.getElementById('chat-messages');
+let open=false;
+fab.addEventListener('click',()=>{open=!open;win.style.display=open?'flex':'none';if(open)win.classList.add('open');else win.classList.remove('open');});
+closeB.addEventListener('click',()=>{open=false;win.classList.remove('open');setTimeout(()=>win.style.display='none',300);});
+const R={services:"<strong>4 Service Pillars:</strong><br>📈 Digital Marketing<br>🤖 AI & Automation<br>💻 Web Development<br>🎓 Training",pricing:"From <strong>KES 35K/day</strong> training to <strong>KES 180K+</strong> web projects. <a href='contact.html' style='color:var(--orange)'>Book a call</a> for a custom quote.",book:"<a href='contact.html' style='color:var(--orange)'>Book a free strategy call</a> or email <strong>afrinetixsolutions@gmail.com</strong>.",default:"I'd love to help! <a href='contact.html' style='color:var(--orange)'>Contact us</a> for a tailored answer."};
+function getR(m){const l=m.toLowerCase();if(l.includes('service'))return R.services;if(l.includes('price')||l.includes('cost'))return R.pricing;if(l.includes('book')||l.includes('call'))return R.book;return R.default;}
+function addMsg(t,c){const d=document.createElement('div');d.className='chat-msg '+c;d.innerHTML=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;}
+function showTyping(){const t=document.createElement('div');t.className='typing-indicator';t.id='typing';t.innerHTML='<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';msgs.appendChild(t);msgs.scrollTop=msgs.scrollHeight;}
+function rmTyping(){const t=document.getElementById('typing');if(t)t.remove();}
+function sendMsg(t){if(!t.trim())return;addMsg(t,'user');showTyping();setTimeout(()=>{rmTyping();addMsg(getR(t),'bot');},800+Math.random()*500);}
+function sendChip(t){sendMsg(t);}
+sendB.addEventListener('click',()=>{sendMsg(inp.value);inp.value='';});
+inp.addEventListener('keydown',e=>{if(e.key==='Enter'){sendMsg(inp.value);inp.value='';}});
+</script>
+</body>
+</html>

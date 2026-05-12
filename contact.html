@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Afrinetix Solutions</title>
+<meta name="description" content="Get in touch with Afrinetix Solutions. Book a free strategy call, send a message, or visit us in Nairobi, Kenya.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sora:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--white:#FFFFFF;--orange:#E8631A;--orange-dark:#c44a08;--navy:#0B1828;--navy-dark:#050e1a;--navy-light:#1a2f48;--gray-light:#f4f5f7;--gray-mid:#e8eaed;--gray-text:#6b7280;--text-dark:#111827;--font-serif:'DM Serif Display',Georgia,serif;--font-body:'Sora',-apple-system,sans-serif;--font-mono:'DM Mono',monospace;--r-md:16px;--r-lg:24px;--r-full:9999px;--sh-md:0 8px 32px rgba(0,0,0,.10);--sh-lg:0 20px 60px rgba(0,0,0,.15);--sh-or:0 8px 32px rgba(232,99,26,.25);--t:0.3s cubic-bezier(.4,0,.2,1);--ts:0.6s cubic-bezier(.4,0,.2,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:var(--font-body);color:var(--text-dark);background:var(--white);overflow-x:hidden;cursor:none}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--orange);border-radius:2px}
+#cursor-dot,#cursor-ring{position:fixed;border-radius:50%;pointer-events:none;z-index:99999}#cursor-dot{width:8px;height:8px;background:var(--orange);transform:translate(-50%,-50%)}#cursor-ring{width:36px;height:36px;border:2px solid var(--orange);transform:translate(-50%,-50%);transition:width .2s,height .2s}a,button{cursor:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 48px;height:72px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-bottom:1px solid transparent;transition:border-color var(--t),box-shadow var(--t)}nav.scrolled{border-bottom-color:var(--gray-mid);box-shadow:0 4px 24px rgba(0,0,0,.06)}.nav-brand{display:flex;align-items:center;text-decoration:none}.nav-logo-img{height:46px;width:auto;display:block}.nav-links{display:flex;align-items:center;gap:4px}.nav-links a{font-size:.85rem;font-weight:500;color:var(--navy);text-decoration:none;padding:6px 14px;border-radius:var(--r-full);transition:background var(--t),color var(--t)}.nav-links a:hover,.nav-links a.active{background:rgba(232,99,26,.1);color:var(--orange)}.nav-right{display:flex;align-items:center;gap:16px}.nav-phone{font-size:.82rem;font-weight:500;color:var(--navy);text-decoration:none}.btn-nav{background:var(--orange);color:var(--white);border:none;padding:10px 22px;border-radius:var(--r-full);font-size:.85rem;font-weight:600;cursor:none;transition:background var(--t);text-decoration:none;white-space:nowrap}.btn-nav:hover{background:var(--orange-dark)}.nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:8px;cursor:none}.nav-hamburger span{display:block;width:24px;height:2px;background:var(--navy);border-radius:2px;transition:transform var(--t),opacity var(--t)}.nav-drawer{display:none;position:fixed;inset:0;background:var(--white);z-index:999;flex-direction:column;padding:100px 40px 40px;transform:translateX(100%);transition:transform var(--ts)}.nav-drawer.open{transform:translateX(0)}.nav-drawer a{font-family:var(--font-serif);font-size:2rem;color:var(--navy);text-decoration:none;padding:12px 0;border-bottom:1px solid var(--gray-mid);display:block}.nav-drawer a:hover{color:var(--orange)}.nav-drawer .btn-nav{margin-top:24px;display:inline-block;font-size:1rem;padding:14px 32px}
+.page-hero{padding:140px 48px 80px;background:var(--navy);position:relative;overflow:hidden}.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(232,99,26,.15),transparent 60%)}.page-hero-inner{max-width:1240px;margin:0 auto;position:relative;z-index:1}.page-label{font-family:var(--font-mono);font-size:.72rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}.page-title{font-family:var(--font-serif);font-size:clamp(2.8rem,5vw,5rem);color:var(--white);line-height:1.05;margin-bottom:20px}.page-title em{font-style:italic;color:var(--orange)}.page-subtitle{font-size:1.05rem;line-height:1.7;color:rgba(255,255,255,.65);max-width:560px}
+section{padding:100px 48px}.section-inner{max-width:1240px;margin:0 auto}.section-label{font-family:var(--font-mono);font-size:.72rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}.section-heading{font-family:var(--font-serif);font-size:clamp(2rem,3vw,3rem);color:var(--navy);line-height:1.1}.section-heading em{font-style:italic;color:var(--orange)}
+/* CONTACT GRID */
+.contact-section{background:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:start}
+.contact-info{position:sticky;top:100px}
+.contact-info-item{display:flex;align-items:flex-start;gap:16px;padding:20px 0;border-bottom:1px solid var(--gray-mid)}
+.contact-info-item:last-of-type{border-bottom:none}
+.ci-icon{width:44px;height:44px;border-radius:var(--r-md);background:rgba(232,99,26,.1);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;transition:all var(--t)}
+.contact-info-item:hover .ci-icon{background:var(--orange);transform:scale(1.05)}
+.ci-label{font-family:var(--font-mono);font-size:.68rem;color:var(--gray-text);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.ci-value{font-weight:600;font-size:.92rem;color:var(--navy)}
+.ci-sub{font-size:.78rem;color:var(--gray-text);margin-top:2px}
+.ci-value a{color:inherit;text-decoration:none;transition:color var(--t)}
+.ci-value a:hover{color:var(--orange)}
+/* MAP */
+.map-placeholder{background:var(--gray-light);border-radius:var(--r-lg);height:200px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;border:1px solid var(--gray-mid);margin-top:24px;transition:all var(--t)}
+.map-placeholder:hover{border-color:var(--orange)}
+.map-pin{font-size:2.5rem}
+.map-address{font-size:.85rem;font-family:var(--font-mono);color:var(--gray-text);text-align:center}
+/* HOURS */
+.hours-table{width:100%;margin-top:20px;border-collapse:collapse}
+.hours-table tr{border-bottom:1px solid var(--gray-mid)}
+.hours-table td{padding:10px 0;font-size:.84rem}.hours-table td:first-child{color:var(--navy);font-weight:600}.hours-table td:last-child{color:var(--gray-text);text-align:right;font-family:var(--font-mono)}
+.hours-table tr:last-child{border-bottom:none}
+/* FORM */
+.contact-form{background:var(--gray-light);border-radius:var(--r-lg);padding:40px;border:1px solid var(--gray-mid)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group.full{grid-column:1/-1}
+.form-label{font-size:.82rem;font-weight:600;color:var(--navy);font-family:var(--font-mono)}
+.form-input,.form-select,.form-textarea{border:1px solid var(--gray-mid);border-radius:var(--r-md);padding:12px 16px;font-family:var(--font-body);font-size:.9rem;outline:none;transition:border-color var(--t);width:100%;background:var(--white)}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--orange)}
+.form-textarea{resize:vertical;min-height:140px}
+.form-submit{background:var(--orange);color:var(--white);border:none;padding:16px 36px;border-radius:var(--r-full);font-family:var(--font-body);font-size:1rem;font-weight:700;cursor:none;transition:all var(--t);margin-top:8px;width:100%}
+.form-submit:hover{background:var(--orange-dark);transform:translateY(-2px);box-shadow:var(--sh-or)}
+.form-note{font-size:.75rem;color:var(--gray-text);margin-top:10px;font-family:var(--font-mono)}
+.success-msg{display:none;background:rgba(34,197,94,.1);border:1px solid #22c55e;border-radius:var(--r-md);padding:20px;text-align:center;color:#16a34a;font-weight:600;margin-top:16px}
+/* FAQ */
+.faq-section{background:var(--gray-light)}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.faq-item{background:var(--white);border:1px solid var(--gray-mid);border-radius:var(--r-md);overflow:hidden;transition:border-color var(--t)}
+.faq-item.open{border-color:var(--orange)}
+.faq-q{padding:20px 24px;display:flex;justify-content:space-between;align-items:center;cursor:none;font-weight:600;font-size:.9rem;color:var(--navy)}
+.faq-icon{font-size:1.2rem;transition:transform var(--t);color:var(--orange);flex-shrink:0}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-a-inner{padding:0 24px 20px;font-size:.86rem;line-height:1.7;color:var(--gray-text)}
+.faq-item.open .faq-a{max-height:300px}
+/* SOCIAL CONNECT */
+.social-section{background:var(--white);padding:60px 48px}
+.social-inner{max-width:1240px;margin:0 auto;text-align:center}
+.social-title{font-family:var(--font-serif);font-size:1.8rem;color:var(--navy);margin-bottom:8px}
+.social-sub{font-size:.9rem;color:var(--gray-text);margin-bottom:28px}
+.social-row{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.social-link{display:flex;align-items:center;gap:8px;background:var(--gray-light);border:1px solid var(--gray-mid);border-radius:var(--r-full);padding:10px 20px;font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none;transition:all var(--t)}
+.social-link:hover{border-color:var(--orange);color:var(--orange);background:rgba(232,99,26,.06);transform:translateY(-2px)}
+footer{background:var(--navy-dark);padding:80px 48px 0}.footer-inner{max-width:1240px;margin:0 auto}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:60px;padding-bottom:60px;border-bottom:1px solid rgba(255,255,255,.08)}.footer-brand{display:flex;margin-bottom:20px;text-decoration:none}.footer-about{font-size:.85rem;line-height:1.7;color:rgba(255,255,255,.5);margin-bottom:24px}.footer-socials{display:flex;gap:12px}.social-btn{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:.85rem;text-decoration:none;transition:all var(--t)}.social-btn:hover{border-color:var(--orange);color:var(--orange)}.footer-col-title{font-family:var(--font-mono);font-size:.72rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:20px}.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}.footer-links a{font-size:.85rem;color:rgba(255,255,255,.5);text-decoration:none;transition:color var(--t)}.footer-links a:hover{color:var(--white)}.footer-bar{display:flex;justify-content:space-between;align-items:center;padding:24px 0;flex-wrap:wrap;gap:12px}.footer-copy{font-size:.78rem;color:rgba(255,255,255,.35);font-family:var(--font-mono)}.footer-legal{display:flex;gap:24px}.footer-legal a{font-size:.78rem;color:rgba(255,255,255,.35);text-decoration:none}.footer-legal a:hover{color:rgba(255,255,255,.7)}
+.chatbot-fab{position:fixed;bottom:32px;right:32px;z-index:900;width:58px;height:58px;border-radius:50%;background:var(--orange);border:none;cursor:none;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 32px rgba(232,99,26,.4);animation:fabBounce 3s ease-in-out infinite}.chatbot-fab:hover{animation:none;transform:scale(1.1)}.chatbot-fab svg{width:26px;height:26px;color:var(--white)}.fab-badge{position:absolute;top:0;right:0;width:14px;height:14px;border-radius:50%;background:#22c55e;border:2px solid var(--white)}@keyframes fabBounce{0%,100%{transform:translateY(0)}30%{transform:translateY(-8px)}60%{transform:translateY(-4px)}}.chatbot-window{position:fixed;bottom:108px;right:32px;z-index:900;width:364px;background:var(--white);border-radius:var(--r-lg);box-shadow:0 20px 80px rgba(0,0,0,.2);overflow:hidden;display:none;flex-direction:column}.chatbot-window.open{display:flex}.chat-header{background:linear-gradient(135deg,var(--orange),var(--orange-dark));padding:20px;display:flex;align-items:center;gap:12px}.chat-avatar{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1.1rem}.chat-header-info{flex:1}.chat-header-name{font-weight:700;font-size:.95rem;color:var(--white)}.chat-header-status{font-size:.72rem;color:rgba(255,255,255,.8);font-family:var(--font-mono)}.chat-header-status::before{content:'● ';color:#4ade80}.chat-close{background:none;border:none;cursor:none;color:rgba(255,255,255,.7);font-size:1.2rem;padding:4px}.chat-messages{height:280px;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px}.chat-msg{max-width:85%;padding:10px 14px;border-radius:14px;font-size:.85rem;line-height:1.5}.chat-msg.bot{background:var(--gray-light);align-self:flex-start;border-bottom-left-radius:4px}.chat-msg.user{background:var(--orange);color:var(--white);align-self:flex-end;border-bottom-right-radius:4px}.typing-indicator{display:flex;align-items:center;gap:4px;padding:10px 14px;background:var(--gray-light);border-radius:14px;border-bottom-left-radius:4px;width:fit-content}.typing-dot{width:7px;height:7px;border-radius:50%;background:var(--gray-text);animation:td 1.4s infinite}.typing-dot:nth-child(2){animation-delay:.2s}.typing-dot:nth-child(3){animation-delay:.4s}@keyframes td{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-6px);opacity:1}}.chat-chips{display:flex;gap:6px;padding:10px 14px;overflow-x:auto;border-top:1px solid var(--gray-mid)}.chat-chips::-webkit-scrollbar{height:0}.chip{background:var(--gray-light);border:1px solid var(--gray-mid);border-radius:var(--r-full);padding:5px 11px;font-size:.74rem;font-weight:500;cursor:none;white-space:nowrap;transition:all var(--t)}.chip:hover{background:rgba(232,99,26,.1);border-color:var(--orange);color:var(--orange)}.chat-input-row{display:flex;padding:12px 14px;gap:8px;border-top:1px solid var(--gray-mid)}.chat-input{flex:1;border:1px solid var(--gray-mid);border-radius:var(--r-full);padding:9px 14px;font-family:var(--font-body);font-size:.85rem;outline:none;transition:border-color var(--t)}.chat-input:focus{border-color:var(--orange)}.chat-send{width:36px;height:36px;border-radius:50%;background:var(--orange);border:none;cursor:none;display:flex;align-items:center;justify-content:center;color:var(--white);transition:all var(--t)}.chat-send:hover{background:var(--orange-dark)}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}.reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease}.reveal-left.visible{opacity:1;transform:translateX(0)}.reveal-right{opacity:0;transform:translateX(40px);transition:opacity .7s ease,transform .7s ease}.reveal-right.visible{opacity:1;transform:translateX(0)}
+@media(max-width:1100px){nav{padding:0 24px}.nav-phone{display:none}.nav-links{display:none}.nav-hamburger{display:flex}.nav-drawer{display:flex}}
+@media(max-width:900px){section,.social-section{padding:72px 24px}.page-hero{padding:110px 24px 60px}.contact-grid{grid-template-columns:1fr;gap:48px}.contact-info{position:static}.faq-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr;gap:40px}}
+@media(max-width:600px){.form-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.chatbot-window{width:calc(100vw - 32px);right:16px}}
+</style>
+</head>
+<body>
+<div id="cursor-dot"></div><div id="cursor-ring"></div>
+<nav id="main-nav">
+  <a href="index.html" class="nav-brand"><img src="images/logo.png" alt="Afrinetix Solutions Limited" class="nav-logo-img"></a>
+  <div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="results.html">Results</a><a href="blog.html">Blog</a><a href="careers.html">Careers</a><a href="contact.html" class="active">Contact</a></div>
+  <div class="nav-right"><a href="tel:+254711571124" class="nav-phone">+254 711 571 124</a><a href="#contact-form" class="btn-nav">Free Strategy Call</a></div>
+  <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<nav class="nav-drawer" id="nav-drawer"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="results.html">Results</a><a href="blog.html">Blog</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a><a href="#contact-form" class="btn-nav">Book Strategy Call →</a></nav>
+<main>
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-label">Let's Talk</div>
+    <h1 class="page-title">Start Your Growth <em>Journey</em></h1>
+    <p class="page-subtitle">Whether you want to book a free strategy call, discuss a project, or just say hello — we'd love to hear from you. We typically respond within 4 hours.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact-form">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <!-- LEFT: INFO -->
+      <div class="contact-info reveal-left">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-heading" style="margin-bottom:32px">We're <em>Here</em> For You</h2>
+        <div class="contact-info-item">
+          <div class="ci-icon">📧</div>
+          <div><div class="ci-label">Email</div><div class="ci-value"><a href="mailto:afrinetixsolutions@gmail.com">afrinetixsolutions@gmail.com</a></div><div class="ci-sub">We reply within 4 hours</div></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ci-icon">📞</div>
+          <div><div class="ci-label">Phone / WhatsApp</div><div class="ci-value"><a href="tel:+254711571124">+254 711 571 124</a></div><div class="ci-sub">Mon–Fri, 8AM–6PM EAT</div></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ci-icon">📍</div>
+          <div><div class="ci-label">Location</div><div class="ci-value">Nairobi, Kenya</div><div class="ci-sub">East Africa Time (UTC+3)</div></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ci-icon">🕐</div>
+          <div>
+            <div class="ci-label">Office Hours</div>
+            <table class="hours-table">
+              <tr><td>Monday – Friday</td><td>8:00 AM – 6:00 PM</td></tr>
+              <tr><td>Saturday</td><td>9:00 AM – 2:00 PM</td></tr>
+              <tr><td>Sunday</td><td>Closed</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="map-placeholder">
+          <div class="map-pin">📍</div>
+          <div class="map-address">Afrinetix Solutions Limited<br>Nairobi, Kenya</div>
+          <div style="font-size:.72rem;font-family:var(--font-mono);color:var(--orange);margin-top:4px">EAT · UTC+3</div>
+        </div>
+      </div>
+      <!-- RIGHT: FORM -->
+      <div class="reveal-right">
+        <div class="section-label">Send a Message</div>
+        <h2 class="section-heading" style="margin-bottom:28px">Tell Us About Your <em>Goals</em></h2>
+        <form class="contact-form" id="main-form" onsubmit="handleContact(event)" novalidate>
+          <div class="form-grid">
+            <div class="form-group"><label class="form-label">Your Name *</label><input type="text" class="form-input" placeholder="Full name" required></div>
+            <div class="form-group"><label class="form-label">Email Address *</label><input type="email" class="form-input" placeholder="your@email.com" required></div>
+            <div class="form-group"><label class="form-label">Company / Organisation</label><input type="text" class="form-input" placeholder="Company name"></div>
+            <div class="form-group"><label class="form-label">Phone Number</label><input type="tel" class="form-input" placeholder="+254 7XX XXX XXX"></div>
+            <div class="form-group full"><label class="form-label">Service You're Interested In *</label>
+              <select class="form-select" required>
+                <option value="">Select a service...</option>
+                <option>Digital Marketing & Growth</option>
+                <option>AI & Automation Solutions</option>
+                <option>Web & Systems Development</option>
+                <option>Training & Digital Transformation</option>
+                <option>Full 360° Growth Package</option>
+                <option>General Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group full"><label class="form-label">Tell Us About Your Goals *</label><textarea class="form-textarea" placeholder="What are you trying to achieve? What's your biggest challenge? Any relevant context about your business..." required></textarea></div>
+          </div>
+          <button type="submit" class="form-submit">Send Message & Book Strategy Call →</button>
+          <p class="form-note">By submitting you agree to our Privacy Policy. We'll get back to you within 4 hours.</p>
+          <div class="success-msg" id="success-msg">✓ Message sent! We'll be in touch within 4 hours. Looking forward to speaking with you.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="section-inner">
+    <div style="max-width:600px" class="reveal">
+      <div class="section-label">Common Questions</div>
+      <h2 class="section-heading">Frequently Asked <em>Questions</em></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item reveal"><div class="faq-q">What happens on a free strategy call?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">The 30-minute session is focused entirely on your business. We'll ask about your goals, current challenges, and digital setup. By the end, you'll have a clear view of your top growth opportunities — with or without Afrinetix.</div></div></div>
+      <div class="faq-item reveal"><div class="faq-q">How quickly do you start after we engage?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">For most services, we launch within 1-2 weeks of signing. We have a streamlined onboarding process that gets us from contract to execution extremely quickly.</div></div></div>
+      <div class="faq-item reveal"><div class="faq-q">Do you work with businesses outside Kenya?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Absolutely. We work with clients across Kenya, Uganda, Tanzania, Rwanda, and beyond. All our services can be delivered 100% remotely, and we're well-versed in market nuances across East Africa.</div></div></div>
+      <div class="faq-item reveal"><div class="faq-q">What is the minimum engagement period?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">For ongoing services (marketing retainers, automation support), we require a 3-month minimum. Project-based work (web development, one-off training) has no minimum commitment.</div></div></div>
+      <div class="faq-item reveal"><div class="faq-q">Can you work within a tight budget?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Yes. Our Starter packages are designed for growing businesses with lean budgets. We'll always be transparent about what's achievable at your budget level and won't overpromise.</div></div></div>
+      <div class="faq-item reveal"><div class="faq-q">How do you report on results?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">All clients receive real-time access to a live performance dashboard, weekly email summaries, and a formal monthly strategy report. You'll never be in the dark about your campaign performance.</div></div></div>
+      <div class="faq-item reveal"><div class="faq-q">Do you offer guarantees?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">We don't make blanket guarantees (no reputable agency should). However, we commit to clear, measurable KPIs in every engagement contract — and we've never missed a target in our history of engagements.</div></div></div>
+      <div class="faq-item reveal"><div class="faq-q">What industries do you specialize in?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">We have deep expertise in Finance & Fintech, Healthcare, Real Estate, Education & EdTech, and SaaS/Tech. We've also worked with retail, hospitality, and non-profits. If you're in a different sector, reach out — we may still be the right fit.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL -->
+<div class="social-section">
+  <div class="social-inner reveal">
+    <h3 class="social-title">Follow Our Journey</h3>
+    <p class="social-sub">Get daily insights on digital growth, AI, and building African businesses. Follow us across all platforms.</p>
+    <div class="social-row">
+      <a href="https://linkedin.com/company/AfrinetixSolutions" class="social-link">in LinkedIn</a>
+      <a href="https://twitter.com/AfrinetixSolutions" class="social-link">𝕏 Twitter/X</a>
+      <a href="https://instagram.com/AfrinetixSolutions" class="social-link">📸 Instagram</a>
+      <a href="https://facebook.com/AfrinetixSolutions" class="social-link">fb Facebook</a>
+      <a href="https://tiktok.com/@AfrinetixSolutions" class="social-link">▶ TikTok</a>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer><div class="footer-inner"><div class="footer-grid"><div><a href="index.html" class="footer-brand"><img src="images/logo.png" alt="Afrinetix" style="height:40px;width:auto;filter:brightness(0) invert(1)"></a><p class="footer-about">Growth Engine for the Digital Age. Nairobi-based AI-powered digital growth agency.</p><div class="footer-socials"><a href="https://linkedin.com/company/AfrinetixSolutions" class="social-btn">in</a><a href="https://twitter.com/AfrinetixSolutions" class="social-btn">𝕏</a><a href="https://instagram.com/AfrinetixSolutions" class="social-btn">ig</a><a href="https://facebook.com/AfrinetixSolutions" class="social-btn">fb</a><a href="https://tiktok.com/@AfrinetixSolutions" class="social-btn">tk</a></div></div><div><div class="footer-col-title">Services</div><ul class="footer-links"><li><a href="services.html">Digital Marketing</a></li><li><a href="services.html">AI & Automation</a></li><li><a href="services.html">Web Development</a></li><li><a href="services.html">Training</a></li></ul></div><div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="work.html">Our Work</a></li><li><a href="results.html">Results</a></li><li><a href="careers.html">Careers</a></li></ul></div><div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a href="mailto:afrinetixsolutions@gmail.com">afrinetixsolutions@gmail.com</a></li><li><a href="tel:+254711571124">+254 711 571 124</a></li><li><a href="contact.html">Nairobi, Kenya</a></li></ul></div></div><div class="footer-bar"><div class="footer-copy">© 2025 Afrinetix Solutions Limited. All rights reserved.</div><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div></div></div></footer>
+
+<button class="chatbot-fab" id="chatbot-fab"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><span class="fab-badge"></span></button>
+<div class="chatbot-window" id="chatbot-window"><div class="chat-header"><div class="chat-avatar">🤖</div><div class="chat-header-info"><div class="chat-header-name">Afri — AI Assistant</div><div class="chat-header-status">Online · Ready to help</div></div><button class="chat-close" id="chat-close">✕</button></div><div class="chat-messages" id="chat-messages"><div class="chat-msg bot">Hi! 👋 I'm <strong>Afri</strong>. You can also reach us directly at <strong>+254 711 571 124</strong> or use the form on this page. How can I help?</div></div><div class="chat-chips"><button class="chip" onclick="sendChip('Our services')">Services</button><button class="chip" onclick="sendChip('Pricing info')">Pricing</button><button class="chip" onclick="sendChip('Our results')">Results</button></div><div class="chat-input-row"><input class="chat-input" id="chat-input" type="text" placeholder="Ask Afri anything…" autocomplete="off"><button class="chat-send" id="chat-send-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div></div>
+<script>
+const dot=document.getElementById('cursor-dot'),ring=document.getElementById('cursor-ring');let mx=0,my=0,rx=0,ry=0;document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});(function ar(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(ar);})();document.querySelectorAll('a,button').forEach(el=>{el.addEventListener('mouseenter',()=>{ring.style.width='52px';ring.style.height='52px';dot.style.opacity='0';});el.addEventListener('mouseleave',()=>{ring.style.width='36px';ring.style.height='36px';dot.style.opacity='1';});});
+window.addEventListener('scroll',()=>document.getElementById('main-nav').classList.toggle('scrolled',scrollY>20));
+const hb=document.getElementById('hamburger'),dr=document.getElementById('nav-drawer');hb.addEventListener('click',()=>{const o=dr.classList.toggle('open');const s=hb.querySelectorAll('span');s[0].style.transform=o?'translateY(7px) rotate(45deg)':'';s[1].style.opacity=o?'0':'';s[2].style.transform=o?'translateY(-7px) rotate(-45deg)':'';});
+document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>{const item=q.parentElement;const wasOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!wasOpen)item.classList.add('open');});});
+function handleContact(e){e.preventDefault();const btn=e.target.querySelector('.form-submit');btn.textContent='Sent! We\'ll reply within 4 hours ✓';btn.style.background='#22c55e';btn.disabled=true;document.getElementById('success-msg').style.display='block';}
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}});});
+const obs=new IntersectionObserver(e=>e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')}),{threshold:.1});document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>obs.observe(el));
+const fab=document.getElementById('chatbot-fab'),win=document.getElementById('chatbot-window'),closeB=document.getElementById('chat-close'),inp=document.getElementById('chat-input'),sendB=document.getElementById('chat-send-btn'),msgs=document.getElementById('chat-messages');let open=false;fab.addEventListener('click',()=>{open=!open;win.style.display=open?'flex':'none';if(open)win.classList.add('open');else win.classList.remove('open');});closeB.addEventListener('click',()=>{open=false;win.classList.remove('open');setTimeout(()=>win.style.display='none',300);});
+const R={services:"<strong>4 Service Pillars:</strong><br>📈 Digital Marketing & Growth<br>🤖 AI & Automation<br>💻 Web & Systems Development<br>🎓 Training & Transformation",pricing:"Packages from <strong>KES 35K</strong> (training/day) to <strong>KES 180K+</strong> (web/enterprise). Custom quotes available — <a href='#contact-form' style='color:var(--orange)'>fill the form above</a>.",results:"<strong>Proven Results:</strong><br>✅ 40% avg CAC reduction<br>✅ 3× pipeline growth<br>✅ 4× conversion lift<br>✅ 35% overhead cut",default:"Use the <strong>contact form</strong> above or call us at <strong>+254 711 571 124</strong>. We reply within 4 hours!"};function getR(m){const l=m.toLowerCase();if(l.includes('service')||l.includes('offer'))return R.services;if(l.includes('price')||l.includes('cost'))return R.pricing;if(l.includes('result')||l.includes('proof'))return R.results;return R.default;}function addMsg(t,c){const d=document.createElement('div');d.className='chat-msg '+c;d.innerHTML=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;}function showTyping(){const t=document.createElement('div');t.className='typing-indicator';t.id='typing';t.innerHTML='<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';msgs.appendChild(t);msgs.scrollTop=msgs.scrollHeight;}function rmTyping(){const t=document.getElementById('typing');if(t)t.remove();}function sendMsg(t){if(!t.trim())return;addMsg(t,'user');showTyping();setTimeout(()=>{rmTyping();addMsg(getR(t),'bot');},800+Math.random()*500);}function sendChip(t){sendMsg(t);}sendB.addEventListener('click',()=>{sendMsg(inp.value);inp.value='';});inp.addEventListener('keydown',e=>{if(e.key==='Enter'){sendMsg(inp.value);inp.value='';}});
+</script>
+</body>
+</html>

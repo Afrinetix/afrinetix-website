@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Results & Proof | Afrinetix Solutions</title>
+<meta name="description" content="Real metrics, verified results, and client testimonials from Afrinetix Solutions. 40% CAC reduction, 3× pipeline growth, 4× conversion rates.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sora:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--white:#FFFFFF;--orange:#E8631A;--orange-dark:#c44a08;--navy:#0B1828;--navy-dark:#050e1a;--navy-mid:#132236;--navy-light:#1a2f48;--gray-light:#f4f5f7;--gray-mid:#e8eaed;--gray-text:#6b7280;--text-dark:#111827;--font-serif:'DM Serif Display',Georgia,serif;--font-body:'Sora',-apple-system,sans-serif;--font-mono:'DM Mono',monospace;--r-md:16px;--r-lg:24px;--r-full:9999px;--sh-md:0 8px 32px rgba(0,0,0,.10);--sh-lg:0 20px 60px rgba(0,0,0,.15);--sh-or:0 8px 32px rgba(232,99,26,.25);--t:0.3s cubic-bezier(.4,0,.2,1);--ts:0.6s cubic-bezier(.4,0,.2,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}body{font-family:var(--font-body);color:var(--text-dark);background:var(--white);overflow-x:hidden;cursor:none}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--orange);border-radius:2px}
+#cursor-dot,#cursor-ring{position:fixed;border-radius:50%;pointer-events:none;z-index:99999}
+#cursor-dot{width:8px;height:8px;background:var(--orange);transform:translate(-50%,-50%)}
+#cursor-ring{width:36px;height:36px;border:2px solid var(--orange);transform:translate(-50%,-50%);transition:width .2s,height .2s}
+a,button{cursor:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 48px;height:72px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-bottom:1px solid transparent;transition:border-color var(--t),box-shadow var(--t)}
+nav.scrolled{border-bottom-color:var(--gray-mid);box-shadow:0 4px 24px rgba(0,0,0,.06)}
+.nav-brand{display:flex;align-items:center;text-decoration:none}
+.nav-logo-img{height:46px;width:auto;display:block}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{font-size:.85rem;font-weight:500;color:var(--navy);text-decoration:none;padding:6px 14px;border-radius:var(--r-full);transition:background var(--t),color var(--t)}
+.nav-links a:hover,.nav-links a.active{background:rgba(232,99,26,.1);color:var(--orange)}
+.nav-right{display:flex;align-items:center;gap:16px}
+.nav-phone{font-size:.82rem;font-weight:500;color:var(--navy);text-decoration:none}
+.btn-nav{background:var(--orange);color:var(--white);border:none;padding:10px 22px;border-radius:var(--r-full);font-size:.85rem;font-weight:600;cursor:none;transition:background var(--t);text-decoration:none;white-space:nowrap}
+.btn-nav:hover{background:var(--orange-dark)}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:8px;cursor:none}
+.nav-hamburger span{display:block;width:24px;height:2px;background:var(--navy);border-radius:2px;transition:transform var(--t),opacity var(--t)}
+.nav-drawer{display:none;position:fixed;inset:0;background:var(--white);z-index:999;flex-direction:column;padding:100px 40px 40px;transform:translateX(100%);transition:transform var(--ts)}
+.nav-drawer.open{transform:translateX(0)}
+.nav-drawer a{font-family:var(--font-serif);font-size:2rem;color:var(--navy);text-decoration:none;padding:12px 0;border-bottom:1px solid var(--gray-mid);display:block}
+.nav-drawer a:hover{color:var(--orange)}
+.nav-drawer .btn-nav{margin-top:24px;display:inline-block;font-size:1rem;padding:14px 32px}
+.page-hero{padding:140px 48px 80px;background:var(--navy);position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(232,99,26,.15),transparent 60%)}
+.page-hero-inner{max-width:1240px;margin:0 auto;position:relative;z-index:1}
+.page-label{font-family:var(--font-mono);font-size:.72rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+.page-title{font-family:var(--font-serif);font-size:clamp(2.8rem,5vw,5rem);color:var(--white);line-height:1.05;margin-bottom:20px}
+.page-title em{font-style:italic;color:var(--orange)}
+.page-subtitle{font-size:1.05rem;line-height:1.7;color:rgba(255,255,255,.65);max-width:560px}
+section{padding:100px 48px}
+.section-inner{max-width:1240px;margin:0 auto}
+.section-label{font-family:var(--font-mono);font-size:.72rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+.section-heading{font-family:var(--font-serif);font-size:clamp(2rem,3vw,3rem);color:var(--navy);line-height:1.1}
+.section-heading em{font-style:italic;color:var(--orange)}
+.btn-primary{background:var(--orange);color:var(--white);border:2px solid var(--orange);padding:14px 32px;border-radius:var(--r-full);font-size:.95rem;font-weight:600;cursor:none;transition:all var(--t);text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{background:var(--orange-dark);transform:translateY(-2px);box-shadow:var(--sh-or)}
+/* HERO METRICS */
+.hero-metrics{background:var(--gray-light);padding:80px 48px}
+.metrics-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.metric-big{background:var(--white);border-radius:var(--r-lg);padding:36px;border:1px solid var(--gray-mid);text-align:center;transition:all var(--t)}
+.metric-big:hover{border-color:var(--orange);transform:translateY(-4px);box-shadow:var(--sh-or)}
+.mb-val{font-family:var(--font-serif);font-size:3.5rem;color:var(--navy);line-height:1}
+.mb-val em{color:var(--orange);font-style:normal}
+.mb-label{font-weight:700;font-size:.9rem;color:var(--navy);margin:8px 0 4px}
+.mb-desc{font-size:.78rem;color:var(--gray-text);font-family:var(--font-mono)}
+/* INDUSTRY RESULTS */
+.industry-results{background:var(--white)}
+.ind-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:48px}
+.ind-card{border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--gray-mid);transition:all var(--t)}
+.ind-card:hover{transform:translateY(-4px);box-shadow:var(--sh-lg);border-color:var(--orange)}
+.ind-header{padding:28px 28px 20px;display:flex;align-items:center;gap:16px}
+.ind-icon{font-size:2rem}
+.ind-title{font-family:var(--font-serif);font-size:1.2rem;color:var(--navy)}
+.ind-sub{font-size:.75rem;font-family:var(--font-mono);color:var(--gray-text)}
+.ind-metrics{padding:0 28px 28px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ind-metric{background:var(--gray-light);border-radius:var(--r-md);padding:16px;text-align:center}
+.ind-metric-val{font-family:var(--font-serif);font-size:1.8rem;color:var(--navy)}
+.ind-metric-val em{color:var(--orange);font-style:normal}
+.ind-metric-lbl{font-size:.65rem;font-family:var(--font-mono);color:var(--gray-text);margin-top:3px}
+/* TESTIMONIALS */
+.testimonials{background:var(--gray-light)}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.test-card{background:var(--white);border-radius:var(--r-lg);padding:32px;border:1px solid var(--gray-mid);transition:all var(--t)}
+.test-card:hover{box-shadow:var(--sh-md);transform:translateY(-2px)}
+.test-quote{font-family:var(--font-serif);font-size:3rem;color:var(--orange);line-height:.5;font-style:italic;margin-bottom:16px}
+.test-text{font-size:.88rem;line-height:1.7;color:var(--gray-text);font-style:italic;margin-bottom:20px}
+.test-stars{color:var(--orange);font-size:.9rem;margin-bottom:16px}
+.reviewer{display:flex;align-items:center;gap:12px}
+.rev-avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.rev-role{font-size:.75rem;font-family:var(--font-mono);color:var(--gray-text)}
+.rev-company{font-weight:700;font-size:.9rem;color:var(--navy)}
+/* CLIENT LOGOS */
+.logos-section{background:var(--white)}
+.logos-label{font-family:var(--font-mono);font-size:.72rem;color:var(--gray-text);letter-spacing:.12em;text-transform:uppercase;text-align:center;margin-bottom:40px}
+.logos-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;max-width:900px;margin:0 auto}
+.logo-chip{background:var(--gray-light);border:1px solid var(--gray-mid);border-radius:var(--r-md);padding:18px 28px;font-family:var(--font-mono);font-size:.85rem;font-weight:600;color:var(--gray-text);transition:all var(--t)}
+.logo-chip:hover{border-color:var(--orange);color:var(--navy)}
+/* PROOF BAND */
+.proof-band{background:var(--navy);padding:80px 48px}
+.proof-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.proof-left .section-heading{color:var(--white)}
+.proof-left .section-label{color:var(--orange)}
+.proof-left p{font-size:.95rem;line-height:1.75;color:rgba(255,255,255,.65);margin-top:16px;margin-bottom:28px}
+.proof-stats{display:flex;flex-direction:column;gap:16px}
+.proof-stat-row{display:flex;align-items:center;gap:20px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--r-md);padding:20px 24px;transition:all var(--t)}
+.proof-stat-row:hover{border-color:rgba(232,99,26,.4);background:rgba(232,99,26,.08)}
+.psr-val{font-family:var(--font-serif);font-size:2.2rem;color:var(--white);min-width:80px}
+.psr-val em{color:var(--orange);font-style:normal}
+.psr-label{font-size:.88rem;color:rgba(255,255,255,.7)}
+.psr-lbl2{font-size:.72rem;font-family:var(--font-mono);color:rgba(255,255,255,.4);margin-top:2px}
+/* CTA */
+.cta-band{background:var(--orange);padding:80px 48px;text-align:center}
+.cta-heading{font-family:var(--font-serif);font-size:clamp(2.2rem,4vw,4rem);color:var(--white);line-height:1.1;margin-bottom:16px}
+.cta-sub{font-size:1rem;color:rgba(255,255,255,.85);max-width:520px;margin:0 auto 40px;line-height:1.7}
+.cta-btns{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.btn-white{background:var(--white);color:var(--orange);border:2px solid var(--white);padding:14px 32px;border-radius:var(--r-full);font-size:.95rem;font-weight:600;cursor:none;transition:all var(--t);text-decoration:none}
+.btn-white:hover{background:transparent;color:var(--white)}
+.btn-outline-white{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.5);padding:14px 32px;border-radius:var(--r-full);font-size:.95rem;font-weight:600;cursor:none;transition:all var(--t);text-decoration:none}
+.btn-outline-white:hover{border-color:var(--white);background:rgba(255,255,255,.1)}
+footer{background:var(--navy-dark);padding:80px 48px 0}
+.footer-inner{max-width:1240px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:60px;padding-bottom:60px;border-bottom:1px solid rgba(255,255,255,.08)}
+.footer-brand{display:flex;margin-bottom:20px;text-decoration:none}
+.footer-about{font-size:.85rem;line-height:1.7;color:rgba(255,255,255,.5);margin-bottom:24px}
+.footer-socials{display:flex;gap:12px}
+.social-btn{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:.85rem;text-decoration:none;transition:all var(--t)}
+.social-btn:hover{border-color:var(--orange);color:var(--orange)}
+.footer-col-title{font-family:var(--font-mono);font-size:.72rem;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:20px}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:.85rem;color:rgba(255,255,255,.5);text-decoration:none;transition:color var(--t)}
+.footer-links a:hover{color:var(--white)}
+.footer-bar{display:flex;justify-content:space-between;align-items:center;padding:24px 0;flex-wrap:wrap;gap:12px}
+.footer-copy{font-size:.78rem;color:rgba(255,255,255,.35);font-family:var(--font-mono)}
+.footer-legal{display:flex;gap:24px}
+.footer-legal a{font-size:.78rem;color:rgba(255,255,255,.35);text-decoration:none}
+.footer-legal a:hover{color:rgba(255,255,255,.7)}
+.chatbot-fab{position:fixed;bottom:32px;right:32px;z-index:900;width:58px;height:58px;border-radius:50%;background:var(--orange);border:none;cursor:none;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 32px rgba(232,99,26,.4);animation:fabBounce 3s ease-in-out infinite}
+.chatbot-fab:hover{animation:none;transform:scale(1.1)}
+.chatbot-fab svg{width:26px;height:26px;color:var(--white)}
+.fab-badge{position:absolute;top:0;right:0;width:14px;height:14px;border-radius:50%;background:#22c55e;border:2px solid var(--white)}
+@keyframes fabBounce{0%,100%{transform:translateY(0)}30%{transform:translateY(-8px)}60%{transform:translateY(-4px)}}
+.chatbot-window{position:fixed;bottom:108px;right:32px;z-index:900;width:364px;background:var(--white);border-radius:var(--r-lg);box-shadow:0 20px 80px rgba(0,0,0,.2);overflow:hidden;display:none;flex-direction:column}
+.chatbot-window.open{display:flex}
+.chat-header{background:linear-gradient(135deg,var(--orange),var(--orange-dark));padding:20px;display:flex;align-items:center;gap:12px}
+.chat-avatar{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.chat-header-info{flex:1}.chat-header-name{font-weight:700;font-size:.95rem;color:var(--white)}
+.chat-header-status{font-size:.72rem;color:rgba(255,255,255,.8);font-family:var(--font-mono)}
+.chat-header-status::before{content:'● ';color:#4ade80}
+.chat-close{background:none;border:none;cursor:none;color:rgba(255,255,255,.7);font-size:1.2rem;padding:4px}
+.chat-messages{height:280px;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.chat-msg{max-width:85%;padding:10px 14px;border-radius:14px;font-size:.85rem;line-height:1.5}
+.chat-msg.bot{background:var(--gray-light);align-self:flex-start;border-bottom-left-radius:4px}
+.chat-msg.user{background:var(--orange);color:var(--white);align-self:flex-end;border-bottom-right-radius:4px}
+.typing-indicator{display:flex;align-items:center;gap:4px;padding:10px 14px;background:var(--gray-light);border-radius:14px;border-bottom-left-radius:4px;width:fit-content}
+.typing-dot{width:7px;height:7px;border-radius:50%;background:var(--gray-text);animation:td 1.4s infinite}
+.typing-dot:nth-child(2){animation-delay:.2s}.typing-dot:nth-child(3){animation-delay:.4s}
+@keyframes td{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-6px);opacity:1}}
+.chat-chips{display:flex;gap:6px;padding:10px 14px;overflow-x:auto;border-top:1px solid var(--gray-mid)}
+.chat-chips::-webkit-scrollbar{height:0}
+.chip{background:var(--gray-light);border:1px solid var(--gray-mid);border-radius:var(--r-full);padding:5px 11px;font-size:.74rem;font-weight:500;cursor:none;white-space:nowrap;transition:all var(--t)}
+.chip:hover{background:rgba(232,99,26,.1);border-color:var(--orange);color:var(--orange)}
+.chat-input-row{display:flex;padding:12px 14px;gap:8px;border-top:1px solid var(--gray-mid)}
+.chat-input{flex:1;border:1px solid var(--gray-mid);border-radius:var(--r-full);padding:9px 14px;font-family:var(--font-body);font-size:.85rem;outline:none;transition:border-color var(--t)}
+.chat-input:focus{border-color:var(--orange)}
+.chat-send{width:36px;height:36px;border-radius:50%;background:var(--orange);border:none;cursor:none;display:flex;align-items:center;justify-content:center;color:var(--white);transition:all var(--t)}
+.chat-send:hover{background:var(--orange-dark)}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease}.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(40px);transition:opacity .7s ease,transform .7s ease}.reveal-right.visible{opacity:1;transform:translateX(0)}
+@media(max-width:1100px){nav{padding:0 24px}.nav-phone{display:none}.nav-links{display:none}.nav-hamburger{display:flex}.nav-drawer{display:flex}}
+@media(max-width:900px){section,.hero-metrics,.proof-band{padding:72px 24px}.page-hero{padding:110px 24px 60px}.metrics-grid{grid-template-columns:1fr 1fr}.test-grid{grid-template-columns:1fr 1fr}.ind-cards{grid-template-columns:1fr}.proof-inner{grid-template-columns:1fr;gap:48px}.footer-grid{grid-template-columns:1fr 1fr;gap:40px}}
+@media(max-width:600px){.metrics-grid,.test-grid,.ind-metrics{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.chatbot-window{width:calc(100vw - 32px);right:16px}}
+</style>
+</head>
+<body>
+<div id="cursor-dot"></div><div id="cursor-ring"></div>
+<nav id="main-nav">
+  <a href="index.html" class="nav-brand"><img src="images/logo.png" alt="Afrinetix Solutions Limited" class="nav-logo-img"></a>
+  <div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="results.html" class="active">Results</a><a href="blog.html">Blog</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></div>
+  <div class="nav-right"><a href="tel:+254711571124" class="nav-phone">+254 711 571 124</a><a href="contact.html" class="btn-nav">Free Strategy Call</a></div>
+  <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<nav class="nav-drawer" id="nav-drawer"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="results.html">Results</a><a href="blog.html">Blog</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a><a href="contact.html" class="btn-nav">Free Strategy Call →</a></nav>
+<main>
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-label">Proven Impact</div>
+    <h1 class="page-title">Numbers That <em>Don't Lie</em></h1>
+    <p class="page-subtitle">Every metric on this page is real, verified, and achieved for actual clients. No estimates. No projections. Just results.</p>
+  </div>
+</section>
+
+<!-- HERO METRICS -->
+<div class="hero-metrics">
+  <div class="metrics-grid">
+    <div class="metric-big reveal"><div class="mb-val"><em class="counter" data-target="40">0</em>%</div><div class="mb-label">CAC Reduction</div><div class="mb-desc">Avg across all clients</div></div>
+    <div class="metric-big reveal"><div class="mb-val"><em class="counter" data-target="3">0</em>×</div><div class="mb-label">Pipeline Growth</div><div class="mb-desc">Sales pipeline multiplied</div></div>
+    <div class="metric-big reveal"><div class="mb-val"><em class="counter" data-target="35">0</em>%</div><div class="mb-label">Overhead Reduction</div><div class="mb-desc">Through AI automation</div></div>
+    <div class="metric-big reveal"><div class="mb-val"><em class="counter" data-target="4">0</em>×</div><div class="mb-label">Conversion Rate Lift</div><div class="mb-desc">Average website performance</div></div>
+  </div>
+</div>
+
+<!-- INDUSTRY RESULTS -->
+<section class="industry-results">
+  <div class="section-inner">
+    <div style="text-align:center;max-width:600px;margin:0 auto 0" class="reveal">
+      <div class="section-label">By Industry</div>
+      <h2 class="section-heading">Results Across <em>Every Sector</em></h2>
+    </div>
+    <div class="ind-cards">
+      <div class="ind-card reveal">
+        <div class="ind-header" style="background:linear-gradient(135deg,rgba(30,58,95,.08),rgba(37,99,235,.06))">
+          <span class="ind-icon">🏦</span>
+          <div><div class="ind-title">Finance & Fintech</div><div class="ind-sub">Banks, SACCOs, Insurance, Fintech</div></div>
+        </div>
+        <div class="ind-metrics">
+          <div class="ind-metric"><div class="ind-metric-val"><em>40</em>%</div><div class="ind-metric-lbl">CAC Reduction</div></div>
+          <div class="ind-metric"><div class="ind-metric-val"><em>3</em>×</div><div class="ind-metric-lbl">Lead Growth</div></div>
+          <div class="ind-metric"><div class="ind-metric-val"><em>60</em>%</div><div class="ind-metric-lbl">Process Speed</div></div>
+        </div>
+      </div>
+      <div class="ind-card reveal">
+        <div class="ind-header" style="background:linear-gradient(135deg,rgba(15,76,53,.08),rgba(22,163,74,.06))">
+          <span class="ind-icon">🏥</span>
+          <div><div class="ind-title">Healthcare</div><div class="ind-sub">Hospitals, Clinics, Health Tech</div></div>
+        </div>
+        <div class="ind-metrics">
+          <div class="ind-metric"><div class="ind-metric-val"><em>35</em>%</div><div class="ind-metric-lbl">Overhead Drop</div></div>
+          <div class="ind-metric"><div class="ind-metric-val"><em>3</em>×</div><div class="ind-metric-lbl">Faster Bookings</div></div>
+          <div class="ind-metric"><div class="ind-metric-val"><em>5</em>×</div><div class="ind-metric-lbl">Online Bookings</div></div>
+        </div>
+      </div>
+      <div class="ind-card reveal">
+        <div class="ind-header" style="background:linear-gradient(135deg,rgba(76,29,29,.08),rgba(220,38,38,.06))">
+          <span class="ind-icon">🏠</span>
+          <div><div class="ind-title">Real Estate</div><div class="ind-sub">Developers, Agents, PropTech</div></div>
+        </div>
+        <div class="ind-metrics">
+          <div class="ind-metric"><div class="ind-metric-val"><em>4</em>×</div><div class="ind-metric-lbl">Conversion Rate</div></div>
+          <div class="ind-metric"><div class="ind-metric-val"><em>2.8</em>×</div><div class="ind-metric-lbl">Lead Volume</div></div>
+          <div class="ind-metric"><div class="ind-metric-val"><em>45</em>%</div><div class="ind-metric-lbl">Cost Per Lead Drop</div></div>
+        </div>
+      </div>
+      <div class="ind-card reveal">
+        <div class="ind-header" style="background:linear-gradient(135deg,rgba(26,10,61,.08),rgba(124,58,237,.06))">
+          <span class="ind-icon">📚</span>
+          <div><div class="ind-title">Education</div><div class="ind-sub">Universities, EdTech, E-Learning</div></div>
+        </div>
+        <div class="ind-metrics">
+          <div class="ind-metric"><div class="ind-metric-val"><em>3</em>×</div><div class="ind-metric-lbl">Student Pipeline</div></div>
+          <div class="ind-metric"><div class="ind-metric-val"><em>28</em>%</div><div class="ind-metric-lbl">Sales Lift</div></div>
+          <div class="ind-metric"><div class="ind-metric-val"><em>200</em>+</div><div class="ind-metric-lbl">Staff Trained</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="section-inner">
+    <div style="text-align:center;max-width:600px;margin:0 auto" class="reveal">
+      <div class="section-label">Client Voices</div>
+      <h2 class="section-heading">What Our Clients <em>Say</em></h2>
+    </div>
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <div class="test-quote">"</div>
+        <p class="test-text">Afrinetix completely transformed our digital presence. In 3 months, our cost per acquisition dropped by 42% and our pipeline tripled. The team is world-class and deeply invested in our success.</p>
+        <div class="test-stars">★★★★★</div>
+        <div class="reviewer"><div class="rev-avatar" style="background:linear-gradient(135deg,#1e3a5f,#2563eb)">👨‍💼</div><div><div class="rev-company">CEO · Financial Services</div><div class="rev-role">Nairobi, Kenya</div></div></div>
+      </div>
+      <div class="test-card reveal">
+        <div class="test-quote">"</div>
+        <p class="test-text">The AI automation suite they built reduced our administrative overhead by 35% in 8 weeks. Our team now focuses entirely on patient care, not paperwork.</p>
+        <div class="test-stars">★★★★★</div>
+        <div class="reviewer"><div class="rev-avatar" style="background:linear-gradient(135deg,#0f4c35,#16a34a)">👩‍⚕️</div><div><div class="rev-company">Director · Hospital Network</div><div class="rev-role">Kenya</div></div></div>
+      </div>
+      <div class="test-card reveal">
+        <div class="test-quote">"</div>
+        <p class="test-text">Our property listings now convert at 4× the previous rate. The website is stunning and the SEO work means consistent inbound leads every single week.</p>
+        <div class="test-stars">★★★★★</div>
+        <div class="reviewer"><div class="rev-avatar" style="background:linear-gradient(135deg,#4c1d1d,#dc2626)">🏠</div><div><div class="rev-company">MD · Real Estate Agency</div><div class="rev-role">Nairobi, Kenya</div></div></div>
+      </div>
+      <div class="test-card reveal">
+        <div class="test-quote">"</div>
+        <p class="test-text">The digital training programme upskilled our 200-person team in 6 weeks. We saw a 28% lift in digital sales within the first month after training. Extraordinary results.</p>
+        <div class="test-stars">★★★★★</div>
+        <div class="reviewer"><div class="rev-avatar" style="background:linear-gradient(135deg,#1a0a3d,#7c3aed)">📚</div><div><div class="rev-company">Head of Learning · EdTech</div><div class="rev-role">East Africa</div></div></div>
+      </div>
+      <div class="test-card reveal">
+        <div class="test-quote">"</div>
+        <p class="test-text">Best agency decision we've ever made. Afrinetix doesn't just run campaigns — they become true strategic partners. 3× pipeline in 6 months speaks for itself.</p>
+        <div class="test-stars">★★★★★</div>
+        <div class="reviewer"><div class="rev-avatar" style="background:linear-gradient(135deg,#1a2a1a,#4ade80)">⚙️</div><div><div class="rev-company">CTO · SaaS Fintech</div><div class="rev-role">Nairobi, Kenya</div></div></div>
+      </div>
+      <div class="test-card reveal">
+        <div class="test-quote">"</div>
+        <p class="test-text">We'd tried three agencies before Afrinetix. They were the first to truly understand our market and build a strategy that delivered real, measurable results in 90 days.</p>
+        <div class="test-stars">★★★★★</div>
+        <div class="reviewer"><div class="rev-avatar" style="background:linear-gradient(135deg,#2a1a00,#f59e0b)">📱</div><div><div class="rev-company">CEO · AgriTech Startup</div><div class="rev-role">East Africa</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENT LOGOS -->
+<section class="logos-section">
+  <div class="section-inner">
+    <div class="logos-label">Trusted by 20+ organisations across East Africa</div>
+    <div class="logos-grid">
+      <div class="logo-chip reveal">NexaBank</div>
+      <div class="logo-chip reveal">HealthFirst</div>
+      <div class="logo-chip reveal">PrimeEstate</div>
+      <div class="logo-chip reveal">EduGrow</div>
+      <div class="logo-chip reveal">CloudPay</div>
+      <div class="logo-chip reveal">RetailChain</div>
+      <div class="logo-chip reveal">MediCare Group</div>
+      <div class="logo-chip reveal">AgriTech East Africa</div>
+      <div class="logo-chip reveal">InsureNow</div>
+      <div class="logo-chip reveal">PropLink</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF BAND -->
+<div class="proof-band">
+  <div class="proof-inner">
+    <div class="proof-left reveal-left">
+      <div class="section-label">The Afrinetix Difference</div>
+      <h2 class="section-heading" style="color:var(--white)">Consistent <em>Results</em> Across Every Engagement</h2>
+      <p>We don't cherry-pick our best numbers. These averages represent our full client portfolio across all industries and service types. Consistency is our standard.</p>
+      <a href="contact.html" class="btn-primary">Get These Results →</a>
+    </div>
+    <div class="proof-stats reveal-right">
+      <div class="proof-stat-row"><div class="psr-val"><em>20</em>+</div><div><div class="psr-label">Completed Client Engagements</div><div class="psr-lbl2">Across 5 industries</div></div></div>
+      <div class="proof-stat-row"><div class="psr-val"><em>100</em>%</div><div><div class="psr-label">Client Retention Rate</div><div class="psr-lbl2">Clients who renew or expand</div></div></div>
+      <div class="proof-stat-row"><div class="psr-val"><em>5.0</em></div><div><div class="psr-label">Average Client Rating</div><div class="psr-lbl2">Out of 5 stars</div></div></div>
+      <div class="proof-stat-row"><div class="psr-val"><em>90</em></div><div><div class="psr-label">Days to First Significant Results</div><div class="psr-lbl2">Average time to measurable impact</div></div></div>
+    </div>
+  </div>
+</div>
+
+<section class="cta-band">
+  <div class="section-inner">
+    <h2 class="cta-heading reveal">Your Results Start With <em>One Call</em></h2>
+    <p class="cta-sub reveal">Book a free 30-minute strategy session. We'll identify your biggest growth opportunities and show you exactly how we'd deliver results.</p>
+    <div class="cta-btns reveal"><a href="contact.html" class="btn-white">Book Free Strategy Call</a><a href="work.html" class="btn-outline-white">See Case Studies</a></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="footer-inner"><div class="footer-grid"><div><a href="index.html" class="footer-brand"><img src="images/logo.png" alt="Afrinetix" style="height:40px;width:auto;filter:brightness(0) invert(1)"></a><p class="footer-about">Growth Engine for the Digital Age. Nairobi-based AI-powered digital growth agency.</p><div class="footer-socials"><a href="https://linkedin.com/company/AfrinetixSolutions" class="social-btn">in</a><a href="https://twitter.com/AfrinetixSolutions" class="social-btn">𝕏</a><a href="https://instagram.com/AfrinetixSolutions" class="social-btn">ig</a><a href="https://facebook.com/AfrinetixSolutions" class="social-btn">fb</a><a href="https://tiktok.com/@AfrinetixSolutions" class="social-btn">tk</a></div></div><div><div class="footer-col-title">Services</div><ul class="footer-links"><li><a href="services.html">Digital Marketing</a></li><li><a href="services.html">AI & Automation</a></li><li><a href="services.html">Web Development</a></li><li><a href="services.html">Training</a></li></ul></div><div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="work.html">Our Work</a></li><li><a href="results.html">Results</a></li><li><a href="careers.html">Careers</a></li></ul></div><div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a href="mailto:afrinetixsolutions@gmail.com">afrinetixsolutions@gmail.com</a></li><li><a href="tel:+254711571124">+254 711 571 124</a></li><li><a href="contact.html">Nairobi, Kenya</a></li></ul></div></div><div class="footer-bar"><div class="footer-copy">© 2025 Afrinetix Solutions Limited. All rights reserved.</div><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div></div></div></footer>
+
+<button class="chatbot-fab" id="chatbot-fab"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><span class="fab-badge"></span></button>
+<div class="chatbot-window" id="chatbot-window"><div class="chat-header"><div class="chat-avatar">🤖</div><div class="chat-header-info"><div class="chat-header-name">Afri — AI Assistant</div><div class="chat-header-status">Online · Ready to help</div></div><button class="chat-close" id="chat-close">✕</button></div><div class="chat-messages" id="chat-messages"><div class="chat-msg bot">Hi! 👋 Impressed by our results? I can tell you more or help you <strong>book a free strategy call</strong>.</div></div><div class="chat-chips"><button class="chip" onclick="sendChip('Our services')">Services</button><button class="chip" onclick="sendChip('Book a call')">Book a call</button></div><div class="chat-input-row"><input class="chat-input" id="chat-input" type="text" placeholder="Ask Afri anything…" autocomplete="off"><button class="chat-send" id="chat-send-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div></div>
+<script>
+const dot=document.getElementById('cursor-dot'),ring=document.getElementById('cursor-ring');let mx=0,my=0,rx=0,ry=0;document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});(function ar(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(ar);})();document.querySelectorAll('a,button').forEach(el=>{el.addEventListener('mouseenter',()=>{ring.style.width='52px';ring.style.height='52px';dot.style.opacity='0';});el.addEventListener('mouseleave',()=>{ring.style.width='36px';ring.style.height='36px';dot.style.opacity='1';});});
+window.addEventListener('scroll',()=>document.getElementById('main-nav').classList.toggle('scrolled',scrollY>20));
+const hb=document.getElementById('hamburger'),dr=document.getElementById('nav-drawer');hb.addEventListener('click',()=>{const o=dr.classList.toggle('open');const s=hb.querySelectorAll('span');s[0].style.transform=o?'translateY(7px) rotate(45deg)':'';s[1].style.opacity=o?'0':'';s[2].style.transform=o?'translateY(-7px) rotate(-45deg)':'';});
+const obs=new IntersectionObserver(e=>e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>obs.observe(el));
+const counterObs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting&&!el.target.dataset.done){el.target.dataset.done='true';const t=+el.target.dataset.target;let c=0;const i=t/60;const int=setInterval(()=>{c+=i;if(c>=t){el.target.textContent=t;clearInterval(int);}else{el.target.textContent=Math.floor(c);}},25);}});},{threshold:.5});document.querySelectorAll('.counter').forEach(c=>counterObs.observe(c));
+const fab=document.getElementById('chatbot-fab'),win=document.getElementById('chatbot-window'),closeB=document.getElementById('chat-close'),inp=document.getElementById('chat-input'),sendB=document.getElementById('chat-send-btn'),msgs=document.getElementById('chat-messages');let open=false;fab.addEventListener('click',()=>{open=!open;win.style.display=open?'flex':'none';if(open)win.classList.add('open');else win.classList.remove('open');});closeB.addEventListener('click',()=>{open=false;win.classList.remove('open');setTimeout(()=>win.style.display='none',300);});
+const R={services:"<strong>4 Service Pillars:</strong><br>📈 Digital Marketing<br>🤖 AI & Automation<br>💻 Web Dev<br>🎓 Training",book:"<a href='contact.html' style='color:var(--orange)'>Book a free strategy call</a> or call <strong>+254 711 571 124</strong>.",default:"Ask about our <strong>services</strong>, <strong>pricing</strong>, or <a href='contact.html' style='color:var(--orange)'>book a call</a>!"};function getR(m){const l=m.toLowerCase();if(l.includes('service'))return R.services;if(l.includes('book')||l.includes('call'))return R.book;return R.default;}
+function addMsg(t,c){const d=document.createElement('div');d.className='chat-msg '+c;d.innerHTML=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;}function showTyping(){const t=document.createElement('div');t.className='typing-indicator';t.id='typing';t.innerHTML='<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';msgs.appendChild(t);msgs.scrollTop=msgs.scrollHeight;}function rmTyping(){const t=document.getElementById('typing');if(t)t.remove();}function sendMsg(t){if(!t.trim())return;addMsg(t,'user');showTyping();setTimeout(()=>{rmTyping();addMsg(getR(t),'bot');},800+Math.random()*500);}function sendChip(t){sendMsg(t);}sendB.addEventListener('click',()=>{sendMsg(inp.value);inp.value='';});inp.addEventListener('keydown',e=>{if(e.key==='Enter'){sendMsg(inp.value);inp.value='';}});
+</script>
+</body>
+</html>
