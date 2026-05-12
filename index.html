@@ -184,6 +184,14 @@ section{padding:100px 48px}
 .work-title{font-family:var(--font-serif);font-size:1.15rem;color:var(--navy);margin-bottom:4px}
 .work-client{font-size:.78rem;color:var(--gray-text);margin-bottom:12px;font-family:var(--font-mono)}
 .work-result{background:rgba(232,99,26,.06);border-left:3px solid var(--orange);border-radius:4px;padding:10px 14px;font-size:.78rem;font-weight:600;color:var(--orange)}
+/* CLIENT LOGOS STRIP */
+.clients-strip{margin-bottom:48px;padding:28px 32px;background:var(--gray-light);border-radius:var(--r-lg)}
+.clients-strip-label{font-family:var(--font-mono);font-size:.68rem;color:var(--gray-text);letter-spacing:.12em;text-transform:uppercase;margin-bottom:20px;text-align:center}
+.clients-logos{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center}
+.client-logo-plate{display:flex;align-items:center;gap:10px;padding:9px 16px;background:var(--white);border-radius:var(--r-full);border:1px solid var(--gray-mid);transition:all var(--t);text-decoration:none}
+.client-logo-plate:hover{border-color:var(--orange);box-shadow:0 4px 16px rgba(232,99,26,.12);transform:translateY(-1px)}
+.logo-badge{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;font-family:var(--font-mono);color:var(--white);flex-shrink:0;letter-spacing:.02em}
+.logo-company{font-size:.78rem;font-weight:600;color:var(--navy);white-space:nowrap}
 /* RESULTS BAND */
 .results-band{background:var(--navy);padding:80px 48px}
 .results-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
@@ -663,66 +671,97 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
       </div>
       <a href="work.html" class="btn-outline">View All Projects</a>
     </div>
-    <div class="filter-bar">
-      <button class="filter-btn active" data-filter="all">All Projects</button>
-      <button class="filter-btn" data-filter="marketing">Marketing</button>
-      <button class="filter-btn" data-filter="automation">Automation</button>
-      <button class="filter-btn" data-filter="web">Web Dev</button>
-      <button class="filter-btn" data-filter="training">Training</button>
+    <!-- CLIENT LOGOS STRIP -->
+    <div class="clients-strip reveal">
+      <div class="clients-strip-label">Trusted By</div>
+      <div class="clients-logos">
+        <span class="client-logo-plate">
+          <span class="logo-badge" style="background:linear-gradient(135deg,#0b1828,#e8631a)">IE</span>
+          <span class="logo-company">Ishmar Expo</span>
+        </span>
+        <span class="client-logo-plate">
+          <span class="logo-badge" style="background:linear-gradient(135deg,#0a3320,#16a34a)">KCG</span>
+          <span class="logo-company">Kajiado County Govt</span>
+        </span>
+        <span class="client-logo-plate">
+          <span class="logo-badge" style="background:linear-gradient(135deg,#1a0a3d,#7c3aed)">MU</span>
+          <span class="logo-company">Machakos University</span>
+        </span>
+        <span class="client-logo-plate">
+          <span class="logo-badge" style="background:linear-gradient(135deg,#0a2040,#0ea5e9)">AD</span>
+          <span class="logo-company">Ajira Digital</span>
+        </span>
+        <span class="client-logo-plate">
+          <span class="logo-badge" style="background:linear-gradient(135deg,#0f3d2a,#22c55e)">CI</span>
+          <span class="logo-company">Corepath Impact</span>
+        </span>
+        <span class="client-logo-plate">
+          <span class="logo-badge" style="background:linear-gradient(135deg,#1e1a2e,#e8631a)">DRN</span>
+          <span class="logo-company">Directors Referral Club</span>
+        </span>
+        <span class="client-logo-plate">
+          <span class="logo-badge" style="background:linear-gradient(135deg,#1a2a00,#65a30d)">ASK</span>
+          <span class="logo-company">Agric. Society of Kenya</span>
+        </span>
+        <span class="client-logo-plate">
+          <span class="logo-badge" style="background:linear-gradient(135deg,#1a1a2e,#2563eb)">QC</span>
+          <span class="logo-company">Queenstar Computers</span>
+        </span>
+      </div>
     </div>
     <div class="work-grid" id="work-grid">
-      <div class="work-card reveal" data-category="marketing">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#1e3a5f,#2563eb)">🏦</div>
+      <div class="work-card reveal">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#0a3320,#16a34a)">🏛️</div>
         <div class="work-body">
-          <div class="work-tags"><span class="work-tag">Marketing</span><span class="work-tag">SEO</span></div>
-          <div class="work-title">NexaBank Digital Transformation</div>
-          <div class="work-client">Finance · Nairobi</div>
-          <div class="work-result">↑ 40% CAC reduction in 90 days</div>
+          <div class="work-tags"><span class="work-tag">Graphic Design</span><span class="work-tag">Government</span></div>
+          <div class="work-title">Kajiado County Government</div>
+          <div class="work-client">County Government · Kenya</div>
+          <div class="work-result">Professional visual communications & government branding</div>
         </div>
       </div>
-      <div class="work-card reveal" data-category="automation">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#0f4c35,#16a34a)">🏥</div>
+      <div class="work-card reveal">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#1a0a3d,#7c3aed)">🎓</div>
         <div class="work-body">
-          <div class="work-tags"><span class="work-tag">AI</span><span class="work-tag">Automation</span></div>
-          <div class="work-title">HealthFirst AI Patient System</div>
-          <div class="work-client">Healthcare · Kenya</div>
-          <div class="work-result">↓ 35% overhead, 3× faster bookings</div>
+          <div class="work-tags"><span class="work-tag">Training</span><span class="work-tag">Education</span></div>
+          <div class="work-title">Machakos University</div>
+          <div class="work-client">Machakos University · Kenya</div>
+          <div class="work-result">Digital skills training · Students & staff upskilled</div>
         </div>
       </div>
-      <div class="work-card reveal" data-category="web">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#4c1d1d,#dc2626)">🏠</div>
+      <div class="work-card reveal">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#0a2040,#0ea5e9)">💻</div>
         <div class="work-body">
-          <div class="work-tags"><span class="work-tag">Web Dev</span><span class="work-tag">UX</span></div>
-          <div class="work-title">PrimeEstate Property Portal</div>
-          <div class="work-client">Real Estate · Nairobi</div>
-          <div class="work-result">4× conversion rate on listings</div>
+          <div class="work-tags"><span class="work-tag">Training</span><span class="work-tag">Digital Skills</span></div>
+          <div class="work-title">Ajira Digital Programme</div>
+          <div class="work-client">Ajira Digital · Kenya</div>
+          <div class="work-result">Youth empowered with digital freelancing skills</div>
         </div>
       </div>
-      <div class="work-card reveal" data-category="marketing">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#1a0a3d,#7c3aed)">📚</div>
+      <div class="work-card reveal">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#0b1828,#e8631a)">🏢</div>
         <div class="work-body">
-          <div class="work-tags"><span class="work-tag">Marketing</span><span class="work-tag">Growth</span></div>
-          <div class="work-title">EduGrow Student Acquisition</div>
-          <div class="work-client">Education · East Africa</div>
-          <div class="work-result">3× pipeline growth in 6 months</div>
+          <div class="work-tags"><span class="work-tag">IT Consultancy</span><span class="work-tag">Design</span><span class="work-tag">Marketing</span></div>
+          <div class="work-title">Ishmar Expo</div>
+          <div class="work-client">Ishmar Expo · Nairobi</div>
+          <div class="work-result">Full-service partnership: IT + Design + Digital Marketing</div>
         </div>
       </div>
-      <div class="work-card reveal" data-category="automation">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#1a2a1a,#4ade80)">⚙️</div>
+      <div class="work-card reveal">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#0f3d2a,#22c55e)">🌍</div>
         <div class="work-body">
-          <div class="work-tags"><span class="work-tag">Automation</span><span class="work-tag">SaaS</span></div>
-          <div class="work-title">CloudPay Workflow Automation</div>
-          <div class="work-client">SaaS · Nairobi</div>
-          <div class="work-result">70% reduction in manual processes</div>
+          <div class="work-tags"><span class="work-tag">Digital Marketing</span><span class="work-tag">Social Media</span></div>
+          <div class="work-title">Corepath Impact</div>
+          <div class="work-client">Corepath Impact · Kenya</div>
+          <div class="work-result">Online presence growth & mission amplification</div>
         </div>
       </div>
-      <div class="work-card reveal" data-category="training">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#2a1a00,#f59e0b)">🎓</div>
+      <div class="work-card reveal">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#1a2a00,#65a30d)">🌾</div>
         <div class="work-body">
-          <div class="work-tags"><span class="work-tag">Training</span><span class="work-tag">Strategy</span></div>
-          <div class="work-title">RetailChain Digital Upskill</div>
-          <div class="work-client">Retail · Kenya</div>
-          <div class="work-result">200+ staff trained, 28% sales lift</div>
+          <div class="work-tags"><span class="work-tag">Data</span><span class="work-tag">IT Services</span></div>
+          <div class="work-title">Agricultural Society of Kenya</div>
+          <div class="work-client">ASK · Kenya</div>
+          <div class="work-result">Data management & IT infrastructure support</div>
         </div>
       </div>
     </div>
