@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
@@ -6,49 +6,49 @@
 
   <!-- Core Pages -->
   <url>
-    <loc>https://afrinetixsolutions.com/</loc>
+    <loc>https://afrinetix.com/</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/about.html</loc>
+    <loc>https://afrinetix.com/about.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/services.html</loc>
+    <loc>https://afrinetix.com/services.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/work.html</loc>
+    <loc>https://afrinetix.com/work.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/results.html</loc>
+    <loc>https://afrinetix.com/results.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/blog.html</loc>
+    <loc>https://afrinetix.com/blog.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/careers.html</loc>
+    <loc>https://afrinetix.com/careers.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/contact.html</loc>
+    <loc>https://afrinetix.com/contact.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -56,61 +56,61 @@
 
   <!-- Blog Posts -->
   <url>
-    <loc>https://afrinetixsolutions.com/blog/ai-cutting-customer-acquisition-costs.html</loc>
+    <loc>https://afrinetix.com/blog/ai-cutting-customer-acquisition-costs.html</loc>
     <lastmod>2025-05-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/blog/3-growth-levers-kenyan-business.html</loc>
+    <loc>https://afrinetix.com/blog/3-growth-levers-kenyan-business.html</loc>
     <lastmod>2025-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/blog/why-digital-transformations-fail.html</loc>
+    <loc>https://afrinetix.com/blog/why-digital-transformations-fail.html</loc>
     <lastmod>2025-04-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/blog/5-ai-tools-african-sme.html</loc>
+    <loc>https://afrinetix.com/blog/5-ai-tools-african-sme.html</loc>
     <lastmod>2025-03-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/blog/meta-ads-kenya.html</loc>
+    <loc>https://afrinetix.com/blog/meta-ads-kenya.html</loc>
     <lastmod>2025-03-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/blog/true-cost-slow-website.html</loc>
+    <loc>https://afrinetix.com/blog/true-cost-slow-website.html</loc>
     <lastmod>2025-02-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/blog/digital-first-business-east-africa.html</loc>
+    <loc>https://afrinetix.com/blog/digital-first-business-east-africa.html</loc>
     <lastmod>2025-02-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/blog/whatsapp-business-automation-kenya.html</loc>
+    <loc>https://afrinetix.com/blog/whatsapp-business-automation-kenya.html</loc>
     <lastmod>2025-01-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/blog/tiktok-for-business-africa.html</loc>
+    <loc>https://afrinetix.com/blog/tiktok-for-business-africa.html</loc>
     <lastmod>2025-01-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://afrinetixsolutions.com/blog/ecommerce-kenya-tech-stack.html</loc>
+    <loc>https://afrinetix.com/blog/ecommerce-kenya-tech-stack.html</loc>
     <lastmod>2024-12-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>

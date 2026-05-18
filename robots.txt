@@ -1,5 +1,5 @@
-# robots.txt — Afrinetix Solutions Limited
-# https://afrinetixsolutions.com
+﻿# robots.txt — Afrinetix Solutions Limited
+# https://afrinetix.com
 
 User-agent: *
 Allow: /
@@ -9,7 +9,7 @@ Disallow: /admin/
 Disallow: /private/
 
 # Sitemap location
-Sitemap: https://afrinetixsolutions.com/sitemap.xml
+Sitemap: https://afrinetix.com/sitemap.xml
 
 # Allow major AI crawlers for AI search visibility
 User-agent: GPTBot
