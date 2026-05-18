@@ -1,0 +1,34 @@
+# robots.txt — Afrinetix Solutions Limited
+# https://afrinetixsolutions.com
+
+User-agent: *
+Allow: /
+
+# Block any admin or utility paths if added in future
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://afrinetixsolutions.com/sitemap.xml
+
+# Allow major AI crawlers for AI search visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
