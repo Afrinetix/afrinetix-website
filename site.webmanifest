@@ -1,0 +1,21 @@
+{
+  "name": "Afrinetix Solutions",
+  "short_name": "Afrinetix",
+  "description": "AI-Powered Digital Growth Agency in Nairobi, Kenya",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B1828",
+  "theme_color": "#E8631A",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
