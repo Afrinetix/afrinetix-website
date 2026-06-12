@@ -269,9 +269,10 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
 .reveal-left.visible{opacity:1;transform:translateX(0)}
 .reveal-right{opacity:0;transform:translateX(40px);transition:opacity .7s ease,transform .7s ease}
 .reveal-right.visible{opacity:1;transform:translateX(0)}
-@media(max-width:1100px){nav{padding:0 24px}.nav-phone{display:none}.nav-links{display:none}.nav-hamburger{display:flex}.nav-drawer{display:flex}}
-@media(max-width:900px){section,.service-pillar{padding:72px 24px}.page-hero{padding:110px 24px 60px}.pillar-hero{grid-template-columns:1fr;gap:40px}.pricing-grid{grid-template-columns:1fr;max-width:460px}.footer-grid{grid-template-columns:1fr 1fr;gap:40px}}
-@media(max-width:600px){.pillar-features{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.chatbot-window{width:calc(100vw - 32px);right:16px}}
+.pricing-grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:1100px){nav{padding:0 24px}.nav-phone{display:none}.nav-links{display:none}.nav-hamburger{display:flex}.nav-drawer{display:flex}.pricing-grid-4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){section,.service-pillar{padding:72px 24px}.page-hero{padding:110px 24px 60px}.pillar-hero{grid-template-columns:1fr;gap:40px}.pricing-grid{grid-template-columns:1fr;max-width:460px}.pricing-grid-4{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr;gap:40px}}
+@media(max-width:600px){.pillar-features{grid-template-columns:1fr}.pricing-grid-4{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.chatbot-window{width:calc(100vw - 32px);right:16px}}
 </style>
 </head>
 <body>
@@ -301,380 +302,576 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
 <section class="page-hero">
   <div class="page-hero-inner">
     <div class="page-label">What We Offer</div>
-    <h1 class="page-title">Four Pillars of <em>Transformative</em> Growth</h1>
-    <p class="page-subtitle">Every service we offer is engineered for one outcome: measurable growth. Explore our four core service pillars and find the right fit for your ambitions.</p>
+    <h1 class="page-title">Six Services. <em>One</em> Growth Engine.</h1>
+    <p class="page-subtitle">From a KES 15,000 SME website to a complete enterprise digital transformation — every service we offer is built to deliver measurable results for your business.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px">
+      <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20services" target="_blank" rel="noopener" class="btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Get Started on WhatsApp
+      </a>
+      <a href="contact.html" class="btn-outline" style="border-color:rgba(255,255,255,.4);color:var(--white)">Book a Strategy Call</a>
+    </div>
   </div>
 </section>
 
-<!-- SERVICE 01: DIGITAL MARKETING -->
-<div class="service-pillar" id="marketing">
-  <div class="pillar-inner">
-    <div class="pillar-hero">
-      <div class="reveal-left">
-        <div class="pillar-num">01 / SERVICE</div>
-        <div class="pillar-icon" style="background:rgba(232,99,26,.12)">📈</div>
-        <h2 class="pillar-title">Digital Marketing <em>&</em> Growth</h2>
-        <p class="pillar-desc">Full-funnel marketing that finds your ideal customers, converts them at record rates, and builds a brand that compounds in value over time. We blend performance marketing precision with creative storytelling that resonates in African markets.</p>
-        <div class="pillar-features">
-          <div class="pf-item">Performance advertising (Meta, Google, TikTok)</div>
-          <div class="pf-item">SEO & organic content strategy</div>
-          <div class="pf-item">Email & SMS marketing automation</div>
-          <div class="pf-item">Conversion rate optimization (CRO)</div>
-          <div class="pf-item">Social media management & growth</div>
-          <div class="pf-item">Brand strategy & positioning</div>
-          <div class="pf-item">Influencer & affiliate marketing</div>
-          <div class="pf-item">Analytics, attribution & reporting</div>
-        </div>
-      </div>
-      <div class="pillar-visual reveal-right">
-        <div class="pv-stat"><div class="pv-val"><em>40</em>%</div><div class="pv-lbl">Average CAC Reduction</div></div>
-        <div class="pv-stat"><div class="pv-val"><em>4</em>×</div><div class="pv-lbl">Average Conversion Rate Lift</div></div>
-        <div class="pv-stat"><div class="pv-val"><em>3</em>×</div><div class="pv-lbl">Pipeline Growth</div></div>
-        <div style="background:rgba(255,255,255,.05);border-radius:var(--r-md);padding:16px;margin-top:8px">
-          <p style="font-size:.8rem;color:rgba(255,255,255,.6);font-style:italic">"Afrinetix dropped our cost per lead from KES 1,200 to KES 420 in 8 weeks."</p>
-          <p style="font-size:.72rem;color:rgba(255,255,255,.4);margin-top:8px;font-family:var(--font-mono)">— Head of Growth, NexaBank</p>
-        </div>
-      </div>
-    </div>
-    <div class="pricing-section reveal">
-      <div class="pricing-label">Get a Quotation</div>
-      <div class="pricing-grid">
-        <div class="price-card">
-          <div class="price-tier">Starter</div>
-          <div class="price-val" style="font-size:1.6rem">Request Quote</div>
-          <div class="price-period">tailored to your scope</div>
-          <ul class="price-features">
-            <li>2 paid ad channels (Meta + Google)</li>
-            <li>Defined monthly ad budget</li>
-            <li>Basic SEO (10 keywords)</li>
-            <li>Monthly performance report</li>
-            <li>Email automation setup</li>
-            <li>Dedicated account manager</li>
-          </ul>
-          <a href="contact.html" class="price-cta">Get a Quote</a>
-        </div>
-        <div class="price-card featured">
-          <div class="price-badge">Most Popular</div>
-          <div class="price-tier">Growth</div>
-          <div class="price-val" style="font-size:1.6rem">Request Quote</div>
-          <div class="price-period">tailored to your scope</div>
-          <ul class="price-features">
-            <li>4 paid ad channels incl. TikTok</li>
-            <li>Expanded monthly ad budget</li>
-            <li>Advanced SEO (30 keywords)</li>
-            <li>Weekly performance reports</li>
-            <li>Full email & SMS automation</li>
-            <li>CRO audits & landing pages</li>
-            <li>Social media management (3 channels)</li>
-            <li>Monthly strategy session</li>
-          </ul>
-          <a href="contact.html" class="price-cta">Get a Quote</a>
-        </div>
-        <div class="price-card">
-          <div class="price-tier">Enterprise</div>
-          <div class="price-val" style="font-size:1.6rem">Request Quote</div>
-          <div class="price-period">bespoke engagement</div>
-          <ul class="price-features">
-            <li>Unlimited ad channels</li>
-            <li>Unlimited ad budget management</li>
-            <li>Full SEO & content programme</li>
-            <li>Real-time analytics dashboard</li>
-            <li>Dedicated team (3+ specialists)</li>
-            <li>Weekly strategy sessions</li>
-            <li>Full marketing stack management</li>
-            <li>Priority 24/7 support</li>
-          </ul>
-          <a href="contact.html" class="price-cta">Get a Quote</a>
-        </div>
-      </div>
-    </div>
-    <div class="faq-section reveal">
-      <div class="faq-label">Frequently Asked Questions</div>
-      <div class="faq-list">
-        <div class="faq-item"><div class="faq-q">How quickly will I see results?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Most clients see measurable improvement within the first 30 days, with significant performance gains by month 3. Paid ads typically show results in the first 2 weeks, while SEO compounds over 3-6 months.</div></div></div>
-        <div class="faq-item"><div class="faq-q">Do I need to provide the ad creative?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">No. Our Growth and Enterprise packages include full creative production — copy, design, and video. On the Starter plan, we provide copy and static creative.</div></div></div>
-        <div class="faq-item"><div class="faq-q">What ad spend is included in the package cost?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">The package prices are our management fees. Ad spend is separate and paid directly to the platforms (Meta, Google, etc.). We'll recommend an appropriate budget based on your goals.</div></div></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- SERVICE 02: AI & AUTOMATION -->
-<div class="service-pillar" id="automation">
-  <div class="pillar-inner">
-    <div class="pillar-hero">
-      <div class="reveal-left">
-        <div class="pillar-num">02 / SERVICE</div>
-        <div class="pillar-icon" style="background:rgba(11,24,40,.08)">🤖</div>
-        <h2 class="pillar-title">AI <em>&</em> Automation Solutions</h2>
-        <p class="pillar-desc">We deploy intelligent automation that removes the bottlenecks killing your growth. From AI-powered chatbots to full workflow automation, we help you do more with less — cutting costs while accelerating operations.</p>
-        <div class="pillar-features">
-          <div class="pf-item">AI chatbot & customer service automation</div>
-          <div class="pf-item">CRM & lead pipeline automation</div>
-          <div class="pf-item">Workflow & process automation (Zapier, n8n)</div>
-          <div class="pf-item">Predictive analytics & dashboards</div>
-          <div class="pf-item">AI content generation systems</div>
-          <div class="pf-item">Automated reporting & data pipelines</div>
-          <div class="pf-item">Custom AI model integration</div>
-          <div class="pf-item">Operations intelligence & forecasting</div>
-        </div>
-      </div>
-      <div class="pillar-visual orange reveal-right">
-        <div class="pv-stat"><div class="pv-val">35%</div><div class="pv-lbl">Average Overhead Reduction</div></div>
-        <div class="pv-stat"><div class="pv-val">70%</div><div class="pv-lbl">Manual Process Elimination</div></div>
-        <div class="pv-stat"><div class="pv-val">3×</div><div class="pv-lbl">Faster Customer Response Times</div></div>
-        <div style="background:rgba(255,255,255,.15);border-radius:var(--r-md);padding:16px;margin-top:8px">
-          <p style="font-size:.8rem;color:rgba(255,255,255,.85);font-style:italic">"Our AI chatbot now handles 68% of customer queries automatically."</p>
-          <p style="font-size:.72rem;color:rgba(255,255,255,.6);margin-top:8px;font-family:var(--font-mono)">— Director, HealthFirst</p>
-        </div>
-      </div>
-    </div>
-    <div class="pricing-section reveal">
-      <div class="pricing-label">Get a Quotation</div>
-      <div class="pricing-grid">
-        <div class="price-card">
-          <div class="price-tier">Starter</div>
-          <div class="price-val" style="font-size:1.6rem">Request Quote</div>
-          <div class="price-period">tailored to your scope</div>
-          <ul class="price-features">
-            <li>1 AI chatbot deployment</li>
-            <li>Up to 5 automation workflows</li>
-            <li>CRM integration (existing platform)</li>
-            <li>Basic analytics dashboard</li>
-            <li>30-day post-launch support</li>
-            <li>Training for 2 team members</li>
-          </ul>
-          <a href="contact.html" class="price-cta">Get a Quote</a>
-        </div>
-        <div class="price-card featured">
-          <div class="price-badge">Best Value</div>
-          <div class="price-tier">Growth</div>
-          <div class="price-val" style="font-size:1.6rem">Request Quote</div>
-          <div class="price-period">tailored to your scope</div>
-          <ul class="price-features">
-            <li>2 AI chatbots (web + WhatsApp)</li>
-            <li>Up to 20 automation workflows</li>
-            <li>Full CRM setup & automation</li>
-            <li>Advanced analytics dashboard</li>
-            <li>Predictive lead scoring</li>
-            <li>3-month post-launch support</li>
-            <li>Team training (5 members)</li>
-            <li>Monthly optimization reviews</li>
-          </ul>
-          <a href="contact.html" class="price-cta">Get a Quote</a>
-        </div>
-        <div class="price-card">
-          <div class="price-tier">Enterprise</div>
-          <div class="price-val" style="font-size:1.6rem">Request Quote</div>
-          <div class="price-period">full AI transformation</div>
-          <ul class="price-features">
-            <li>Unlimited chatbot & automation build</li>
-            <li>Custom AI model development</li>
-            <li>Full data pipeline architecture</li>
-            <li>Enterprise CRM & ERP integration</li>
-            <li>Real-time BI dashboards</li>
-            <li>Dedicated AI engineer on retainer</li>
-            <li>SLA-backed ongoing support</li>
-            <li>Quarterly AI strategy reviews</li>
-          </ul>
-          <a href="contact.html" class="price-cta">Get a Quote</a>
-        </div>
-      </div>
-    </div>
-    <div class="faq-section reveal">
-      <div class="faq-label">Frequently Asked Questions</div>
-      <div class="faq-list">
-        <div class="faq-item"><div class="faq-q">What systems can you integrate with?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">We integrate with all major CRMs (HubSpot, Salesforce, Zoho), ERPs, WhatsApp Business API, email platforms, and custom databases. If your tool has an API, we can connect it.</div></div></div>
-        <div class="faq-item"><div class="faq-q">Do I need a technical team to maintain the automations?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">No. We build systems designed for non-technical teams to manage. We also provide training and ongoing support so your team can make updates confidently.</div></div></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- SERVICE 03: WEB & SYSTEMS -->
+<!-- SERVICE 01: WEB DEVELOPMENT & E-COMMERCE -->
 <div class="service-pillar" id="web">
   <div class="pillar-inner">
     <div class="pillar-hero">
       <div class="reveal-left">
-        <div class="pillar-num">03 / SERVICE</div>
-        <div class="pillar-icon" style="background:rgba(232,99,26,.12)">💻</div>
-        <h2 class="pillar-title">Web <em>&</em> Systems Development</h2>
-        <p class="pillar-desc">We build high-performance digital products — from conversion-engineered websites to complex custom platforms — that look stunning, load instantly, and scale with your growth.</p>
+        <div class="pillar-num">01 / SERVICE</div>
+        <div class="pillar-icon" style="background:rgba(232,99,26,.12)">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h2 class="pillar-title">Web Development <em>&</em> E-Commerce</h2>
+        <p class="pillar-desc">From a KES 15,000 one-page business site to a full e-commerce platform with M-Pesa integration — we build websites that convert visitors into paying customers. Every site is mobile-first, SEO-ready, and built for the Kenyan market.</p>
         <div class="pillar-features">
-          <div class="pf-item">Conversion-optimized marketing websites</div>
-          <div class="pf-item">Custom web applications & SaaS platforms</div>
-          <div class="pf-item">E-commerce & online booking systems</div>
-          <div class="pf-item">Customer portals & dashboards</div>
-          <div class="pf-item">API design, development & integration</div>
-          <div class="pf-item">Progressive Web Apps (PWA)</div>
-          <div class="pf-item">Database architecture & design</div>
-          <div class="pf-item">Ongoing maintenance & hosting</div>
+          <div class="pf-item">Mobile-responsive design for all screen sizes</div>
+          <div class="pf-item">WhatsApp and M-Pesa integration</div>
+          <div class="pf-item">Google Maps and Google Analytics setup</div>
+          <div class="pf-item">SEO-optimized from day one</div>
+          <div class="pf-item">Online store with product catalogues</div>
+          <div class="pf-item">Lead capture forms and CRM integration</div>
+          <div class="pf-item">M-Pesa STK Push and checkout automation</div>
+          <div class="pf-item">Free .co.ke domain plus hosting (select plans)</div>
         </div>
       </div>
       <div class="pillar-visual reveal-right">
-        <div class="pv-stat"><div class="pv-val"><em>4</em>×</div><div class="pv-lbl">Average Conversion Lift from Redesign</div></div>
-        <div class="pv-stat"><div class="pv-val"><em>&lt;2s</em></div><div class="pv-lbl">Average Page Load Time</div></div>
-        <div class="pv-stat"><div class="pv-val"><em>100</em></div><div class="pv-lbl">Lighthouse Performance Score</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>KES 15K</em></div><div class="pv-lbl">SME Starter Website — From</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>2 Wks</em></div><div class="pv-lbl">Average SME Site Delivery Time</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>4×</em></div><div class="pv-lbl">Average Conversion Lift from Redesign</div></div>
+        <div style="background:rgba(255,255,255,.05);border-radius:var(--r-md);padding:16px;margin-top:8px">
+          <p style="font-size:.8rem;color:rgba(255,255,255,.6);font-style:italic">"Our Afrinetix website started generating WhatsApp leads within the first week of going live."</p>
+          <p style="font-size:.72rem;color:rgba(255,255,255,.4);margin-top:8px;font-family:var(--font-mono)">SME Owner, Nairobi</p>
+        </div>
       </div>
     </div>
     <div class="pricing-section reveal">
-      <div class="pricing-label">Get a Quotation</div>
-      <div class="pricing-grid">
+      <div class="pricing-label">Web Development Pricing</div>
+      <div class="pricing-grid-4">
         <div class="price-card">
-          <div class="price-tier">Starter</div>
-          <div class="price-val" style="font-size:1.6rem">Request Quote</div>
-          <div class="price-period">tailored to your scope</div>
+          <div class="price-tier">SME Starter</div>
+          <div class="price-val">KES 15,000</div>
+          <div class="price-period">one-time</div>
           <ul class="price-features">
-            <li>5-page marketing website</li>
-            <li>Mobile-responsive design</li>
-            <li>Basic SEO setup</li>
-            <li>Contact form & CRM integration</li>
-            <li>Google Analytics setup</li>
-            <li>1 month post-launch support</li>
+            <li>One-page website</li>
+            <li>Mobile responsive design</li>
+            <li>WhatsApp integration</li>
+            <li>Google Maps integration</li>
+            <li>Free .co.ke domain</li>
+            <li>1 year hosting included</li>
           </ul>
-          <a href="contact.html" class="price-cta">Get a Quote</a>
+          <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27m%20interested%20in%20the%20SME%20Starter%20Website%20at%20KES%2015%2C000" target="_blank" rel="noopener" class="price-cta">Get Started on WhatsApp</a>
         </div>
         <div class="price-card featured">
           <div class="price-badge">Most Popular</div>
-          <div class="price-tier">Growth</div>
-          <div class="price-val" style="font-size:1.6rem">Request Quote</div>
-          <div class="price-period">tailored to your scope</div>
+          <div class="price-tier">Business Growth</div>
+          <div class="price-val">KES 35,000</div>
+          <div class="price-period">one-time</div>
           <ul class="price-features">
-            <li>10-15 page website or web app</li>
-            <li>Custom UI/UX design</li>
-            <li>Advanced SEO & performance</li>
-            <li>CMS integration (content management)</li>
-            <li>Booking / e-commerce functionality</li>
-            <li>3rd-party API integrations</li>
-            <li>3-month post-launch support</li>
-            <li>Analytics & conversion tracking</li>
+            <li>Up to 5 pages</li>
+            <li>SEO setup and optimization</li>
+            <li>Lead capture forms</li>
+            <li>WhatsApp integration</li>
+            <li>M-Pesa integration</li>
+            <li>Google Analytics setup</li>
           </ul>
-          <a href="contact.html" class="price-cta">Get a Quote</a>
+          <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27m%20interested%20in%20the%20Business%20Growth%20Website%20at%20KES%2035%2C000" target="_blank" rel="noopener" class="price-cta">Get Started on WhatsApp</a>
         </div>
         <div class="price-card">
-          <div class="price-tier">Enterprise</div>
-          <div class="price-val" style="font-size:1.6rem">Request Quote</div>
-          <div class="price-period">complex digital products</div>
+          <div class="price-tier">E-Commerce</div>
+          <div class="price-val">KES 65,000</div>
+          <div class="price-period">one-time</div>
           <ul class="price-features">
-            <li>Custom web applications & SaaS</li>
-            <li>Complex system architecture</li>
-            <li>Multi-role user portals</li>
-            <li>Advanced API & data integrations</li>
-            <li>Scalable cloud infrastructure</li>
-            <li>Full QA & security testing</li>
-            <li>DevOps & CI/CD pipeline</li>
-            <li>Ongoing retainer support</li>
+            <li>Full online store</li>
+            <li>Product catalogue management</li>
+            <li>M-Pesa STK Push payments</li>
+            <li>Checkout automation</li>
+            <li>Inventory management</li>
+            <li>Order notification system</li>
           </ul>
-          <a href="contact.html" class="price-cta">Get a Quote</a>
+          <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27m%20interested%20in%20the%20E-Commerce%20Website%20at%20KES%2065%2C000" target="_blank" rel="noopener" class="price-cta">Get Started on WhatsApp</a>
         </div>
-      </div>
-    </div>
-    <div class="faq-section reveal">
-      <div class="faq-label">Frequently Asked Questions</div>
-      <div class="faq-list">
-        <div class="faq-item"><div class="faq-q">How long does a website project take?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Starter sites launch in 2-3 weeks. Growth projects typically take 4-8 weeks. Enterprise applications are scoped individually, but we always deliver a detailed timeline before starting.</div></div></div>
-        <div class="faq-item"><div class="faq-q">Will I be able to update the website myself?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Yes. Growth and Enterprise sites include a user-friendly CMS so your team can update content without technical knowledge. We also provide hands-on training.</div></div></div>
+        <div class="price-card">
+          <div class="price-tier">Custom Web App</div>
+          <div class="price-val" style="font-size:2rem">From KES 120K</div>
+          <div class="price-period">custom scoping</div>
+          <ul class="price-features">
+            <li>Custom web applications</li>
+            <li>Multi-role portals and dashboards</li>
+            <li>Complex API integrations</li>
+            <li>Scalable cloud infrastructure</li>
+            <li>Full QA and security testing</li>
+            <li>Ongoing support retainer</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Book a Strategy Call</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- SERVICE 04: TRAINING -->
-<div class="service-pillar" id="training">
+<!-- SERVICE 02: DIGITAL MARKETING & GROWTH -->
+<div class="service-pillar" id="marketing">
+  <div class="pillar-inner">
+    <div class="pillar-hero">
+      <div class="reveal-left">
+        <div class="pillar-num">02 / SERVICE</div>
+        <div class="pillar-icon" style="background:rgba(11,24,40,.08)">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+        </div>
+        <h2 class="pillar-title">Digital Marketing <em>&</em> Growth</h2>
+        <p class="pillar-desc">We run performance marketing campaigns that fill your pipeline and convert leads at record rates — Meta, Google, TikTok, and beyond. Every campaign is tied to real KES revenue, not just clicks and impressions.</p>
+        <div class="pillar-features">
+          <div class="pf-item">Performance advertising (Meta, Google, TikTok)</div>
+          <div class="pf-item">SEO and organic content strategy</div>
+          <div class="pf-item">Email and SMS marketing automation</div>
+          <div class="pf-item">Conversion rate optimization (CRO)</div>
+          <div class="pf-item">Social media management and growth</div>
+          <div class="pf-item">B2B LinkedIn lead generation</div>
+          <div class="pf-item">Brand strategy and positioning</div>
+          <div class="pf-item">Analytics, attribution and monthly reporting</div>
+        </div>
+      </div>
+      <div class="pillar-visual orange reveal-right">
+        <div class="pv-stat"><div class="pv-val">40%</div><div class="pv-lbl">Average Customer Acquisition Cost Reduction</div></div>
+        <div class="pv-stat"><div class="pv-val">3×</div><div class="pv-lbl">Average Sales Pipeline Growth</div></div>
+        <div class="pv-stat"><div class="pv-val">4×</div><div class="pv-lbl">Average Conversion Rate Lift</div></div>
+      </div>
+    </div>
+    <div class="pricing-section reveal">
+      <div class="pricing-label">Digital Marketing Pricing</div>
+      <div class="pricing-grid-4">
+        <div class="price-card">
+          <div class="price-tier">SME Growth</div>
+          <div class="price-val">KES 25,000</div>
+          <div class="price-period">per month</div>
+          <ul class="price-features">
+            <li>Meta and Google ads management</li>
+            <li>Basic SEO (10 keywords)</li>
+            <li>Social media management (2 channels)</li>
+            <li>Monthly performance report</li>
+            <li>Dedicated account manager</li>
+          </ul>
+          <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27m%20interested%20in%20the%20SME%20Growth%20Marketing%20Package" target="_blank" rel="noopener" class="price-cta">Get Started on WhatsApp</a>
+        </div>
+        <div class="price-card featured">
+          <div class="price-badge">Best Value</div>
+          <div class="price-tier">Business Growth</div>
+          <div class="price-val">KES 45,000</div>
+          <div class="price-period">per month</div>
+          <ul class="price-features">
+            <li>All 4 channels including TikTok</li>
+            <li>Advanced SEO (30 keywords)</li>
+            <li>Weekly performance reports</li>
+            <li>Social media management (3 channels)</li>
+            <li>Email and SMS automation</li>
+            <li>CRO audits and landing pages</li>
+          </ul>
+          <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27m%20interested%20in%20the%20Business%20Growth%20Marketing%20Package" target="_blank" rel="noopener" class="price-cta">Get Started on WhatsApp</a>
+        </div>
+        <div class="price-card">
+          <div class="price-tier">B2B Lead Generation</div>
+          <div class="price-val">KES 75,000</div>
+          <div class="price-period">per month</div>
+          <ul class="price-features">
+            <li>Full-funnel B2B strategy</li>
+            <li>LinkedIn campaigns</li>
+            <li>Email and SMS outreach sequences</li>
+            <li>Lead scoring and qualification</li>
+            <li>Weekly strategy sessions</li>
+            <li>CRM pipeline management</li>
+          </ul>
+          <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27m%20interested%20in%20B2B%20Lead%20Generation%20services" target="_blank" rel="noopener" class="price-cta">Get Started on WhatsApp</a>
+        </div>
+        <div class="price-card">
+          <div class="price-tier">Enterprise</div>
+          <div class="price-val" style="font-size:1.8rem">Custom Pricing</div>
+          <div class="price-period">bespoke engagement</div>
+          <ul class="price-features">
+            <li>Full marketing stack management</li>
+            <li>Dedicated team (3+ specialists)</li>
+            <li>Real-time analytics dashboard</li>
+            <li>Unlimited ad channels</li>
+            <li>Priority 24/7 support</li>
+            <li>Weekly executive reporting</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Book a Strategy Call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICE 03: WHATSAPP AUTOMATION & AI SOLUTIONS -->
+<div class="service-pillar" id="whatsapp">
+  <div class="pillar-inner">
+    <div class="pillar-hero">
+      <div class="reveal-left">
+        <div class="pillar-num">03 / SERVICE</div>
+        <div class="pillar-icon" style="background:rgba(232,99,26,.12)">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        </div>
+        <h2 class="pillar-title">WhatsApp Automation <em>&</em> AI Solutions</h2>
+        <p class="pillar-desc">Kenya runs on WhatsApp. We help your business automate customer conversations, qualify leads, send broadcasts, and integrate your CRM — all through WhatsApp. Respond to customers 24/7 without lifting a finger.</p>
+        <div class="pillar-features">
+          <div class="pf-item">WhatsApp Business API setup and verification</div>
+          <div class="pf-item">Automated welcome and response flows</div>
+          <div class="pf-item">Lead capture and qualification bots</div>
+          <div class="pf-item">CRM and pipeline integration</div>
+          <div class="pf-item">Broadcast messaging and segmentation</div>
+          <div class="pf-item">AI-powered chat responses</div>
+          <div class="pf-item">Multi-agent team inbox management</div>
+          <div class="pf-item">Order and appointment automation</div>
+        </div>
+      </div>
+      <div class="pillar-visual reveal-right">
+        <div class="pv-stat"><div class="pv-val"><em>68</em>%</div><div class="pv-lbl">Customer Queries Automated on Average</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>24/7</em></div><div class="pv-lbl">Automatic Customer Response Coverage</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>3×</em></div><div class="pv-lbl">Faster Lead Response Time</div></div>
+      </div>
+    </div>
+    <div class="pricing-section reveal">
+      <div class="pricing-label">WhatsApp Automation Pricing</div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-tier">WhatsApp CRM Setup</div>
+          <div class="price-val">KES 35,000</div>
+          <div class="price-period">one-time setup</div>
+          <ul class="price-features">
+            <li>WhatsApp Business API setup</li>
+            <li>Automated welcome messages</li>
+            <li>Basic lead capture flows</li>
+            <li>CRM integration</li>
+            <li>Team training (3 members)</li>
+            <li>30-day support</li>
+          </ul>
+          <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27m%20interested%20in%20WhatsApp%20CRM%20Setup" target="_blank" rel="noopener" class="price-cta">Get Started on WhatsApp</a>
+        </div>
+        <div class="price-card featured">
+          <div class="price-badge">Most Popular</div>
+          <div class="price-tier">Workflow Automation</div>
+          <div class="price-val">KES 65,000</div>
+          <div class="price-period">one-time setup</div>
+          <ul class="price-features">
+            <li>Full WhatsApp automation flows</li>
+            <li>Broadcast messaging system</li>
+            <li>Customer segmentation</li>
+            <li>AI-powered chatbot</li>
+            <li>Advanced CRM integration</li>
+            <li>Monthly optimization review</li>
+          </ul>
+          <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27m%20interested%20in%20WhatsApp%20Workflow%20Automation" target="_blank" rel="noopener" class="price-cta">Get Started on WhatsApp</a>
+        </div>
+        <div class="price-card">
+          <div class="price-tier">Enterprise Automation</div>
+          <div class="price-val" style="font-size:2rem">From KES 150K</div>
+          <div class="price-period">enterprise scale</div>
+          <ul class="price-features">
+            <li>Multi-agent team inbox</li>
+            <li>Custom AI response engine</li>
+            <li>Full business process automation</li>
+            <li>ERP and system integrations</li>
+            <li>Real-time analytics dashboard</li>
+            <li>Dedicated support engineer</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Book a Strategy Call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICE 04: LOCAL SEO -->
+<div class="service-pillar" id="seo">
   <div class="pillar-inner">
     <div class="pillar-hero">
       <div class="reveal-left">
         <div class="pillar-num">04 / SERVICE</div>
-        <div class="pillar-icon" style="background:rgba(11,24,40,.08)">🎓</div>
-        <h2 class="pillar-title">Training <em>&</em> Digital Transformation</h2>
-        <p class="pillar-desc">Your technology is only as powerful as the people using it. We upskill your entire organization — from executives to frontline teams — with practical, results-oriented digital training programmes built for African business realities.</p>
+        <div class="pillar-icon" style="background:rgba(11,24,40,.08)">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h2 class="pillar-title">Local SEO <em>&</em> Google Business Optimization</h2>
+        <p class="pillar-desc">When Kenyans search for your product or service on Google, you need to appear first. We optimize your Google Business Profile, build local citations, and run location-specific SEO that drives real foot traffic and calls — not just clicks.</p>
         <div class="pillar-features">
-          <div class="pf-item">Digital marketing bootcamps (2-5 days)</div>
-          <div class="pf-item">AI tools & automation masterclasses</div>
-          <div class="pf-item">Digital transformation consulting</div>
-          <div class="pf-item">Executive digital leadership programme</div>
-          <div class="pf-item">Custom corporate training design</div>
-          <div class="pf-item">Team digital capability assessments</div>
-          <div class="pf-item">Change management support</div>
-          <div class="pf-item">Ongoing coaching & mentorship</div>
+          <div class="pf-item">Google Business Profile setup and optimization</div>
+          <div class="pf-item">Local keyword research and on-page SEO</div>
+          <div class="pf-item">NAP citation building across directories</div>
+          <div class="pf-item">Review generation strategy</div>
+          <div class="pf-item">Google Maps ranking optimization</div>
+          <div class="pf-item">Local landing page creation</div>
+          <div class="pf-item">Monthly rank tracking and reporting</div>
+          <div class="pf-item">Competitor local SEO analysis</div>
         </div>
       </div>
       <div class="pillar-visual orange reveal-right">
-        <div class="pv-stat"><div class="pv-val">500+</div><div class="pv-lbl">Professionals Trained</div></div>
-        <div class="pv-stat"><div class="pv-val">28%</div><div class="pv-lbl">Avg Sales Lift Post-Training</div></div>
-        <div class="pv-stat"><div class="pv-val">4.9★</div><div class="pv-lbl">Average Training Rating</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>Top 3</em></div><div class="pv-lbl">Average Google Maps Ranking After 90 Days</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>4×</em></div><div class="pv-lbl">More Calls from Google Business Profile</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>0</em></div><div class="pv-lbl">Ad Spend Required for Organic Visibility</div></div>
       </div>
     </div>
     <div class="pricing-section reveal">
-      <div class="pricing-label">Get a Quotation</div>
-      <div class="pricing-grid">
+      <div class="pricing-label">Local SEO Pricing</div>
+      <div class="pricing-grid-4">
         <div class="price-card">
-          <div class="price-tier">Starter</div>
-          <div class="price-val" style="font-size:1.6rem">Request Quote</div>
-          <div class="price-period">tailored to your scope</div>
+          <div class="price-tier">GBP Setup</div>
+          <div class="price-val">KES 10,000</div>
+          <div class="price-period">one-time</div>
           <ul class="price-features">
-            <li>1-day focused workshop</li>
-            <li>Pre-designed curriculum</li>
-            <li>Printed training materials</li>
-            <li>Certificate of completion</li>
-            <li>Post-training resource pack</li>
-            <li>Follow-up Q&A session</li>
+            <li>Google Business Profile creation</li>
+            <li>Profile fully optimized</li>
+            <li>Category and service setup</li>
+            <li>Photo optimization</li>
+            <li>Review response templates</li>
           </ul>
-          <a href="contact.html" class="price-cta">Get a Quote</a>
+          <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27m%20interested%20in%20GBP%20Setup%20at%20KES%2010%2C000" target="_blank" rel="noopener" class="price-cta">Get Started on WhatsApp</a>
+        </div>
+        <div class="price-card">
+          <div class="price-tier">Local SEO Starter</div>
+          <div class="price-val">KES 20,000</div>
+          <div class="price-period">one-time</div>
+          <ul class="price-features">
+            <li>GBP setup included</li>
+            <li>Local keyword research</li>
+            <li>On-page SEO (5 pages)</li>
+            <li>Citation building (20 directories)</li>
+            <li>Baseline rank report</li>
+          </ul>
+          <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27m%20interested%20in%20Local%20SEO%20Starter%20at%20KES%2020%2C000" target="_blank" rel="noopener" class="price-cta">Get Started on WhatsApp</a>
         </div>
         <div class="price-card featured">
-          <div class="price-badge">Most Effective</div>
-          <div class="price-tier">Growth</div>
-          <div class="price-val" style="font-size:1.6rem">Request Quote</div>
-          <div class="price-period">tailored to your scope</div>
+          <div class="price-badge">Best Results</div>
+          <div class="price-tier">Local SEO Growth</div>
+          <div class="price-val">KES 35,000</div>
+          <div class="price-period">per month</div>
           <ul class="price-features">
-            <li>5-day immersive bootcamp</li>
-            <li>Custom curriculum design</li>
-            <li>Hands-on practical workshops</li>
-            <li>Up to 30 participants</li>
-            <li>Pre & post capability assessments</li>
-            <li>1-month post-training coaching</li>
-            <li>Implementation action plan</li>
-            <li>Digital toolkits & resources</li>
+            <li>Full GBP management</li>
+            <li>Monthly content and posts</li>
+            <li>Ongoing citation building</li>
+            <li>Review generation system</li>
+            <li>Monthly rank tracking report</li>
+            <li>Competitor monitoring</li>
           </ul>
-          <a href="contact.html" class="price-cta">Get a Quote</a>
+          <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27m%20interested%20in%20Local%20SEO%20Growth%20at%20KES%2035%2C000%2Fmo" target="_blank" rel="noopener" class="price-cta">Get Started on WhatsApp</a>
         </div>
         <div class="price-card">
           <div class="price-tier">Enterprise</div>
-          <div class="price-val" style="font-size:1.6rem">Request Quote</div>
-          <div class="price-period">full transformation programme</div>
+          <div class="price-val" style="font-size:2rem">Custom Pricing</div>
+          <div class="price-period">multi-location SEO</div>
           <ul class="price-features">
-            <li>Full digital transformation consulting</li>
-            <li>Multi-team, multi-level training</li>
-            <li>Unlimited participants</li>
-            <li>Custom learning platform / LMS</li>
-            <li>Quarterly refresh sessions</li>
-            <li>Digital maturity assessment</li>
-            <li>Executive strategy workshops</li>
-            <li>12-month transformation support</li>
+            <li>Multiple locations managed</li>
+            <li>Full SEO content strategy</li>
+            <li>Technical SEO audits</li>
+            <li>Franchise/chain SEO</li>
+            <li>Dedicated account manager</li>
+            <li>Executive monthly reporting</li>
           </ul>
-          <a href="contact.html" class="price-cta">Get a Quote</a>
+          <a href="contact.html" class="price-cta">Book a Strategy Call</a>
         </div>
-      </div>
-    </div>
-    <div class="faq-section reveal">
-      <div class="faq-label">Frequently Asked Questions</div>
-      <div class="faq-list">
-        <div class="faq-item"><div class="faq-q">Can training be delivered remotely?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Yes. All training programmes are available in-person (Nairobi), hybrid, or fully online via Zoom. We use interactive tools like Miro and Kahoot to keep online sessions engaging.</div></div></div>
-        <div class="faq-item"><div class="faq-q">Do you customize training for our specific industry?<span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Absolutely. All Growth and Enterprise programmes are custom-built for your industry, team composition, and specific challenges. We do a needs assessment before designing the curriculum.</div></div></div>
       </div>
     </div>
   </div>
 </div>
 
+<!-- SERVICE 05: TRAINING & DIGITAL UPSKILLING -->
+<div class="service-pillar" id="training">
+  <div class="pillar-inner">
+    <div class="pillar-hero">
+      <div class="reveal-left">
+        <div class="pillar-num">05 / SERVICE</div>
+        <div class="pillar-icon" style="background:rgba(232,99,26,.12)">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        </div>
+        <h2 class="pillar-title">Training <em>&</em> Digital Upskilling</h2>
+        <p class="pillar-desc">Technology is only powerful if your team knows how to use it. We deliver practical, hands-on digital training — from social media to AI tools — designed specifically for Kenyan businesses and their day-to-day realities.</p>
+        <div class="pillar-features">
+          <div class="pf-item">Digital marketing bootcamps (2-5 days)</div>
+          <div class="pf-item">AI tools and automation masterclasses</div>
+          <div class="pf-item">Social media management training</div>
+          <div class="pf-item">WhatsApp Business and CRM training</div>
+          <div class="pf-item">Google Ads and Meta Ads workshops</div>
+          <div class="pf-item">Executive digital leadership programme</div>
+          <div class="pf-item">Custom corporate training design</div>
+          <div class="pf-item">Post-training coaching and support</div>
+        </div>
+      </div>
+      <div class="pillar-visual reveal-right">
+        <div class="pv-stat"><div class="pv-val"><em>500+</em></div><div class="pv-lbl">Professionals Trained Across Kenya</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>28%</em></div><div class="pv-lbl">Average Sales Lift After Training</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>4.9★</em></div><div class="pv-lbl">Average Participant Rating</div></div>
+      </div>
+    </div>
+    <div class="pricing-section reveal">
+      <div class="pricing-label">Training Pricing</div>
+      <div class="pricing-grid" style="grid-template-columns:1fr 1fr;max-width:720px;margin-left:auto;margin-right:auto">
+        <div class="price-card">
+          <div class="price-tier">SME Team</div>
+          <div class="price-val">KES 40,000</div>
+          <div class="price-period">per engagement</div>
+          <ul class="price-features">
+            <li>2-day intensive workshop</li>
+            <li>Up to 15 participants</li>
+            <li>Practical hands-on sessions</li>
+            <li>Training materials included</li>
+            <li>Certificate of completion</li>
+            <li>30-day follow-up support</li>
+          </ul>
+          <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27m%20interested%20in%20SME%20Team%20Training%20at%20KES%2040%2C000" target="_blank" rel="noopener" class="price-cta">Get Started on WhatsApp</a>
+        </div>
+        <div class="price-card featured">
+          <div class="price-badge">Enterprise</div>
+          <div class="price-tier">Corporate Programme</div>
+          <div class="price-val" style="font-size:2rem">From KES 150K</div>
+          <div class="price-period">full programme</div>
+          <ul class="price-features">
+            <li>Custom curriculum design</li>
+            <li>Unlimited participants</li>
+            <li>Multi-day programme</li>
+            <li>Pre and post assessments</li>
+            <li>LMS platform access</li>
+            <li>3-month coaching support</li>
+            <li>Implementation action plan</li>
+            <li>Executive strategy workshops</li>
+          </ul>
+          <a href="contact.html" class="price-cta">Book a Strategy Call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICE 06: ENTERPRISE SOLUTIONS -->
+<div class="service-pillar" id="enterprise">
+  <div class="pillar-inner">
+    <div class="pillar-hero">
+      <div class="reveal-left">
+        <div class="pillar-num">06 / SERVICE</div>
+        <div class="pillar-icon" style="background:rgba(11,24,40,.08)">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h2 class="pillar-title">Enterprise Solutions <em>&</em> Digital Transformation</h2>
+        <p class="pillar-desc">For organizations ready to move beyond individual tools and undergo a full digital transformation. We embed with your team to design and execute an enterprise-wide digital strategy — from system integrations to change management.</p>
+        <div class="pillar-features">
+          <div class="pf-item">Digital maturity assessment and roadmap</div>
+          <div class="pf-item">Enterprise system integration and automation</div>
+          <div class="pf-item">Custom internal tools and dashboards</div>
+          <div class="pf-item">Data analytics and business intelligence setup</div>
+          <div class="pf-item">Cloud infrastructure and migration</div>
+          <div class="pf-item">Change management and adoption support</div>
+          <div class="pf-item">Ongoing technology advisory</div>
+          <div class="pf-item">Executive digital leadership coaching</div>
+        </div>
+      </div>
+      <div class="pillar-visual orange reveal-right">
+        <div class="pv-stat"><div class="pv-val"><em>Custom</em></div><div class="pv-lbl">Pricing Based on Scope and Complexity</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>90-day</em></div><div class="pv-lbl">Transformation Quick-Win Sprint Available</div></div>
+        <div class="pv-stat"><div class="pv-val"><em>Dedicated</em></div><div class="pv-lbl">Strategy Team Assigned to Your Account</div></div>
+        <div style="margin-top:2rem;text-align:center"><a href="contact.html" class="btn-primary" style="display:inline-block">Book a Strategy Call</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WEBSITE MAINTENANCE -->
+<section id="maintenance" style="background:var(--gray-light);padding:80px 0">
+  <div class="section-inner">
+    <div class="reveal" style="text-align:center;margin-bottom:48px">
+      <div class="section-eyebrow">Website Maintenance</div>
+      <h2 class="section-title">Keep Your Website <em>Fast, Secure</em> & Always Online</h2>
+      <p style="max-width:600px;margin:16px auto 0;color:var(--gray-text);font-size:1.05rem">Your website is your 24/7 salesperson. We handle updates, backups, security, and performance so you never have to worry about downtime.</p>
+    </div>
+    <div class="pricing-grid reveal">
+      <div class="price-card">
+        <div class="price-tier">Stay Online</div>
+        <div class="price-val">KES 1,500</div>
+        <div class="price-period">per month</div>
+        <ul class="price-features">
+          <li>Monthly security scan</li>
+          <li>Plugin and CMS updates</li>
+          <li>Monthly backup</li>
+          <li>Uptime monitoring</li>
+          <li>Email support</li>
+        </ul>
+        <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27m%20interested%20in%20Stay%20Online%20Maintenance%20at%20KES%201%2C500%2Fmo" target="_blank" rel="noopener" class="price-cta">Get Started on WhatsApp</a>
+      </div>
+      <div class="price-card featured">
+        <div class="price-badge">Most Popular</div>
+        <div class="price-tier">Business Growth</div>
+        <div class="price-val">KES 3,500</div>
+        <div class="price-period">per month</div>
+        <ul class="price-features">
+          <li>Everything in Stay Online</li>
+          <li>Weekly backups</li>
+          <li>Performance optimization</li>
+          <li>2 content updates/month</li>
+          <li>Monthly analytics report</li>
+          <li>Priority support (24h response)</li>
+        </ul>
+        <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27m%20interested%20in%20Business%20Growth%20Maintenance%20at%20KES%203%2C500%2Fmo" target="_blank" rel="noopener" class="price-cta">Get Started on WhatsApp</a>
+      </div>
+      <div class="price-card">
+        <div class="price-tier">E-Commerce</div>
+        <div class="price-val">KES 7,500</div>
+        <div class="price-period">per month</div>
+        <ul class="price-features">
+          <li>Everything in Business Growth</li>
+          <li>Daily backups</li>
+          <li>Unlimited content updates</li>
+          <li>M-Pesa integration monitoring</li>
+          <li>Conversion rate monitoring</li>
+          <li>Same-day emergency support</li>
+        </ul>
+        <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27m%20interested%20in%20E-Commerce%20Maintenance%20at%20KES%207%2C500%2Fmo" target="_blank" rel="noopener" class="price-cta">Get Started on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOBAL FAQ -->
+<section id="faq" style="padding:80px 0;background:var(--white)">
+  <div class="section-inner">
+    <div class="reveal" style="text-align:center;margin-bottom:48px">
+      <div class="section-eyebrow">FAQ</div>
+      <h2 class="section-title">Questions We <em>Get Asked</em> Every Day</h2>
+    </div>
+    <div class="faq-list reveal" style="max-width:800px;margin:0 auto">
+      <div class="faq-item">
+        <div class="faq-q">How much does a website cost?<span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Our websites start from KES 15,000 for an SME Starter site, KES 35,000 for a Business Growth site, and KES 65,000 for an E-Commerce store. Custom web applications start from KES 120,000. Every project gets a detailed quote after a free discovery call.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How long does development take?<span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Starter websites typically launch in 1-2 weeks. Business Growth sites take 2-4 weeks. E-Commerce stores take 3-5 weeks. Custom web applications are scoped individually, but we always provide a clear timeline before starting.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do packages include hosting?<span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Hosting is not included in the one-time build fee, but we can set it up for you. We recommend reliable Kenyan and international hosts (typically KES 5,000-15,000/year depending on your needs). Our maintenance packages include ongoing hosting support.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can you integrate M-Pesa into the website?<span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes. We integrate M-Pesa STK Push, Lipa Na M-Pesa, and Daraja API into websites, e-commerce stores, and custom web applications. M-Pesa integration is included in E-Commerce packages and available as an add-on for other packages.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you provide ongoing maintenance?<span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes. We offer three maintenance plans starting from KES 1,500/month covering security, backups, updates, and support. All new websites come with 30 days of free post-launch support before transitioning to a maintenance plan.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can you redesign my existing website?<span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Absolutely. Website redesigns are one of our most common projects. We audit your current site, identify what is working and what is not, and rebuild it with better design, faster performance, and stronger conversion focus. Pricing follows our standard Web Development packages.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="cta-band">
   <div class="section-inner">
-    <h2 class="cta-heading reveal">Not Sure Which Service <em>Fits</em>?</h2>
-    <p class="cta-sub reveal">Book a free 30-minute strategy call. We'll audit your current situation and recommend the exact mix of services to hit your growth goals fastest.</p>
+    <h2 class="cta-heading reveal">Ready to Grow <em>Your</em> Business?</h2>
+    <p class="cta-sub reveal">SMEs: start a conversation on WhatsApp and get going today. Enterprise teams: book a strategy call and we will map out a custom growth plan.</p>
     <div class="cta-btns reveal">
-      <a href="contact.html" class="btn-primary">Book Free Strategy Call</a>
-      <a href="work.html" class="btn-white">See Our Work</a>
+      <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27d%20like%20to%20discuss%20your%20services" target="_blank" rel="noopener" class="btn-primary">Get Started on WhatsApp</a>
+      <a href="contact.html" class="btn-white">Request a Free Audit</a>
+      <a href="contact.html" class="btn-white">Book a Strategy Call</a>
     </div>
   </div>
 </section>
@@ -684,7 +881,7 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
   <div class="footer-inner">
     <div class="footer-grid">
       <div><a href="index.html" class="footer-brand"><img src="images/logo.png" alt="Afrinetix" style="height:40px;width:auto;filter:brightness(0) invert(1)"></a><p class="footer-about">Growth Engine for the Digital Age. AI-powered digital growth agency based in Nairobi, Kenya.</p><div class="footer-socials"><a href="https://linkedin.com/company/AfrinetixSolutions" class="social-btn">in</a><a href="https://twitter.com/AfrinetixSolutions" class="social-btn">𝕏</a><a href="https://instagram.com/AfrinetixSolutions" class="social-btn">ig</a><a href="https://facebook.com/AfrinetixSolutions" class="social-btn">fb</a><a href="https://tiktok.com/@AfrinetixSolutions" class="social-btn">tk</a></div></div>
-      <div><div class="footer-col-title">Services</div><ul class="footer-links"><li><a href="#marketing">Digital Marketing</a></li><li><a href="#automation">AI & Automation</a></li><li><a href="#web">Web Development</a></li><li><a href="#training">Training</a></li></ul></div>
+      <div><div class="footer-col-title">Services</div><ul class="footer-links"><li><a href="#web">Web Development</a></li><li><a href="#marketing">Digital Marketing</a></li><li><a href="#whatsapp">WhatsApp Automation</a></li><li><a href="#seo">Local SEO</a></li><li><a href="#training">Training</a></li><li><a href="#enterprise">Enterprise</a></li></ul></div>
       <div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="work.html">Our Work</a></li><li><a href="results.html">Results</a></li><li><a href="careers.html">Careers</a></li></ul></div>
       <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a href="mailto:afrinetixsolutions@gmail.com">afrinetixsolutions@gmail.com</a></li><li><a href="tel:+254711571124">+254 711 571 124</a></li><li><a href="contact.html">Nairobi, Kenya</a></li></ul></div>
     </div>
@@ -712,7 +909,7 @@ const fab=document.getElementById('chatbot-fab'),win=document.getElementById('ch
 let open=false;
 fab.addEventListener('click',()=>{open=!open;win.style.display=open?'flex':'none';if(open)win.classList.add('open');else win.classList.remove('open');});
 closeB.addEventListener('click',()=>{open=false;win.classList.remove('open');setTimeout(()=>win.style.display='none',300);});
-const R={pricing:"<strong>Service Pricing Ranges:</strong><br>📈 Marketing: from <strong>KES 45K/mo</strong><br>🤖 AI/Automation: from <strong>KES 55K</strong> setup<br>💻 Web Dev: from <strong>KES 80K</strong> project<br>🎓 Training: from <strong>KES 35K/day</strong>",results:"<strong>Client Results:</strong><br>✅ 40% CAC reduction<br>✅ 3× pipeline growth<br>✅ 35% overhead saved<br>✅ 4× conversion lift",book:"Book via <a href='contact.html' style='color:var(--orange)'>our contact form</a> or call <strong>+254 711 571 124</strong>.",default:"I'd recommend <a href='contact.html' style='color:var(--orange)'>booking a free strategy call</a> — we'll give you a personalised recommendation!"};
+const R={pricing:"<strong>Our Pricing:</strong><br>Web Dev: from <strong>KES 15,000</strong><br>Digital Marketing: from <strong>KES 25,000/mo</strong><br>WhatsApp Automation: from <strong>KES 35,000</strong><br>Local SEO: from <strong>KES 10,000</strong><br>Training: from <strong>KES 40,000</strong><br>Maintenance: from <strong>KES 1,500/mo</strong>",results:"<strong>Client Results:</strong><br>✅ 40% CAC reduction<br>✅ 3× pipeline growth<br>✅ 35% overhead saved<br>✅ 4× conversion lift",book:"Book via <a href='contact.html' style='color:var(--orange)'>our contact form</a> or call <strong>+254 711 571 124</strong>.",default:"I'd recommend <a href='contact.html' style='color:var(--orange)'>booking a free strategy call</a> — we'll give you a personalised recommendation!"};
 function getR(m){const l=m.toLowerCase();if(l.includes('price')||l.includes('cost'))return R.pricing;if(l.includes('result')||l.includes('proof'))return R.results;if(l.includes('book')||l.includes('call'))return R.book;return R.default;}
 function addMsg(t,c){const d=document.createElement('div');d.className='chat-msg '+c;d.innerHTML=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;}
 function showTyping(){const t=document.createElement('div');t.className='typing-indicator';t.id='typing';t.innerHTML='<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';msgs.appendChild(t);msgs.scrollTop=msgs.scrollHeight;}

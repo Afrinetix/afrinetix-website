@@ -106,8 +106,9 @@ section{padding:100px 48px}
 .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .work-card{border-radius:var(--r-lg);overflow:hidden;background:var(--white);border:1px solid var(--gray-mid);transition:all var(--t)}
 .work-card:hover{transform:translateY(-6px);box-shadow:var(--sh-lg);border-color:var(--orange)}
-.work-thumb{height:200px;display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative;overflow:hidden}
-.work-thumb::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(0,0,0,.4))}
+.work-thumb{height:200px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:var(--gray-light);padding:24px}
+.work-thumb img{max-height:120px;max-width:80%;object-fit:contain;display:block}
+.work-thumb-text{font-family:var(--font-serif);font-size:1.5rem;color:var(--white);text-align:center;line-height:1.3}
 .work-body{padding:28px}
 .work-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
 .work-tag{font-size:.68rem;font-family:var(--font-mono);color:var(--orange);background:rgba(232,99,26,.1);padding:3px 10px;border-radius:var(--r-full)}
@@ -234,7 +235,7 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
     </div>
     <div class="work-grid" id="work-grid">
       <div class="work-card reveal" data-category="marketing design web">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#0b1828,#e8631a)">🏢</div>
+        <div class="work-thumb"><img src="images/Ishmar_Expo_Logo.png" alt="Ishmar Expo"></div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">IT Consultancy</span><span class="work-tag">Graphic Design</span><span class="work-tag">Digital Marketing</span></div>
           <div class="work-title">Ishmar Expo — Full-Service Partnership</div>
@@ -244,7 +245,7 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
         </div>
       </div>
       <div class="work-card reveal" data-category="design">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#0a3320,#16a34a)">🏛️</div>
+        <div class="work-thumb"><img src="images/Kajiado county gov logo.jpg" alt="Kajiado County Government"></div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">Graphic Design</span></div>
           <div class="work-title">Kajiado County Government — Graphic Design</div>
@@ -254,7 +255,7 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
         </div>
       </div>
       <div class="work-card reveal" data-category="training">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#1a0a3d,#7c3aed)">🎓</div>
+        <div class="work-thumb"><img src="images/Machakos University.png" alt="Machakos University"></div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">Training</span><span class="work-tag">Education</span></div>
           <div class="work-title">Machakos University — Digital Training</div>
@@ -264,7 +265,7 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
         </div>
       </div>
       <div class="work-card reveal" data-category="training">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#0a2040,#0ea5e9)">💻</div>
+        <div class="work-thumb"><img src="images/Ajira Digital Logo.jpg" alt="Ajira Digital"></div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">Training</span><span class="work-tag">Digital Skills</span></div>
           <div class="work-title">Ajira Digital — Digital Skills Programme</div>
@@ -274,7 +275,7 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
         </div>
       </div>
       <div class="work-card reveal" data-category="marketing">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#0f3d2a,#22c55e)">🌍</div>
+        <div class="work-thumb"><img src="images/corepath_Impact_Logo.png" alt="Corepath Impact"></div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">Digital Marketing</span><span class="work-tag">Social Media</span></div>
           <div class="work-title">Corepath Impact — Digital Marketing &amp; Social Media</div>
@@ -284,7 +285,7 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
         </div>
       </div>
       <div class="work-card reveal" data-category="marketing design">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#1e1a2e,#e8631a)">🤝</div>
+        <div class="work-thumb"><img src="images/Directors referral network logo.jpeg" alt="Directors Referral Network"></div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">Digital Marketing</span><span class="work-tag">Graphic Design</span></div>
           <div class="work-title">Directors Referral Club (DRN)</div>
@@ -294,7 +295,7 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
         </div>
       </div>
       <div class="work-card reveal" data-category="data">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#1a2a00,#65a30d)">🌾</div>
+        <div class="work-thumb"><img src="images/ASK_logo.jpg" alt="Agricultural Society of Kenya"></div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">Data</span><span class="work-tag">IT Services</span></div>
           <div class="work-title">Agricultural Society of Kenya (ASK) — Data &amp; IT</div>
@@ -304,7 +305,7 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
         </div>
       </div>
       <div class="work-card reveal" data-category="web training">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#1a1a2e,#2563eb)">🖥️</div>
+        <div class="work-thumb" style="background:linear-gradient(135deg,#1a1a2e,#2563eb)"><span class="work-thumb-text">Queenstar<br>Computers</span></div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">Digital Services</span><span class="work-tag">Training</span></div>
           <div class="work-title">Queenstar Computers — Digital Services &amp; Training</div>
@@ -368,7 +369,7 @@ const fab=document.getElementById('chatbot-fab'),win=document.getElementById('ch
 let open=false;
 fab.addEventListener('click',()=>{open=!open;win.style.display=open?'flex':'none';if(open)win.classList.add('open');else win.classList.remove('open');});
 closeB.addEventListener('click',()=>{open=false;win.classList.remove('open');setTimeout(()=>win.style.display='none',300);});
-const R={services:"<strong>4 Service Pillars:</strong><br>📈 Digital Marketing<br>🤖 AI & Automation<br>💻 Web Development<br>🎓 Training",pricing:"From <strong>KES 35K/day</strong> training to <strong>KES 180K+</strong> web projects. <a href='contact.html' style='color:var(--orange)'>Book a call</a> for a custom quote.",book:"<a href='contact.html' style='color:var(--orange)'>Book a free strategy call</a> or email <strong>afrinetixsolutions@gmail.com</strong>.",default:"I'd love to help! <a href='contact.html' style='color:var(--orange)'>Contact us</a> for a tailored answer."};
+const R={services:"<strong>6 Services:</strong><br>Web Development from KES 15K<br>Digital Marketing from KES 25K/mo<br>WhatsApp Automation from KES 35K<br>Local SEO from KES 10K<br>Training from KES 40K<br>Enterprise — Custom",pricing:"<strong>Pricing ranges:</strong><br>Web Dev from <strong>KES 15,000</strong><br>Marketing from <strong>KES 25,000/mo</strong><br>WhatsApp from <strong>KES 35,000</strong><br>Maintenance from <strong>KES 1,500/mo</strong>.<br><a href='services.html' style='color:var(--orange)'>See full pricing</a>",book:"<a href='contact.html' style='color:var(--orange)'>Book a free strategy call</a> or email <strong>afrinetixsolutions@gmail.com</strong>.",default:"I'd love to help! <a href='contact.html' style='color:var(--orange)'>Contact us</a> for a tailored answer."};
 function getR(m){const l=m.toLowerCase();if(l.includes('service'))return R.services;if(l.includes('price')||l.includes('cost'))return R.pricing;if(l.includes('book')||l.includes('call'))return R.book;return R.default;}
 function addMsg(t,c){const d=document.createElement('div');d.className='chat-msg '+c;d.innerHTML=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;}
 function showTyping(){const t=document.createElement('div');t.className='typing-indicator';t.id='typing';t.innerHTML='<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';msgs.appendChild(t);msgs.scrollTop=msgs.scrollHeight;}

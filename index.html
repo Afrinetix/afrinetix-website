@@ -243,8 +243,9 @@ section{padding:100px 48px}
 .service-card{background:var(--white);border-radius:var(--r-lg);padding:36px;border:2px solid transparent;position:relative;overflow:hidden;transition:all var(--t)}
 .service-card:hover{border-color:var(--orange);transform:translateY(-4px);box-shadow:var(--sh-or)}
 .service-num{font-family:var(--font-mono);font-size:.7rem;color:var(--orange);letter-spacing:.1em;margin-bottom:16px}
-.service-icon-box{width:56px;height:56px;background:rgba(232,99,26,.1);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:1.5rem;transition:all var(--t)}
-.service-card:hover .service-icon-box{background:var(--orange);transform:scale(1.1)}
+.service-icon-box{width:56px;height:56px;background:rgba(232,99,26,.1);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;margin-bottom:20px;color:var(--orange);transition:all var(--t)}
+.service-card:hover .service-icon-box{background:var(--orange);color:var(--white);transform:scale(1.1)}
+.service-icon-box svg{stroke:currentColor;transition:stroke var(--t)}
 .service-title{font-family:var(--font-serif);font-size:1.4rem;color:var(--navy);margin-bottom:12px}
 .service-desc{font-size:.88rem;line-height:1.6;color:var(--gray-text);margin-bottom:16px}
 .service-bullets{list-style:none;display:flex;flex-direction:column;gap:6px}
@@ -264,8 +265,9 @@ section{padding:100px 48px}
 .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .work-card{border-radius:var(--r-lg);overflow:hidden;background:var(--white);border:1px solid var(--gray-mid);transition:all var(--t);cursor:none}
 .work-card:hover{transform:translateY(-6px);box-shadow:var(--sh-lg);border-color:var(--orange)}
-.work-thumb{height:180px;display:flex;align-items:center;justify-content:center;font-size:2.5rem;position:relative;overflow:hidden}
-.work-thumb::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 60%,rgba(0,0,0,.3))}
+.work-thumb{height:180px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:var(--gray-light);padding:20px}
+.work-thumb img{max-height:100px;max-width:80%;object-fit:contain;display:block}
+.work-thumb-text{font-family:var(--font-serif);font-size:1.4rem;color:var(--white);text-align:center;line-height:1.3}
 .work-body{padding:24px}
 .work-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
 .work-tag{font-size:.68rem;font-family:var(--font-mono);color:var(--orange);background:rgba(232,99,26,.1);padding:3px 10px;border-radius:var(--r-full)}
@@ -279,6 +281,7 @@ section{padding:100px 48px}
 .client-logo-plate{display:flex;align-items:center;gap:10px;padding:9px 16px;background:var(--white);border-radius:var(--r-full);border:1px solid var(--gray-mid);transition:all var(--t);text-decoration:none}
 .client-logo-plate:hover{border-color:var(--orange);box-shadow:0 4px 16px rgba(232,99,26,.12);transform:translateY(-1px)}
 .logo-badge{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;font-family:var(--font-mono);color:var(--white);flex-shrink:0;letter-spacing:.02em}
+.logo-img{height:28px;width:auto;max-width:80px;object-fit:contain;flex-shrink:0}
 .logo-company{font-size:.78rem;font-weight:600;color:var(--navy);white-space:nowrap}
 /* RESULTS BAND */
 .results-band{background:var(--navy);padding:80px 48px}
@@ -679,71 +682,109 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
     <div class="services-header">
       <div>
         <div class="section-label">What We Do</div>
-        <h2 class="section-heading">Four Pillars of <em>Transformative</em> Growth</h2>
+        <h2 class="section-heading">Six Services. <em>One</em> Growth Engine.</h2>
       </div>
       <a href="services.html" class="btn-outline">View All Services</a>
     </div>
     <div class="services-grid reveal">
       <div class="service-card">
         <div class="service-num">01 / SERVICE</div>
-        <div class="service-icon-box">📈</div>
-        <h3 class="service-title">Digital Marketing & Growth</h3>
-        <p class="service-desc">Full-funnel marketing strategies that fill your pipeline and convert leads at record rates.</p>
+        <div class="service-icon-box">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3 class="service-title">Web Development & E-Commerce</h3>
+        <p class="service-desc">Fast, conversion-focused websites and e-commerce stores built for Kenyan businesses. From KES 15,000.</p>
         <ul class="service-bullets">
-          <li>Performance advertising (Meta, Google, TikTok)</li>
-          <li>SEO & content marketing</li>
-          <li>Email & SMS automation</li>
-          <li>Conversion rate optimization</li>
+          <li>Business websites from KES 15,000</li>
+          <li>E-commerce with M-Pesa integration</li>
+          <li>Custom web applications & portals</li>
+          <li>Website redesigns and migrations</li>
         </ul>
         <div class="service-ghost">01</div>
       </div>
       <div class="service-card">
         <div class="service-num">02 / SERVICE</div>
-        <div class="service-icon-box">🤖</div>
-        <h3 class="service-title">AI & Automation Solutions</h3>
-        <p class="service-desc">Intelligent automation that removes bottlenecks, cuts costs, and scales your operations.</p>
+        <div class="service-icon-box">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+        </div>
+        <h3 class="service-title">Digital Marketing & Growth</h3>
+        <p class="service-desc">Full-funnel campaigns on Meta, Google, and TikTok that fill your pipeline and lower your cost per customer.</p>
         <ul class="service-bullets">
-          <li>AI chatbot & customer service bots</li>
-          <li>Workflow & process automation</li>
-          <li>CRM & lead pipeline automation</li>
-          <li>Predictive analytics dashboards</li>
+          <li>Meta, Google & TikTok advertising</li>
+          <li>SEO & content marketing</li>
+          <li>Email & SMS automation</li>
+          <li>Monthly reporting and optimization</li>
         </ul>
         <div class="service-ghost">02</div>
       </div>
       <div class="service-card">
         <div class="service-num">03 / SERVICE</div>
-        <div class="service-icon-box">💻</div>
-        <h3 class="service-title">Web & Systems Development</h3>
-        <p class="service-desc">High-performance websites and custom systems that drive conversions and scale effortlessly.</p>
+        <div class="service-icon-box">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        </div>
+        <h3 class="service-title">WhatsApp Automation & AI</h3>
+        <p class="service-desc">Automate customer conversations, qualify leads, and run broadcasts — all through WhatsApp, 24/7.</p>
         <ul class="service-bullets">
-          <li>Conversion-optimized websites</li>
-          <li>Custom web applications & portals</li>
-          <li>API integrations & system design</li>
-          <li>E-commerce & booking platforms</li>
+          <li>WhatsApp Business API setup</li>
+          <li>Automated lead capture flows</li>
+          <li>CRM and broadcast integration</li>
+          <li>AI-powered chat responses</li>
         </ul>
         <div class="service-ghost">03</div>
       </div>
       <div class="service-card">
         <div class="service-num">04 / SERVICE</div>
-        <div class="service-icon-box">🎓</div>
-        <h3 class="service-title">Training & Digital Transformation</h3>
-        <p class="service-desc">Upskill your team and transform your organization into a digital-first powerhouse.</p>
+        <div class="service-icon-box">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3 class="service-title">Local SEO & Google Business</h3>
+        <p class="service-desc">Get found first when Kenyans search for your product or service on Google Maps and Search.</p>
         <ul class="service-bullets">
-          <li>Digital marketing bootcamps</li>
-          <li>AI tools & automation training</li>
-          <li>Digital transformation consulting</li>
-          <li>Team capability assessments</li>
+          <li>Google Business Profile optimization</li>
+          <li>Local keyword and on-page SEO</li>
+          <li>Google Maps ranking improvement</li>
+          <li>Review generation strategy</li>
         </ul>
         <div class="service-ghost">04</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">05 / SERVICE</div>
+        <div class="service-icon-box">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        </div>
+        <h3 class="service-title">Training & Digital Upskilling</h3>
+        <p class="service-desc">Practical, hands-on digital training for SME teams and corporate organisations across Kenya.</p>
+        <ul class="service-bullets">
+          <li>SME Team Training from KES 40,000</li>
+          <li>Digital marketing bootcamps</li>
+          <li>AI tools & automation workshops</li>
+          <li>Corporate programmes from KES 150K</li>
+        </ul>
+        <div class="service-ghost">05</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">06 / SERVICE</div>
+        <div class="service-icon-box">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3 class="service-title">Enterprise Solutions & Transformation</h3>
+        <p class="service-desc">End-to-end digital transformation for organisations ready to overhaul their operations and strategy.</p>
+        <ul class="service-bullets">
+          <li>Digital maturity assessment & roadmap</li>
+          <li>Enterprise system integrations</li>
+          <li>Business intelligence & analytics</li>
+          <li>Change management & adoption</li>
+        </ul>
+        <div class="service-ghost">06</div>
       </div>
     </div>
     <div class="service-card-wide reveal" style="margin-top:24px">
       <div>
-        <h3 class="wide-title">Ready for a Complete Digital Overhaul?</h3>
-        <p class="wide-desc">Our 360° Growth Package combines all four service pillars into a single, cohesive strategy. Custom-built for your industry, goals, and timeline.</p>
+        <h3 class="wide-title">Not Sure Which Service You Need?</h3>
+        <p class="wide-desc">Book a free 30-minute strategy call. We will audit your current situation and recommend the exact mix of services to hit your growth goals fastest.</p>
       </div>
       <div class="wide-cta">
-        <a href="contact.html" class="btn-primary">Get a Custom Plan</a>
+        <a href="https://wa.me/254711571124?text=Hi%20Afrinetix%2C%20I%27d%20like%20to%20discuss%20your%20services" target="_blank" rel="noopener" class="btn-primary">Get Started on WhatsApp</a>
       </div>
     </div>
   </div>
@@ -764,31 +805,31 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
       <div class="clients-strip-label">Trusted By</div>
       <div class="clients-logos">
         <span class="client-logo-plate">
-          <span class="logo-badge" style="background:linear-gradient(135deg,#0b1828,#e8631a)">IE</span>
+          <img src="images/Ishmar_Expo_Logo.png" alt="Ishmar Expo" class="logo-img">
           <span class="logo-company">Ishmar Expo</span>
         </span>
         <span class="client-logo-plate">
-          <span class="logo-badge" style="background:linear-gradient(135deg,#0a3320,#16a34a)">KCG</span>
+          <img src="images/Kajiado county gov logo.jpg" alt="Kajiado County Government" class="logo-img">
           <span class="logo-company">Kajiado County Govt</span>
         </span>
         <span class="client-logo-plate">
-          <span class="logo-badge" style="background:linear-gradient(135deg,#1a0a3d,#7c3aed)">MU</span>
+          <img src="images/Machakos University.png" alt="Machakos University" class="logo-img">
           <span class="logo-company">Machakos University</span>
         </span>
         <span class="client-logo-plate">
-          <span class="logo-badge" style="background:linear-gradient(135deg,#0a2040,#0ea5e9)">AD</span>
+          <img src="images/Ajira Digital Logo.jpg" alt="Ajira Digital" class="logo-img">
           <span class="logo-company">Ajira Digital</span>
         </span>
         <span class="client-logo-plate">
-          <span class="logo-badge" style="background:linear-gradient(135deg,#0f3d2a,#22c55e)">CI</span>
+          <img src="images/corepath_Impact_Logo.png" alt="Corepath Impact" class="logo-img">
           <span class="logo-company">Corepath Impact</span>
         </span>
         <span class="client-logo-plate">
-          <span class="logo-badge" style="background:linear-gradient(135deg,#1e1a2e,#e8631a)">DRN</span>
+          <img src="images/Directors referral network logo.jpeg" alt="Directors Referral Network" class="logo-img">
           <span class="logo-company">Directors Referral Club</span>
         </span>
         <span class="client-logo-plate">
-          <span class="logo-badge" style="background:linear-gradient(135deg,#1a2a00,#65a30d)">ASK</span>
+          <img src="images/ASK_logo.jpg" alt="Agricultural Society of Kenya" class="logo-img">
           <span class="logo-company">Agric. Society of Kenya</span>
         </span>
         <span class="client-logo-plate">
@@ -799,7 +840,7 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
     </div>
     <div class="work-grid" id="work-grid">
       <div class="work-card reveal">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#0a3320,#16a34a)">🏛️</div>
+        <div class="work-thumb"><img src="images/Kajiado county gov logo.jpg" alt="Kajiado County Government"></div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">Graphic Design</span><span class="work-tag">Government</span></div>
           <div class="work-title">Kajiado County Government</div>
@@ -808,7 +849,7 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
         </div>
       </div>
       <div class="work-card reveal">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#1a0a3d,#7c3aed)">🎓</div>
+        <div class="work-thumb"><img src="images/Machakos University.png" alt="Machakos University"></div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">Training</span><span class="work-tag">Education</span></div>
           <div class="work-title">Machakos University</div>
@@ -817,7 +858,7 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
         </div>
       </div>
       <div class="work-card reveal">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#0a2040,#0ea5e9)">💻</div>
+        <div class="work-thumb"><img src="images/Ajira Digital Logo.jpg" alt="Ajira Digital"></div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">Training</span><span class="work-tag">Digital Skills</span></div>
           <div class="work-title">Ajira Digital Programme</div>
@@ -826,7 +867,7 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
         </div>
       </div>
       <div class="work-card reveal">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#0b1828,#e8631a)">🏢</div>
+        <div class="work-thumb"><img src="images/Ishmar_Expo_Logo.png" alt="Ishmar Expo"></div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">IT Consultancy</span><span class="work-tag">Design</span><span class="work-tag">Marketing</span></div>
           <div class="work-title">Ishmar Expo</div>
@@ -835,7 +876,7 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
         </div>
       </div>
       <div class="work-card reveal">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#0f3d2a,#22c55e)">🌍</div>
+        <div class="work-thumb"><img src="images/corepath_Impact_Logo.png" alt="Corepath Impact"></div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">Digital Marketing</span><span class="work-tag">Social Media</span></div>
           <div class="work-title">Corepath Impact</div>
@@ -844,7 +885,7 @@ footer{background:var(--navy-dark);padding:80px 48px 0}
         </div>
       </div>
       <div class="work-card reveal">
-        <div class="work-thumb" style="background:linear-gradient(135deg,#1a2a00,#65a30d)">🌾</div>
+        <div class="work-thumb"><img src="images/ASK_logo.jpg" alt="Agricultural Society of Kenya"></div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">Data</span><span class="work-tag">IT Services</span></div>
           <div class="work-title">Agricultural Society of Kenya</div>
@@ -1330,8 +1371,8 @@ let chatOpen = false;
 fab.addEventListener('click', () => { chatOpen = !chatOpen; win.style.display = chatOpen ? 'flex' : 'none'; setTimeout(() => { if(chatOpen){ win.classList.add('open'); } else { win.classList.remove('open'); } }, 10); });
 closeBtn.addEventListener('click', () => { chatOpen = false; win.classList.remove('open'); setTimeout(() => win.style.display = 'none', 300); });
 const responses = {
-  services: "<strong>Our 4 service pillars:</strong><br><br>📈 <strong>Digital Marketing & Growth</strong> — SEO, paid ads, email automation<br>🤖 <strong>AI & Automation</strong> — chatbots, workflow automation, CRM<br>💻 <strong>Web & Systems Development</strong> — websites, apps, portals<br>🎓 <strong>Training & Transformation</strong> — bootcamps, consulting<br><br>Want details on any specific service?",
-  pricing: "<strong>Our pricing is custom-built for your goals.</strong><br><br>Typical ranges:<br>• Starter packages from <strong>KES 45,000/mo</strong><br>• Growth packages from <strong>KES 95,000/mo</strong><br>• Enterprise from <strong>KES 180,000/mo</strong><br><br>The best way to get accurate pricing is a <strong>free strategy call</strong> — we'll scope your exact needs.",
+  services: "<strong>Our 6 services:</strong><br><br>1. <strong>Web Development</strong> — from KES 15,000<br>2. <strong>Digital Marketing</strong> — from KES 25,000/mo<br>3. <strong>WhatsApp Automation</strong> — from KES 35,000<br>4. <strong>Local SEO</strong> — from KES 10,000<br>5. <strong>Training</strong> — from KES 40,000<br>6. <strong>Enterprise Solutions</strong> — custom pricing<br><br>Want details on any specific service?",
+  pricing: "<strong>Real pricing, no surprises:</strong><br><br>• Web Dev from <strong>KES 15,000</strong><br>• Digital Marketing from <strong>KES 25,000/mo</strong><br>• WhatsApp Automation from <strong>KES 35,000</strong><br>• Local SEO from <strong>KES 10,000</strong><br>• Training from <strong>KES 40,000</strong><br>• Maintenance from <strong>KES 1,500/mo</strong><br><br><a href='services.html' style='color:var(--orange)'>See full pricing →</a>",
   results: "<strong>Proven results across 20+ clients:</strong><br><br>✅ <strong>40%</strong> average CAC reduction<br>✅ <strong>3×</strong> average pipeline growth<br>✅ <strong>35%</strong> overhead reduction via AI<br>✅ <strong>4×</strong> conversion rate improvement<br><br>Industries: Finance, Healthcare, Real Estate, Education, SaaS",
   book: "Great choice! 🎉<br><br>To book your <strong>free 30-minute strategy call</strong>:<br><br>📧 Email: <strong>afrinetixsolutions@gmail.com</strong><br>📞 Call: <strong>+254 711 571 124</strong><br>📝 Or fill our <strong><a href='contact.html' style='color:var(--orange)'>contact form</a></strong><br><br>We'll schedule a session within 24 hours.",
   industries: "We have deep expertise in <strong>5 industries:</strong><br><br>🏦 Finance & Fintech<br>🏥 Healthcare<br>🏠 Real Estate<br>📚 Education<br>☁️ SaaS & Tech<br><br>Our strategies are built specifically for each sector's unique challenges.",
